@@ -3,11 +3,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
   
   /* Add some spacing and styling */
   body {
-    font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
@@ -57,7 +58,7 @@
   
   .btn {
     display: inline-block;
-    background-color: #333;
+    background-color: #00c9a7;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -66,7 +67,7 @@
   }
   
   .btn:hover {
-    background-color: #666;
+    background-color: #0fe5c2;
   }
   
   footer {

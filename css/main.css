@@ -93,7 +93,7 @@
   }
   
 /* --------------------------------------------------------------
- * Sets up some default styles for heading tag 
+ * Sets up some default styles for heading tag.
  * -------------------------------------------------------------*/
  h1,h2,h3,
  h4,h5,h6 { 
@@ -109,7 +109,7 @@ h6 { font-size: 1rem; } */
 
 
 /* --------------------------------------------------------------
- * Sets up some default styles for anchor tag 
+ * Sets up some default styles for anchor tag.
  * -------------------------------------------------------------*/
  a {
 	text-decoration: none;
@@ -133,7 +133,7 @@ a:focus{
 }
 
 /* --------------------------------------------------------------
- * Sets up default styles for outine
+ * Sets up default styles for outline.
  * -------------------------------------------------------------*/
  *:focus {
   outline-style: solid;
@@ -142,7 +142,7 @@ a:focus{
 }
 
 /* --------------------------------------------------------------
-* Sets up default styles for selection
+* Sets up default styles for selection.
 * -------------------------------------------------------------*/
 *::selection {
   color: var(--main-bg);

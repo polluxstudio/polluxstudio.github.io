@@ -133,6 +133,34 @@ a:focus{
 }
 
 /* --------------------------------------------------------------
+ * Sets up default styles for button.
+ * -------------------------------------------------------------*/
+.app__btn {
+  display: inline-block;
+  background-color: var(--highlight);
+  color: var(--main-bg);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.app__btn:hover {
+  background-color: var(--highlight-light);
+  color: var(--main-color);
+}
+
+/* --------------------------------------------------------------
+ * Sets up default styles for input fields.
+ * -------------------------------------------------------------*/
+input, textarea {
+  border: 1px solid #c4c4c4;
+  padding: 5px 10px;
+  border-radius: 3px;
+  display: block;
+  margin-bottom: 1.4em;
+}
+
+/* --------------------------------------------------------------
  * Sets up default styles for outline.
  * -------------------------------------------------------------*/
  *:focus {
@@ -147,6 +175,44 @@ a:focus{
 *::selection {
   color: var(--main-bg);
   background: var(--highlight);
+}
+
+/* --------------------------------------------------------------
+* Styling main header selection.
+* -------------------------------------------------------------*/
+header {
+  padding: 10px 0;
+}
+ .app__header {
+  display: flex;
+}
+
+.app__header span {
+  margin-right: 20px;
+}
+
+.app__header nav {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.app__header nav ul {
+  list-style-type: none;
+}
+
+.app__header nav ul li {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.app__header nav ul li a {
+  color: var(--main-color);
+  text-decoration: none;
+  font-weight: 300;
+}
+.app__header nav ul li a:hover {
+  color: var(--highlight);
+  text-decoration: none;
 }
 
   /* .container {
@@ -216,41 +282,3 @@ a:focus{
     font-size: 14px;
   }
    */
-
-   header {
-    padding: 10px 0;
-  }
-   .app__header {
-    display: flex;
-    /* align-items: center; */
-  }
-
-  .app__header span {
-    margin-right: 20px;
-  }
-
-  .app__header nav {
-    flex-grow: 1;
-    text-align: right;
-  }
-  
-  .app__header nav ul {
-    list-style-type: none;
-    /* display: flex;
-    justify-content: center; */
-  }
-  
-  .app__header nav ul li {
-    margin: 0 10px;
-    display: inline-block;
-  }
-  
-  .app__header nav ul li a {
-    color: var(--main-color);
-    text-decoration: none;
-    font-weight: 300;
-  }
-  .app__header nav ul li a:hover {
-    color: var(--highlight);
-    text-decoration: none;
-  }

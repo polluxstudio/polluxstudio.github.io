@@ -246,7 +246,9 @@ input, textarea {
 .app__hero__section .right {
   flex: 2;
 }
-
+.app__hero__section .right img {
+  width: 100%;
+}
 
 /* --------------------------------------------------------------
 * Styling services selection.

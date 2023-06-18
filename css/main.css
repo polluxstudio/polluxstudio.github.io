@@ -110,7 +110,7 @@
     color: var(--main-color);
 }
 h1 {  font-size: 2.6rem; line-height: 1.2em; margin-bottom: 0.8em; letter-spacing: 1px; }
-h2 { font-size: 2.2rem; margin-bottom: 0.75em; }
+h2 { font-size: 1.3rem; margin-bottom: 0.1em; letter-spacing: 0.5px; }
 /* h3 { font-size: 1rem; line-height: 1; margin-bottom: 1em; }
 h4 { font-size: 1rem; line-height: 1.25; margin-bottom: 1.25em; }
 h5 { font-size: 1rem; margin-bottom: 1.5em; }
@@ -123,10 +123,10 @@ h6 { font-size: 1rem; } */
   text-align: center;
   margin-bottom: 1em;
 }
-h2 {
+/* h2 {
   font-size: 1.4rem;
   margin-bottom: 0.1em;
-}
+} */
 
 /* --------------------------------------------------------------
  * Sets up some default styles for anchor tag.
@@ -255,6 +255,19 @@ input, textarea {
 #services {
   background: var(--white);
 }
+
+.app__services__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.app__single__service {
+  flex: 1;
+  text-align: center;
+  border: 1px solid var(--gray);
+  flex-basis: 25%;
+}
+
   /* .container {
     max-width: 960px;
     margin: 0 auto;

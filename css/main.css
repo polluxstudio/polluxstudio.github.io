@@ -1,20 +1,155 @@
-/* Reset some default styles */
-* {
+/**
+ *--------------------------------------------------------------
+ * Main.css
+ *
+ * Hold all the style for the Pollux Studio landing page.
+ *
+ * @author Tafhimul kabir <tafhimulkabir@protonmail.com>
+ *
+ --------------------------------------------------------------*/
+
+/* --------------------------------------------------------------
+ * Sets up some default styles for Root.
+ * -------------------------------------------------------------*/
+  :root {
+    --main-color: #444;
+    --main-bg: #f4f4f4;
+    --highlight: #00c9a7;
+    --highlight-light: #5aecd3;
+  }
+
+  *, html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
     font-family: 'Montserrat', sans-serif;
-  }
+    color: var(--main-color);
+    font-size: 1rem;
+    font-weight: 200;
+}
   
   /* Add some spacing and styling */
   body {
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: var(--main-bg);
+    color: var(--main-color);
+  }
+
+/* --------------------------------------------------------------
+ * Sets up media query for container.
+ * -------------------------------------------------------------*/
+  .app__container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 7680px) {
+    .app__container {
+      max-width: 1920px;
+    }
+  }
+
+  @media (max-width: 7679px) and (min-width: 2560px) {
+    .app__container {
+      max-width: 1440px;
+    }
+  }
+
+  @media (max-width: 2559px) and (min-width: 1920px) {
+    .app__container {
+      max-width: 1200px;
+    }
+  }
+
+  @media (max-width: 1919px) and (min-width: 1366px) {
+    .app__container {
+      max-width: 1024px;
+    }
+  }
+
+  @media (max-width: 1365px) and (min-width: 992px) {
+    .app__container {
+      max-width: 768px;
+    }
+  }
+
+  @media (max-width: 991px) and (min-width: 768px) {
+    .app__container {
+      max-width: 90%;
+    }
+  }
+
+  @media (max-width: 767px) and (min-width: 576px) {
+    .app__container {
+      max-width: 90%;
+    }
+  }
+
+  @media (max-width: 575px) and (min-width: 320px) {
+    .app__container {
+      max-width: 100%;
+    }
   }
   
-  .container {
+/* --------------------------------------------------------------
+ * Sets up some default styles for heading tag 
+ * -------------------------------------------------------------*/
+ h1,h2,h3,
+ h4,h5,h6 { 
+    font-weight: 600; 
+    color: var(--main-color);
+}
+h1 { font-size: 3.6rem; line-height: 1; margin-bottom: 0.5em; }
+h2 { font-size: 2.2rem; margin-bottom: 0.75em; }
+/* h3 { font-size: 1rem; line-height: 1; margin-bottom: 1em; }
+h4 { font-size: 1rem; line-height: 1.25; margin-bottom: 1.25em; }
+h5 { font-size: 1rem; margin-bottom: 1.5em; }
+h6 { font-size: 1rem; } */
+
+
+/* --------------------------------------------------------------
+ * Sets up some default styles for anchor tag 
+ * -------------------------------------------------------------*/
+ a {
+	text-decoration: none;
+	color: var(--highlight);
+ }
+ a:hover {
+      text-decoration: none;
+      color: var(--highlight-light);
+  }
+a:link {
+    text-decoration: none;
+    color: var(--highlight-light);
+}
+a:active{
+    text-decoration: none;
+    color: var(--highlight-light);
+}
+a:focus{
+    text-decoration: none;
+    color: var(--highlight-light);
+}
+
+/* --------------------------------------------------------------
+ * Sets up default styles for outine
+ * -------------------------------------------------------------*/
+ *:focus {
+  outline-style: solid;
+  outline-width: 0.5px;
+  outline-color: var(--highlight-light);
+}
+
+/* --------------------------------------------------------------
+* Sets up default styles for selection
+* -------------------------------------------------------------*/
+*::selection {
+  color: var(--main-bg);
+  background: var(--highlight);
+}
+
+  /* .container {
     max-width: 960px;
     margin: 0 auto;
     padding: 40px;
@@ -80,4 +215,42 @@
   footer p {
     font-size: 14px;
   }
+   */
+
+   header {
+    padding: 10px 0;
+  }
+   .app__header {
+    display: flex;
+    /* align-items: center; */
+  }
+
+  .app__header span {
+    margin-right: 20px;
+  }
+
+  .app__header nav {
+    flex-grow: 1;
+    text-align: right;
+  }
   
+  .app__header nav ul {
+    list-style-type: none;
+    /* display: flex;
+    justify-content: center; */
+  }
+  
+  .app__header nav ul li {
+    margin: 0 10px;
+    display: inline-block;
+  }
+  
+  .app__header nav ul li a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: 300;
+  }
+  .app__header nav ul li a:hover {
+    color: var(--highlight);
+    text-decoration: none;
+  }

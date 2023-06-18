@@ -16,6 +16,8 @@
     --main-bg: #f4f4f4;
     --highlight: #00c9a7;
     --highlight-light: #5aecd3;
+    --gray: #ccc;
+    --white: #fff;
   }
 
   *, html, body {
@@ -48,6 +50,7 @@
   .app__container {
     width: 100%;
     margin: 0 auto;
+    padding: 60px 0;
   }
 
   @media (min-width: 7680px) {
@@ -144,7 +147,7 @@ a:focus{
 .app__btn {
   display: inline-block;
   background-color: var(--highlight);
-  color: var(--main-bg);
+  color: var(--white);
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
@@ -159,7 +162,7 @@ a:focus{
  * Sets up default styles for input fields.
  * -------------------------------------------------------------*/
 input, textarea {
-  border: 1px solid #c4c4c4;
+  border: 1px solid var(--gray);
   padding: 5px 10px;
   border-radius: 3px;
   display: block;
@@ -179,18 +182,16 @@ input, textarea {
 * Sets up default styles for selection.
 * -------------------------------------------------------------*/
 *::selection {
-  color: var(--main-bg);
+  color: var(--white);
   background: var(--highlight);
 }
 
 /* --------------------------------------------------------------
 * Styling main header selection.
 * -------------------------------------------------------------*/
-header {
-  padding: 10px 0;
-}
  .app__header {
   display: flex;
+  padding: 10px 0;
 }
 
 .app__header span {
@@ -226,7 +227,6 @@ header {
 * -------------------------------------------------------------*/
 .app__hero__section {
   display: flex;
-  margin: 60px auto;
   align-items: center;
 }
 .app__hero__section .left {
@@ -234,6 +234,15 @@ header {
 }
 .app__hero__section .right {
   flex: 2;
+}
+
+
+/* --------------------------------------------------------------
+* Styling services selection.
+* -------------------------------------------------------------*/
+
+#services {
+  background: var(--white);
 }
   /* .container {
     max-width: 960px;

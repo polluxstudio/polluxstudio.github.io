@@ -162,6 +162,8 @@ a:focus{
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
+  border: 0;
+  cursor: pointer;
   transition: background-color 0.3s ease;
 }
 .app__btn:hover {
@@ -305,3 +307,120 @@ input, textarea {
     font-size: 14px;
   }
    */
+
+
+   /**
+ * 8.1 - About
+ *
+ * About Stylesheet
+ * This is for About sections style
+ */
+.itl-about-wrap {
+  border-right: 1px solid #e3e3e3;
+}
+.itl-about-wrap header h4 {
+  font-size: 16px;
+  font-weight: 100;
+  color: #757575;
+  text-transform: uppercase;
+  margin: 0;
+}
+.itl-about-wrap header .itl-border {
+  background-color: #F7CE3E;
+}
+.itl-about-wrap article {}
+.itl-about-wrap article h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 12px;
+  color: #444;
+}
+.itl-about-wrap article p {
+  font-size: 14px;
+  font-weight: 200;
+  color: #686868;
+  letter-spacing: 0.3px;
+  line-height: 18px;
+}
+.itl-about-social-link {
+  margin-top: 15px;
+}
+.itl-about-social-link ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.itl-about-social-link ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 6px 8px;
+  margin-right: 11px;
+  width: 30px;
+  text-align: center;
+  transition-duration: 1s;
+}
+.itl-about-social-link ul li:last-child {
+  margin-right: 0px;
+}
+.itl-about-social-link ul li a {
+  color: #fff;
+}
+.itl-about-social-link ul li:hover {
+  border-radius: 8px 0px;
+  transition-duration: 1s;
+}
+.itl-github {
+  background: #24292e
+}
+.itl-linkedin {
+  background: #0077b5
+}
+.itl-wordpress {
+  background: #0087be
+}
+.itl-youtube {
+  background: #f00
+}
+.itl-facebook {
+  background: #4267b2
+}
+.itl-twitter {
+  background: #1da1f2
+}
+
+
+
+
+/**
+ * 8.2 - Services
+ *
+ * Services Stylesheet
+ * This is for Services sections style
+ */
+ .itl-single-service-item {
+  margin-bottom: 40px;
+}
+.itl-services-wrap .itl-services-icon {
+  font-size: 28px;
+  color: #666;
+}
+.itl-services-info h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0;
+  color: #626262;
+  font-weight: 400;
+  letter-spacing: .4px;
+}
+.itl-services-info .itl-border {
+  background-color: #F7CE3E;
+}
+.itl-services-info p {
+  font-size: 14px;
+  font-weight: 200;
+  color: #686868;
+  letter-spacing: 0.3px;
+  line-height: 21px;
+  line-height: 18px;
+}

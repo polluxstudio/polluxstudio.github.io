@@ -116,14 +116,24 @@
     </section>
 
     <section id="contact">
-      <div class="container">
+      <div class="app__container">
         <h2>Contact Us</h2>
         <p>Use the form below to get in touch with us.</p>
-        <form>
-          <input type="text" placeholder="Name">
-          <input type="email" placeholder="Email">
-          <textarea placeholder="Message"></textarea>
-          <button type="submit" class="btn">Send</button>
+        <form action="https://formspree.io/f/mayzrgnk" method="POST">
+          <label>
+            Your email:
+            <input type="email" name="email" placeholder="Enter your mail address">
+          </label>
+          <label>
+            Your email:
+            <input type="text" name="subject" placeholder="Enter a subject">
+          </label>
+          <label>
+            Your message:
+            <textarea name="message" placeholder="Enter your message"></textarea>
+          </label>
+          <!-- your other form fields go here -->
+          <button type="submit">Send</button>
         </form>
       </div>
     </section>

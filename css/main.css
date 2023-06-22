@@ -50,7 +50,7 @@
   .app__container {
     width: 100%;
     margin: 0 auto;
-    padding: 60px 0;
+    padding: 120px 0;
   }
 
   @media (min-width: 7680px) {
@@ -171,6 +171,19 @@ a:focus{
   color: var(--main-color);
 }
 
+
+/* --------------------------------------------------------------
+ * Sets up default styles for border.
+ * -------------------------------------------------------------*/
+.app__border {
+  background-color: var(--highlight-light);
+  display: block;
+  content: '';
+  width: 25px;
+  height: 2px;
+  margin: 10px 0;
+}
+
 /* --------------------------------------------------------------
  * Sets up default styles for input fields.
  * -------------------------------------------------------------*/
@@ -253,14 +266,86 @@ input, textarea {
 }
 
 /* --------------------------------------------------------------
-* Styling services selection.
+* Styling about and services selection.
 * -------------------------------------------------------------*/
-
 #services {
   background: var(--white);
 }
 
-.app__services__container {
+#services .app__container {
+  display:  flex;
+  column-gap: 2em;
+}
+
+/* --------------------------------------------------------------
+* Styling about selection.
+* -------------------------------------------------------------*/
+#services .app__about {
+  flex: 1;
+  border-right: 1px solid #e3e3e3;
+  padding-right: 2em;
+  box-sizing: border-box;
+}
+#services .app__about p {
+  font-size: 14px;
+  font-weight: 200;
+  color: #686868;
+  letter-spacing: 0.3px;
+  line-height: 18px;
+}
+#services .app__about h4 {
+  font-size: 16px;
+  font-weight: 100;
+  color: #757575;
+  text-transform: uppercase;
+  margin: 0;
+}
+#services .app__about h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 12px;
+  color: #444;
+}
+
+/* --------------------------------------------------------------
+* Styling services selection.
+* -------------------------------------------------------------*/
+
+#services .app__services {
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+}
+#services .app__single__service {
+  flex-basis: 33%;
+  display: flex;
+  column-gap: 1em;
+}
+
+#services .app__icon {
+  font-size: 28px;
+  color: #666;
+}
+
+.app__services__info h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0;
+  color: #626262;
+  font-weight: 400;
+  letter-spacing: .4px;
+}
+
+.app__services__info p {
+  font-size: 14px;
+  font-weight: 200;
+  color: #686868;
+  letter-spacing: 0.3px;
+  line-height: 18px;
+}
+
+/* .app__services__container {
   display: flex;
   flex-wrap: wrap;
 }
@@ -270,7 +355,18 @@ input, textarea {
   text-align: center;
   border: 1px solid var(--gray);
   flex-basis: 25%;
-}
+} */
+
+
+
+
+
+
+
+
+
+
+
 
   /* .container {
     max-width: 960px;
@@ -315,43 +411,43 @@ input, textarea {
  * About Stylesheet
  * This is for About sections style
  */
-.itl-about-wrap {
+/* .app__about-wrap {
   border-right: 1px solid #e3e3e3;
 }
-.itl-about-wrap header h4 {
+.app__about-wrap header h4 {
   font-size: 16px;
   font-weight: 100;
   color: #757575;
   text-transform: uppercase;
   margin: 0;
 }
-.itl-about-wrap header .itl-border {
+.app__about-wrap header .app__border {
   background-color: #F7CE3E;
 }
-.itl-about-wrap article {}
-.itl-about-wrap article h2 {
+.app__about-wrap article {}
+.app__about-wrap article h2 {
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 400;
   margin-bottom: 12px;
   color: #444;
 }
-.itl-about-wrap article p {
+.app__about-wrap article p {
   font-size: 14px;
   font-weight: 200;
   color: #686868;
   letter-spacing: 0.3px;
   line-height: 18px;
 }
-.itl-about-social-link {
+.app__about-social-link {
   margin-top: 15px;
 }
-.itl-about-social-link ul {
+.app__about-social-link ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.itl-about-social-link ul li {
+.app__about-social-link ul li {
   list-style: none;
   display: inline-block;
   padding: 6px 8px;
@@ -360,32 +456,32 @@ input, textarea {
   text-align: center;
   transition-duration: 1s;
 }
-.itl-about-social-link ul li:last-child {
+.app__about-social-link ul li:last-child {
   margin-right: 0px;
 }
-.itl-about-social-link ul li a {
+.app__about-social-link ul li a {
   color: #fff;
 }
-.itl-about-social-link ul li:hover {
+.app__about-social-link ul li:hover {
   border-radius: 8px 0px;
   transition-duration: 1s;
 }
-.itl-github {
+.app__github {
   background: #24292e
 }
-.itl-linkedin {
+.app__linkedin {
   background: #0077b5
 }
-.itl-wordpress {
+.app__wordpress {
   background: #0087be
 }
-.itl-youtube {
+.app__youtube {
   background: #f00
 }
-.itl-facebook {
+.app__facebook {
   background: #4267b2
 }
-.itl-twitter {
+.app__twitter {
   background: #1da1f2
 }
 
@@ -397,15 +493,15 @@ input, textarea {
  *
  * Services Stylesheet
  * This is for Services sections style
- */
- .itl-single-service-item {
+ *
+ .app__single-service-item {
   margin-bottom: 40px;
 }
-.itl-services-wrap .itl-services-icon {
+.app__services-wrap .app__services-icon {
   font-size: 28px;
   color: #666;
 }
-.itl-services-info h3 {
+.app__services-info h3 {
   font-size: 14px;
   text-transform: uppercase;
   margin: 0;
@@ -413,14 +509,14 @@ input, textarea {
   font-weight: 400;
   letter-spacing: .4px;
 }
-.itl-services-info .itl-border {
+.app__services-info .app__border {
   background-color: #F7CE3E;
 }
-.itl-services-info p {
+.app__services-info p {
   font-size: 14px;
   font-weight: 200;
   color: #686868;
   letter-spacing: 0.3px;
   line-height: 21px;
   line-height: 18px;
-}
+} */

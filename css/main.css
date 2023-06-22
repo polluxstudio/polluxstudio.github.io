@@ -309,6 +309,62 @@ input, textarea {
 }
 
 /* --------------------------------------------------------------
+* Styling about social media selection.
+* -------------------------------------------------------------*/
+.app__about__social__link ul {
+  list-style: none;
+}
+.app__about__social__link ul li {
+  display: inline-block;
+}
+.app__about__social__link ul li a {}
+
+
+/* .app__about__social__link ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.app__about__social__link ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 6px 8px;
+  margin-right: 11px;
+  width: 30px;
+  text-align: center;
+  transition-duration: 1s;
+}
+.app__about__social__link ul li:last-child {
+  margin-right: 0px;
+}
+.app__about__social__link ul li a {
+  color: #fff;
+}
+.app__about__social__link ul li:hover {
+  border-radius: 8px 0px;
+  transition-duration: 1s;
+}
+.app__github {
+  background: #24292e
+}
+.app__linkedin {
+  background: #0077b5
+}
+.app__wordpress {
+  background: #0087be
+}
+.app__youtube {
+  background: #f00
+}
+.app__facebook {
+  background: #4267b2
+}
+.app__twitter {
+  background: #1da1f2
+} */
+
+
+/* --------------------------------------------------------------
 * Styling services selection.
 * -------------------------------------------------------------*/
 

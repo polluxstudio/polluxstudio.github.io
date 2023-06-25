@@ -318,7 +318,10 @@ input, textarea {
 .app__about__social__link ul li {
   display: inline-block;
 }
-.app__about__social__link ul li a {}
+.app__about__social__link ul li a {
+  display: block;
+  margin: 8px;
+}
 
 
 /* .app__about__social__link ul {

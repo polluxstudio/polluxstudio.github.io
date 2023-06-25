@@ -220,7 +220,8 @@ input, textarea {
   padding: 10px 0;
 }
 
-.app__header span {
+.app__header img {
+  height: 30px;
   margin-right: 20px;
 }
 

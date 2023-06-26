@@ -43,64 +43,6 @@
 
     <section id="services">
       <div class="app__container">
-        <!-- <header class="app__section__header">
-          <h2>Our Services</h2>
-          <p>Describe services here.</p>
-        </header> -->
-
-        <!-- <div class="app__services__container">
-
-          <div class="app__single__service">
-            <span>ICON</span>
-            <h3>Services Name</h3>
-            <p>Description</p>
-          </div>
-
-          <div class="app__single__service">
-            <span>ICON</span>
-            <h3>Services Name</h3>
-            <p>Description</p>
-          </div>
-          
-          <div class="app__single__service">
-            <span>ICON</span>
-            <h3>Services Name</h3>
-            <p>Description</p>
-          </div>
-
-          <div class="app__single__service">
-            <span>ICON</span>
-            <h3>Services Name</h3>
-            <p>Description</p>
-          </div>
-
-          <div class="app__single__service">
-            <span>ICON</span>
-            <h3>Services Name</h3>
-            <p>Description</p>
-          </div>
-
-          <div class="app__single__service">
-            <span>ICON</span>
-            <h3>Services Name</h3>
-            <p>Description</p>
-          </div>
-
-          <div class="app__single__service">
-            <span>ICON</span>
-            <h3>Services Name</h3>
-            <p>Description</p>
-          </div>
-
-          <div class="app__single__service">
-            <span>ICON</span>
-            <h3>Services Name</h3>
-            <p>Description</p>
-          </div>
-
-        </div> -->
-
-
 
         <div class="app__about">
           <header>
@@ -124,13 +66,6 @@
             </ul>
           </footer>
         </div>
-
-
-
-
-
-
-
 
 
  <!-- Services -->
@@ -228,22 +163,12 @@
 </div>
 <!-- /Services -->
 
-
-
-
-
-
-
-
       </div>
     </section>
 
-    <section id="team">
-      <div class="container">
-        <h2>Our Team</h2>
-        <p>Describe team here.</p>
-      </div>
-    </section>
+
+
+
 
     <section id="portfolio">
       <div class="container">
@@ -252,14 +177,41 @@
       </div>
     </section>
 
+
+
+
+
+
+
+    <section id="team">
+      <div class="container">
+        <h2>Our Team</h2>
+        <p>Describe team here.</p>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
     <section id="contact">
       <div class="app__container">
         <header class="app__section__header">
           <h2>Contact Us</h2>
           <p>Use the form below to get in touch with us.</p>
         </header>
+
+        <div class="app__contact__section">
+
+<div class="app__contact__form">
         <form action="https://formspree.io/f/mayzrgnk" method="POST">
-          <label>
+          <!-- <label>
             Your email:
             <input type="email" name="email" placeholder="Enter your mail address">
           </label>
@@ -271,16 +223,72 @@
             Your message:
             <textarea name="message" placeholder="Enter your message"></textarea>
           </label>
-          <!-- your other form fields go here -->
-          <button type="submit" class="app__btn">Send</button>
+          <!-- your other form fields go here 
+          <button type="submit" class="app__btn">Send</button> -->
+          <div class="app__input__group">
+
+            <div class="app__input__wrapper first-name">
+              <label for="firstname">Name</label>
+                            <div class="app_input__group">
+                              <i class="icon ion-ios-person"></i>
+                                <input id="firstname" name="sender__name" placeholder="Firstname" type="text">
+                            </div>
+            </div>
+
+            <div class="app__input__wrapper mail">
+              <label for="mail">Mail</label>
+                            <div class="app_input__group">
+                              <i class="icon ion-android-mail"></i>
+                                <input id="mail" name="email__address" placeholder="Mail" type="mail">
+                            </div>
+            </div>
+  
+
+
+          </div>
+
+          
+          <div class="app__input__wrapper last-name">
+            <label for="lastname">Subject</label>
+                          <div class="app_input__group">
+                            <i class="icon ion-chatboxes"></i>
+                              <input id="lastname" name="subject_of_email" placeholder="Subject" type="text">
+                          </div>
+          </div>
+
+          <div class="app__input__wrapper message">
+            <label for="message">Message</label>
+                          <div class="app_input__group">
+                            <i class="icon ion-chatboxes"></i>
+                              <textarea id="message" name="email__body" placeholder="Message" spellcheck="false"></textarea>
+                          </div>
+          </div>
+
+          <div class="app__input__wrapper send">
+            <button class="app__btn" type="submit"><i class="icon ion-paper-airplane"></i> Send Message</button>
+          </div>
+
         </form>
+
+      </div>
+
+      <div class="app__google__map">
+        <div id="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d193595.91477192476!2d-74.11976360409156!3d40.69740344167656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1634313838297!5m2!1sen!2sbd" width="585" height="260" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      </div>
+
+
+
+</div>
+
       </div>
     </section>
   </main>
 
-  <footer>
+  <footer id="main_footer">
     <div class="container">
-      <p>&copy; 2023 Pollux Studio. All rights reserved.</p>
+      <p>&copy; 2023 Pollux Studio™. All rights reserved.</p>
     </div>
   </footer>
 </body>

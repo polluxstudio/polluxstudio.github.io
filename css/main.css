@@ -582,6 +582,16 @@ input, textarea {
 } */
 
 
+/* --------------------------------------------------------------
+* Styling team selection.
+* -------------------------------------------------------------*/
+#team {
+  background: #fff;
+}
+.app__member__body__wrapper {
+  display: flex;
+  gap: 3em;
+}
 
 /* --------------------------------------------------------------
 * Styling contact selection.

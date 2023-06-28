@@ -111,12 +111,12 @@
 }
 h1 {  font-size: 2.6rem; line-height: 1.2em; margin-bottom: 0.8em; letter-spacing: 1px; }
 h2 { font-size: 1.3rem; margin-bottom: 0.1em; letter-spacing: 0.5px; }
-h3 { font-size: 0.95rem;
+h3 { font-size: 0.85rem;
   line-height: 1;
   margin-bottom: 0.5em;
   letter-spacing: 0.02em; }
   h4 {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     line-height: 1.25;
     margin: 0.8em;
     font-weight: 300;
@@ -377,6 +377,16 @@ input, textarea {
   color: #686868;
   letter-spacing: 0.3px;
   line-height: 18px;
+}
+
+/* --------------------------------------------------------------
+* Styling portfolio selection.
+* -------------------------------------------------------------*/
+#portfolio {
+  
+}
+#portfolio .app__container {
+ padding: 60px 0 0;
 }
 
 /* --------------------------------------------------------------

@@ -20,7 +20,7 @@
     --white: #fff;
   }
 
-  *, html, body {
+  html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -111,9 +111,18 @@
 }
 h1 {  font-size: 2.6rem; line-height: 1.2em; margin-bottom: 0.8em; letter-spacing: 1px; }
 h2 { font-size: 1.3rem; margin-bottom: 0.1em; letter-spacing: 0.5px; }
-/* h3 { font-size: 1rem; line-height: 1; margin-bottom: 1em; }
-h4 { font-size: 1rem; line-height: 1.25; margin-bottom: 1.25em; }
-h5 { font-size: 1rem; margin-bottom: 1.5em; }
+h3 { font-size: 0.95rem;
+  line-height: 1;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.02em; }
+  h4 {
+    font-size: 0.85rem;
+    line-height: 1.25;
+    margin: 0.8em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+  }
+/* h5 { font-size: 1rem; margin-bottom: 1.5em; }
 h6 { font-size: 1rem; } */
   
 /* --------------------------------------------------------------
@@ -151,6 +160,15 @@ a:focus{
     text-decoration: none;
     color: var(--highlight-light);
 }
+
+/* --------------------------------------------------------------
+ * Sets up some default styles for list tag.
+ * -------------------------------------------------------------*/
+ ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+ }
 
 /* --------------------------------------------------------------
  * Sets up default styles for button.
@@ -319,54 +337,10 @@ input, textarea {
   display: inline-block;
 }
 .app__about__social__link ul li a {
+  color: var(--main-color);
   display: block;
-  margin: 8px;
+  margin: 0.6em;
 }
-
-
-/* .app__about__social__link ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.app__about__social__link ul li {
-  list-style: none;
-  display: inline-block;
-  padding: 6px 8px;
-  margin-right: 11px;
-  width: 30px;
-  text-align: center;
-  transition-duration: 1s;
-}
-.app__about__social__link ul li:last-child {
-  margin-right: 0px;
-}
-.app__about__social__link ul li a {
-  color: #fff;
-}
-.app__about__social__link ul li:hover {
-  border-radius: 8px 0px;
-  transition-duration: 1s;
-}
-.app__github {
-  background: #24292e
-}
-.app__linkedin {
-  background: #0077b5
-}
-.app__wordpress {
-  background: #0087be
-}
-.app__youtube {
-  background: #f00
-}
-.app__facebook {
-  background: #4267b2
-}
-.app__twitter {
-  background: #1da1f2
-} */
-
 
 /* --------------------------------------------------------------
 * Styling services selection.
@@ -405,183 +379,6 @@ input, textarea {
   line-height: 18px;
 }
 
-/* .app__services__container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.app__single__service {
-  flex: 1;
-  text-align: center;
-  border: 1px solid var(--gray);
-  flex-basis: 25%;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-  /* .container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 40px;
-  }
-  
-
-  main {
-    text-align: center;
-    padding: 60px 0;
-  }
-  
-  h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  p {
-    font-size: 18px;
-    margin-bottom: 30px;
-  }
-  
-
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-  }
-  
-  footer p {
-    font-size: 14px;
-  }
-   */
-
-
-   /**
- * 8.1 - About
- *
- * About Stylesheet
- * This is for About sections style
- */
-/* .app__about-wrap {
-  border-right: 1px solid #e3e3e3;
-}
-.app__about-wrap header h4 {
-  font-size: 16px;
-  font-weight: 100;
-  color: #757575;
-  text-transform: uppercase;
-  margin: 0;
-}
-.app__about-wrap header .app__border {
-  background-color: #F7CE3E;
-}
-.app__about-wrap article {}
-.app__about-wrap article h2 {
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight: 400;
-  margin-bottom: 12px;
-  color: #444;
-}
-.app__about-wrap article p {
-  font-size: 14px;
-  font-weight: 200;
-  color: #686868;
-  letter-spacing: 0.3px;
-  line-height: 18px;
-}
-.app__about-social-link {
-  margin-top: 15px;
-}
-.app__about-social-link ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.app__about-social-link ul li {
-  list-style: none;
-  display: inline-block;
-  padding: 6px 8px;
-  margin-right: 11px;
-  width: 30px;
-  text-align: center;
-  transition-duration: 1s;
-}
-.app__about-social-link ul li:last-child {
-  margin-right: 0px;
-}
-.app__about-social-link ul li a {
-  color: #fff;
-}
-.app__about-social-link ul li:hover {
-  border-radius: 8px 0px;
-  transition-duration: 1s;
-}
-.app__github {
-  background: #24292e
-}
-.app__linkedin {
-  background: #0077b5
-}
-.app__wordpress {
-  background: #0087be
-}
-.app__youtube {
-  background: #f00
-}
-.app__facebook {
-  background: #4267b2
-}
-.app__twitter {
-  background: #1da1f2
-}
-
-
-
-
-/**
- * 8.2 - Services
- *
- * Services Stylesheet
- * This is for Services sections style
- *
- .app__single-service-item {
-  margin-bottom: 40px;
-}
-.app__services-wrap .app__services-icon {
-  font-size: 28px;
-  color: #666;
-}
-.app__services-info h3 {
-  font-size: 14px;
-  text-transform: uppercase;
-  margin: 0;
-  color: #626262;
-  font-weight: 400;
-  letter-spacing: .4px;
-}
-.app__services-info .app__border {
-  background-color: #F7CE3E;
-}
-.app__services-info p {
-  font-size: 14px;
-  font-weight: 200;
-  color: #686868;
-  letter-spacing: 0.3px;
-  line-height: 21px;
-  line-height: 18px;
-} */
-
-
 /* --------------------------------------------------------------
 * Styling team selection.
 * -------------------------------------------------------------*/
@@ -590,7 +387,30 @@ input, textarea {
 }
 .app__member__body__wrapper {
   display: flex;
-  gap: 3em;
+  gap: 1.3em;
+  text-align: center;
+}
+.app__single__member {
+  box-sizing: border-box;
+  padding: 45px 15px 30px;
+  box-shadow: 0 0 4px 2px #53525214;
+  border-radius: 4px;
+}
+.app__single__member img {
+  border-radius: 100%;
+  height: 150px;
+  width: 150px;
+}
+.app__single__member p {
+  font-size: 0.85rem;
+}
+.app__single__member ul li {
+  display: inline-block;
+}
+.app__single__member ul li a {
+  display: block;
+  margin: 0 0.5em;
+  color: var(--main-color);
 }
 
 /* --------------------------------------------------------------
@@ -606,21 +426,20 @@ input, textarea {
 }
 .app__input__wrapper label {
   display: block;
-  margin: 15px 0;
-  font-size: 16px;
-  font-weight: 300;
+  margin: 8px 0;
+  font-weight: 200;
 }
 .app__input__wrapper .app_input__group {
   position: relative;
 }
 .app__input__wrapper .app_input__group .icon {
-  left: 0px;
+  left: 2px;
   position: absolute;
   padding: 10px 13px;
   pointer-events: none;
   color: #a6a6a6;
-  top: 8px;
-  font-size: 14px;
+  top: 2px;
+  font-size: 16px;
 }
 
 .app__input__wrapper .app_input__group input, textarea {
@@ -637,7 +456,8 @@ input, textarea {
   border: 1px solid;
   border-color: #f1f1f1;
   box-sizing: border-box;
-  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  box-shadow: inset 0 0 4px 1px rgba(0, 0, 0, 0.11);
+  
 }
 #message {
   height: 75px;

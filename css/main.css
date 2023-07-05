@@ -21,6 +21,7 @@
   --light--gray: #555;
   --box--shadow: #53525214;
   --inner--shadow: rgba(0, 0, 0, 0.11);
+  --black: #000;
 }
 
 /* --------------------------------------------------------------
@@ -151,16 +152,32 @@ a:focus{
     max-width: 100%;
   }
 }
-
-/* --------------------------------------------------------------
- * Sets up some default styles for section header.
- * -------------------------------------------------------------*/
-
  
 /* --------------------------------------------------------------
 * Styling main header selection.
 * -------------------------------------------------------------*/
-
+#app__main__container .app__main__header {
+  display: flex;
+  padding: 1em 0;
+}
+/* Styling header logo selection. */
+#app__main__container .app__main__header img {
+  height: 25px;
+  width: auto;
+  margin-right: 20px;
+}
+/* Styling header navigation selection. */
+#app__main__container .app__main__header  .app__header_navigation {
+  flex-grow: 1;
+}
+#app__main__container .app__main__header  .app__header_navigation ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.4em;
+}
+#app__main__container .app__main__header  .app__header_navigation ul li a {
+  color: var(--main--color);
+}
 
 /* --------------------------------------------------------------
 * Styling hero selection.

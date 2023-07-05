@@ -43,7 +43,7 @@ body{
 }
 #app__main__container {
   background: var(--main--bg);
-  height: 100dvh;
+  height: 100%;
 }
 ul {
   list-style: none;
@@ -78,6 +78,26 @@ a:active{
 a:focus{
     text-decoration: none;
     color: var(--highlight-light);
+}
+
+/* --------------------------------------------------------------
+ * Sets up default styles for button.
+ * -------------------------------------------------------------*/
+.app__btn {
+  display: inline-block;
+  background-color: var(--highlight);
+  color: var(--main--foreground);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.app__btn:hover {
+  background-color: var(--highlight-light);
+  transition: background-color 0.3s ease;
+  color: var(--main--foreground);
 }
 
 /* --------------------------------------------------------------
@@ -182,7 +202,33 @@ a:focus{
 /* --------------------------------------------------------------
 * Styling hero selection.
 * -------------------------------------------------------------*/
-
+#app__hero__section {
+  position: relative;
+}
+#app__hero__section .app__hero__container {
+  display: flex;
+  align-items: center;
+  padding: 7em 0;
+}
+/* Styling hero selection's Title and Subtitle */
+#app__hero__section .app__hero__container .app__main__title__and__subtitle h1 {
+  font-size: 2.6rem;
+  line-height: 1.2em;
+  margin-bottom: 0.8em;
+  letter-spacing: 1px;
+}
+#app__hero__section .app__hero__container .app__main__title__and__subtitle {
+  flex: 1;
+}
+#app__hero__section .app__hero__container .app__main__title__and__subtitle h2 {
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1.6em;
+}
+/* Styling hero selection's image */
+#app__hero__section .app__hero__container .app__hero__image {
+  flex: 2;
+}
 
 /* --------------------------------------------------------------
 * Styling about and services selection.

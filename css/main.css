@@ -118,6 +118,20 @@ a:focus{
 }
 
 /* --------------------------------------------------------------
+ * Sets up some default background.
+ * -------------------------------------------------------------*/
+.app__bg__pattern {
+  display: flex;
+  position: absolute;
+  background-image: radial-gradient(var(--gray) 2px,transparent 0);
+  background-size: 15px 15px;
+  background-position: 0 0;
+  opacity: 0.3;
+  margin: auto;
+  z-index: 999999999;
+}
+
+/* --------------------------------------------------------------
  * Sets up media query for container.
  * -------------------------------------------------------------*/
 .app__container {
@@ -209,6 +223,38 @@ a:focus{
   display: flex;
   align-items: center;
   padding: 7em 0;
+}
+
+/*Styling background pattern*/
+#app__hero__section .app__bg__pattern__top__left {
+  height: 50px;
+  width: 60px;
+  top: 29px;
+  left: 62px;
+}
+#app__hero__section .app__bg__pattern__top__right {
+  height: 75px;
+  width: 150px;
+  top: 195px;
+  left: 255px;
+}
+#app__hero__section .app__bg__pattern__top__center {
+  height: 85px;
+  width: 80px;
+  top: 70px;
+  right: 60px;
+}
+#app__hero__section .app__bg__pattern__bottom__left {
+  height: 60px;
+  width: 90px;
+  bottom: 5px;
+  left: 5px;
+}
+#app__hero__section .app__bg__pattern__bottom__right {
+  height: 40px;
+  width: 95px;
+  bottom: 170px;
+  right: 185px;
 }
 /* Styling hero selection's Title and Subtitle */
 #app__hero__section .app__hero__container .app__main__title__and__subtitle h1 {

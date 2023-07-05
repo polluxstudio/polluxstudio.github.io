@@ -14,7 +14,13 @@
 :root {
   --main--color: #444;
   --main--bg: #f0f0f0;
+  --main--foreground: #fff;
   --highlight: #12B99D;
+  --highlight-light: #0CD9B6;
+  --gray: #3c4859;
+  --light--gray: #555;
+  --box--shadow: #53525214;
+  --inner--shadow: rgba(0, 0, 0, 0.11);
 }
 
 /* --------------------------------------------------------------
@@ -48,3 +54,168 @@ ul, li {
 img {
   max-width: 100%;
 }
+
+/* --------------------------------------------------------------
+ * Sets up some default styles for anchor tag.
+ * -------------------------------------------------------------*/
+ a {
+	text-decoration: none;
+	color: var(--highlight);
+ }
+ a:hover {
+      text-decoration: none;
+      color: var(--highlight-light);
+  }
+a:link {
+    text-decoration: none;
+    color: var(--highlight-light);
+}
+a:active{
+    text-decoration: none;
+    color: var(--highlight-light);
+}
+a:focus{
+    text-decoration: none;
+    color: var(--highlight-light);
+}
+
+/* --------------------------------------------------------------
+ * Sets up default styles for outline.
+ * -------------------------------------------------------------*/
+*:focus {
+  outline-style: solid;
+  outline-width: 0.5px;
+  outline-color: var(--highlight);
+}
+
+/* --------------------------------------------------------------
+* Sets up default styles for selection.
+* -------------------------------------------------------------*/
+*::selection {
+  color: var(--main--foreground);
+  background: var(--highlight);
+}
+
+/* --------------------------------------------------------------
+ * Sets up media query for container.
+ * -------------------------------------------------------------*/
+.app__container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 7680px) {
+  .app__container {
+    max-width: 1920px;
+  }
+}
+
+@media (max-width: 7679px) and (min-width: 2560px) {
+  .app__container {
+    max-width: 1440px;
+  }
+}
+
+@media (max-width: 2559px) and (min-width: 1920px) {
+  .app__container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1919px) and (min-width: 1366px) {
+  .app__container {
+    max-width: 1024px;
+  }
+}
+
+@media (max-width: 1365px) and (min-width: 992px) {
+  .app__container {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .app__container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 576px) {
+  .app__container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 575px) and (min-width: 320px) {
+  .app__container {
+    max-width: 100%;
+  }
+}
+
+/* --------------------------------------------------------------
+ * Sets up some default styles for section header.
+ * -------------------------------------------------------------*/
+
+ 
+/* --------------------------------------------------------------
+* Styling main header selection.
+* -------------------------------------------------------------*/
+
+
+/* --------------------------------------------------------------
+* Styling hero selection.
+* -------------------------------------------------------------*/
+
+
+/* --------------------------------------------------------------
+* Styling about and services selection.
+* -------------------------------------------------------------*/
+
+
+/* --------------------------------------------------------------
+* Styling about selection.
+* -------------------------------------------------------------*/
+
+
+
+/* --------------------------------------------------------------
+* Styling about social media selection.
+* -------------------------------------------------------------*/
+
+
+
+/* --------------------------------------------------------------
+* Styling services selection.
+* -------------------------------------------------------------*/
+
+
+
+/* --------------------------------------------------------------
+* Styling portfolio selection.
+* -------------------------------------------------------------*/
+
+
+
+/* --------------------------------------------------------------
+* Styling team selection.
+* -------------------------------------------------------------*/
+
+
+
+/* --------------------------------------------------------------
+* Styling contact selection.
+* -------------------------------------------------------------*/
+
+
+/* --------------------------------------------------------------
+* Styling FAQ selection.
+* -------------------------------------------------------------*/
+
+
+/* --------------------------------------------------------------
+* Styling top footer selection.
+* -------------------------------------------------------------*/
+
+/* --------------------------------------------------------------
+* Styling main footer selection.
+* -------------------------------------------------------------*/

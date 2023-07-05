@@ -11,4 +11,40 @@
 /* --------------------------------------------------------------
  * Sets up some default styles for Root.
  * -------------------------------------------------------------*/
-  
+:root {
+  --main--color: #444;
+  --main--bg: #f0f0f0;
+  --highlight: #12B99D;
+}
+
+/* --------------------------------------------------------------
+ * Sets up some default styles.
+ * -------------------------------------------------------------*/
+html, body, #app__main__container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+body{
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1.4em;
+  color: var(--main--color);
+  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+#app__main__container {
+  background: var(--main--bg);
+  height: 100dvh;
+}
+ul {
+  list-style: none;
+}
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}

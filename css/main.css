@@ -302,13 +302,54 @@ hr::before {
 * -------------------------------------------------------------*/
 #app__services__section {
   background: var(--main--foreground);
-  padding: 60px 0;
+  padding: 8em 0;
 }
 #app__services__section .app__services__section__container {
   display: flex;
 }
 #app__services__section .app__services__section__container .app__services__sidebar {
+  flex: 1;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+#app__services__section .app__services__section__container .app__services__sidebar h2 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
 
+#app__services__section .app__services__section__container .app__services__sidebar p {
+  font-size: 0.9rem;
+  line-height: 1.6em;
+}
+#app__services__section .app__services__section__container .app__actual__services__wrapper {
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#app__services__section .app__services__section__container .app__single__service {
+  text-align: center;
+  width: 30.999%;
+  box-shadow: 0 2px 5px -1px /*var(--inner--shadow)*/ rgba(162, 162, 162, 0.20);
+  box-sizing: border-box;
+  padding: 35px 10px 25px;
+  border-radius: 3px;
+}
+#app__services__section .app__services__section__container .app__single__service h3 {
+  font-size: 0.85rem;
+}
+#app__services__section .app__services__section__container .app__single__service .icon {
+  font-size: 2.2rem;
+}
+#app__services__section .app__services__section__container .app__single__service p {
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+}
+#app__services__section .app__services__section__container .app__single__service a {
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
 }
 
 /* --------------------------------------------------------------

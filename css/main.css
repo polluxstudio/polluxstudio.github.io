@@ -355,7 +355,33 @@ hr::before {
 /* --------------------------------------------------------------
 * Styling about selection.
 * -------------------------------------------------------------*/
-
+#app__about__section .app__services__section__container {
+  display: flex;
+  padding: 8em 0;
+  gap: 5em;
+}
+#app__about__section .app__services__section__container .app__about__picture {
+  flex: 1;
+  background-image: url("../imgs/bg_splash.png");
+  background-position: center;
+  background-size: 100%;
+}
+#app__about__section .app__services__section__container .app__about__picture img {
+  padding: 20px;
+  border-radius: 160px 0;
+}
+#app__about__section .app__services__section__container .app__about__section {
+  flex: 1;
+  text-align: left;
+}
+#app__about__section .app__services__section__container .app__about__section h3 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+#app__about__section .app__services__section__container .app__about__section h2 {
+}
 
 /* --------------------------------------------------------------
 * Styling about selection.

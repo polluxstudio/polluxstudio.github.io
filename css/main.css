@@ -101,10 +101,13 @@ a:focus{
 }
 
 /* --------------------------------------------------------------
- * Sets up default styles for highlighting text.
+ * Sets up default styles for span to modify text.
  * -------------------------------------------------------------*/
 .app__text__color {
   color: var(--highlight);
+}
+.app__text__light {
+  font-weight: 400;
 }
 
 /* --------------------------------------------------------------
@@ -450,6 +453,22 @@ hr::before {
 #app__core__team__section .app__team__section__container .app__team__body__wrapper .app__single__team__member .app__single__member__info {
   padding: 8px 15px 5px;
 }
+#app__core__team__section .app__team__section__container .app__team__body__wrapper .app__single__member__info h3 {
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  padding: 0;
+  margin-bottom: 5px;
+}
+#app__core__team__section .app__team__section__container .app__team__body__wrapper .app__single__member__info h4 {
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  color: var(--light--gray);
+}
+
 #app__core__team__section .app__team__section__container .app__team__body__wrapper .app__single__team__member p {
   font-size: 0.8rem;
 }

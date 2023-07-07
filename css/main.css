@@ -362,13 +362,13 @@ hr::before {
 }
 #app__about__section .app__services__section__container .app__about__picture {
   flex: 1;
-  background-image: url("../imgs/bg_splash.png");
-  background-position: center;
-  background-size: 100%;
+  border: 2px solid #12b99d;
 }
 #app__about__section .app__services__section__container .app__about__picture img {
-  padding: 20px;
-  border-radius: 160px 0;
+  position: relative;
+  display: block;
+  top: -10px;
+  left: -10px;
 }
 #app__about__section .app__services__section__container .app__about__section {
   flex: 1;

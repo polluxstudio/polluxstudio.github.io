@@ -19,7 +19,7 @@
   --highlight-light: #00C9A7;
   --gray: #3c4859;
   --light--gray: #555;
-  --box--shadow: #53525214;
+  --box--shadow: rgba(162, 162, 162, 0.20);
   --inner--shadow: rgba(0, 0, 0, 0.11);
   --black: #000;
 }
@@ -94,27 +94,16 @@ a:focus{
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  /* display: inline-block;
-  background-color: var(--highlight);
-  color: var(--main--foreground);
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease; */
 }
 .app__btn:hover {
   transition: background-color 0.3s ease;
   box-shadow: 3px 3px 0px 0px var(--highlight);
-  /* background-color: var(--highlight-light); */
-  /* color: var(--main--foreground); */
 }
 
 /* --------------------------------------------------------------
  * Sets up default styles for highlighting text.
  * -------------------------------------------------------------*/
-.app__text__text {
+.app__text__color {
   color: var(--highlight);
 }
 
@@ -350,7 +339,7 @@ hr::before {
 #app__services__section .app__services__section__container .app__single__service {
   text-align: center;
   width: 30.999%;
-  box-shadow: 0 2px 5px -1px /*var(--inner--shadow)*/ rgba(162, 162, 162, 0.20);
+  box-shadow: 0 2px 5px -1px var(--box--shadow);
   box-sizing: border-box;
   padding: 35px 10px 25px;
   border-radius: 3px;
@@ -405,6 +394,10 @@ hr::before {
   font-size: 0.9rem;
   line-height: 1.6em;
 }
+#app__about__section .app__services__section__container .app__about__section .app__about__btn__group {
+  display: flex;
+  gap: 0.5em;
+}
 
 /* --------------------------------------------------------------
 * Styling about selection.
@@ -434,36 +427,44 @@ hr::before {
 * Styling team selection.
 * -------------------------------------------------------------*/
 #app__core__team__section .app__team__section__container {
-  padding: 8em 0;
+  padding: 5em 0;
+  text-align: center;
+}
+#app__core__team__section .app__team__section__container .app__team__section__header h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 #app__core__team__section .app__team__section__container .app__team__body__wrapper {
   display: flex;
   gap: 1.5em;
+  margin: 5em 0 3.5em;
 }
 #app__core__team__section .app__team__section__container .app__team__body__wrapper .app__single__team__member {
-  text-align: center;
-  box-sizing: border-box;
-  background: #fff;
-  padding: 90px 15px 15px;
-  border-radius: 4px;
-  box-shadow: 0 2px 5px -1px rgba(162, 162, 162, 0.20);
-  position: relative;
-  flex: 1;
+  background-color: var(--main--foreground);
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px -1px var(--box--shadow);
 }
-#app__core__team__section .app__team__section__container .app__team__body__wrapper .app__single__team__member header img {
-  height: 170px;
-  width: 170px;
-  border-radius: 100%;
-  box-sizing: border-box;
-  position: absolute;
-
-  left: 64px;
-  top: -85px;
+#app__core__team__section .app__team__section__container .app__team__body__wrapper .app__single__team__member .app__single__member__info {
+  padding: 8px 15px 5px;
+}
+#app__core__team__section .app__team__section__container .app__team__body__wrapper .app__single__team__member p {
+  font-size: 0.8rem;
 }
 #app__core__team__section .app__team__section__container .app__team__body__wrapper .app__single__team__member footer ul {
   display: flex;
-  gap: 1em;
+  gap: 1.2em;
   justify-content: center;
+  padding-bottom: 1.2em;
+}
+#app__core__team__section .app__team__section__container .app__team__body__wrapper .app__single__team__member footer ul li a {
+  color: var(--main--color);
+  font-size: 1rem;
+}
+#app__core__team__section .app__team__section__container .app__team__body__wrapper .app__single__team__member footer ul li a:hover {
+  color: var(--highlight);
 }
 
 /* --------------------------------------------------------------

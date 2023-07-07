@@ -62,6 +62,10 @@ img {
  a {
 	text-decoration: none;
 	color: var(--highlight);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
  }
  a:hover {
       text-decoration: none;
@@ -85,6 +89,12 @@ a:focus{
  * -------------------------------------------------------------*/
 .app__btn {
   display: inline-block;
+  border: 1px solid var(--highlight);
+  padding: 0.6em 1.8em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* display: inline-block;
   background-color: var(--highlight);
   color: var(--main--foreground);
   padding: 10px 20px;
@@ -92,12 +102,20 @@ a:focus{
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease; */
 }
 .app__btn:hover {
-  background-color: var(--highlight-light);
   transition: background-color 0.3s ease;
-  color: var(--main--foreground);
+  box-shadow: 3px 3px 0px 0px var(--highlight);
+  /* background-color: var(--highlight-light); */
+  /* color: var(--main--foreground); */
+}
+
+/* --------------------------------------------------------------
+ * Sets up default styles for highlighting text.
+ * -------------------------------------------------------------*/
+.app__text__text {
+  color: var(--highlight);
 }
 
 /* --------------------------------------------------------------
@@ -348,8 +366,7 @@ hr::before {
   letter-spacing: 0.02em;
 }
 #app__services__section .app__services__section__container .app__single__service a {
-  font-size: 0.85rem;
-  letter-spacing: 0.02em;
+  font-size: 0.65rem;
 }
 
 /* --------------------------------------------------------------
@@ -362,12 +379,12 @@ hr::before {
 }
 #app__about__section .app__services__section__container .app__about__picture {
   flex: 1;
-  border: 2px solid #12b99d;
+  border: 2px solid var(--highlight);
 }
 #app__about__section .app__services__section__container .app__about__picture img {
   position: relative;
   display: block;
-  top: -10px;
+  top: -6px;
   left: -10px;
 }
 #app__about__section .app__services__section__container .app__about__section {
@@ -380,7 +397,13 @@ hr::before {
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
-#app__about__section .app__services__section__container .app__about__section h2 {
+#app__about__section .app__services__section__container .app__about__section .app__about__header h2 {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+}
+#app__about__section .app__services__section__container .app__about__section p {
+  font-size: 0.9rem;
+  line-height: 1.6em;
 }
 
 /* --------------------------------------------------------------

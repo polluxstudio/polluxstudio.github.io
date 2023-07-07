@@ -489,7 +489,21 @@ hr::before {
 /* --------------------------------------------------------------
 * Styling contact selection.
 * -------------------------------------------------------------*/
+#app__contact__section {
+  background: #fff;
+  padding: 8em 0;
+}
+#app__contact__section .app__contact__container {
+  display: flex;
+  gap: 3em;
+}
 
+#app__contact__section .app__contact__container .app__contact__image {
+  flex: 1;
+}
+#app__contact__section .app__contact__container .app__actual__contact__form {
+  flex: 1;
+}
 
 /* --------------------------------------------------------------
 * Styling FAQ selection.

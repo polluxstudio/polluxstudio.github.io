@@ -633,9 +633,18 @@ hr::before {
 
 
 /* --------------------------------------------------------------
-* Styling top footer selection.
+* Styling footer selection.
 * -------------------------------------------------------------*/
+#app__top__footer .app__footer__container {
+  padding: 4.5em 0;
+  display: flex;
+  gap: 1em;
+}
+#app__top__footer .app__footer__container .app__footer__segment {
+  flex: 1;
+}
+#app__top__footer .app__footer__container .app__main__footer {
+  flex: 2;
+}
 
-/* --------------------------------------------------------------
-* Styling main footer selection.
-* -------------------------------------------------------------*/
+/* Styling main footer selection */

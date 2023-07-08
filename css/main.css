@@ -374,13 +374,37 @@ hr::before {
 }
 #app__about__section .app__services__section__container .app__about__picture {
   flex: 1;
-  border: 2px solid var(--highlight);
+  position: relative;
+  z-index: 9;
+  /* border: 2px solid var(--highlight); */
+}
+#app__about__section .app__services__section__container .app__about__picture::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: -8px;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.09);
+  z-index: -1;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+#app__about__section .app__services__section__container .app__about__picture::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  right: -16px;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.09);
+  z-index: -1;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 #app__about__section .app__services__section__container .app__about__picture img {
   position: relative;
   display: block;
-  top: -6px;
-  left: -10px;
+  /* top: -6px;
+  left: -10px; */
 }
 #app__about__section .app__services__section__container .app__about__section {
   flex: 1;
@@ -574,6 +598,9 @@ hr::before {
   outline: none;
   border-radius: 0;
   -webkit-appearance: none;
+}
+#app__contact__section .app__contact__container .app__actual__contact__form .app__input__wrapper #app__contact__message {
+  height: 70px;
 }
 #app__contact__section .app__contact__container .app__actual__contact__form .app__input__wrapper label {
   position: absolute;

@@ -494,7 +494,7 @@ hr::before {
 * -------------------------------------------------------------*/
 #app__contact__section {
   background: #fff;
-  padding: 8em 0;
+  padding: 5em 0;
 }
 #app__contact__section .app__contact__container {
   display: flex;
@@ -506,6 +506,21 @@ hr::before {
 }
 #app__contact__section .app__contact__container .app__actual__contact__form {
   flex: 1;
+}
+#app__contact__section .app__contact__container .app__contact__image h2 {
+  font-size: 2.6rem;
+  line-height: 1.2em;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  margin: 0;
+}
+#app__contact__section .app__contact__container .app__contact__image h4 {
+  font-size: 0.7rem;
+  color: var(--light--gray);
+  font-weight: 600;
+}
+#app__contact__section .app__contact__container .app__contact__image a {
+  text-transform: lowercase;
 }
 
 /* Contact Social Media Links */

@@ -507,6 +507,24 @@ hr::before {
 #app__contact__section .app__contact__container .app__actual__contact__form {
   flex: 1;
 }
+
+/* Contact Social Media Links */
+#app__contact__section .app__contact__container .app__contact__image .app__contact__image__footer ul {
+  display: flex;
+  gap: 1.6em;
+  justify-content: center;
+  margin: 2em 0;
+}
+#app__contact__section .app__contact__container .app__contact__image .app__contact__image__footer ul li a {
+  color: var(--highlight);
+  font-size: 1.2rem;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
 /* Input Field Style */
 #app__contact__section .app__contact__container .app__actual__contact__form .app__input__wrapper dl {
   overflow: hidden;
@@ -519,9 +537,11 @@ hr::before {
   left: 0;
   width: 200px;
   height: 30px;
-  color: #666;
-  font-weight: bold;
   line-height: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
 }
 #app__contact__section .app__contact__container .app__actual__contact__form .app__input__wrapper .app__input__content {
   position: relative;
@@ -550,6 +570,17 @@ hr::before {
   cursor: text;
   transition: all 200ms ease-out;
   z-index: 10;
+}
+#app__contact__section .app__contact__container .app__actual__contact__form .app__input__wrapper span {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--highlight-light);
+  transition: all 200ms ease-out;
 }
 
 /* --------------------------------------------------------------

@@ -529,13 +529,13 @@ hr::before {
 #app__contact__section .app__contact__container .app__actual__contact__form .app__input__wrapper dl {
   overflow: hidden;
   position: relative;
-  padding: 15px 0 28px 200px;
+  padding: 15px 0 28px 150px;
 }
 #app__contact__section .app__contact__container .app__actual__contact__form .app__input__wrapper .app__input__title {
   position: absolute;
   top: 15px;
   left: 0;
-  width: 200px;
+  width: 150px;
   height: 30px;
   line-height: 30px;
   font-weight: 600;
@@ -570,6 +570,8 @@ hr::before {
   cursor: text;
   transition: all 200ms ease-out;
   z-index: 10;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
 }
 #app__contact__section .app__contact__container .app__actual__contact__form .app__input__wrapper span {
   content: "";

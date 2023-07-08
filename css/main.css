@@ -94,6 +94,9 @@ a:focus{
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  background: none;
+	color: var(--highlight);
+  text-transform: uppercase;
 }
 .app__btn:hover {
   transition: background-color 0.3s ease;
@@ -503,6 +506,12 @@ hr::before {
 }
 #app__contact__section .app__contact__container .app__actual__contact__form {
   flex: 1;
+}
+/* Input Field Style */
+#app__contact__section .app__contact__container .app__actual__contact__form .app__input__wrapper dl {
+  overflow: hidden;
+  position: relative;
+  padding: 15px 0 28px 200px;
 }
 
 /* --------------------------------------------------------------

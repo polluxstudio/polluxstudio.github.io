@@ -369,10 +369,59 @@
         <!-- Contact Form -->
         <div class="app__actual__contact__form">
           <form action="https://formspree.io/f/mayzrgnk" method="POST">
-            <label>
-              Your email:
-              <input type="email" name="email" placeholder="Enter your mail address">
-            </label>
+            <!-- Single Input -->
+            <div class="app__input__wrapper">
+              <dl>
+                <dt class="app__input__title">Name</dt>
+                <dd class="app__input__content">
+                  <input id="app__contact__name" class="app__input" type="text" required>
+                  <label for="app__contact__name">Name</label>
+                </dd>
+              </dl>
+            </div>
+            <!-- /Single Input -->
+            
+            <!-- Single Input -->
+            <div class="app__input__wrapper">
+              <dl>
+                <dt class="app__input__title">Email</dt>
+                <dd class="app__input__content">
+                  <input id="app__contact__mail" class="app__input" type="email" required>
+                  <label for="app__contact__mail">Mail</label>
+                </dd>
+              </dl>
+            </div>
+            <!-- /Single Input -->
+
+            <!-- Single Input -->
+            <div class="app__input__wrapper">
+              <dl>
+                <dt class="app__input__title">Subject</dt>
+                <dd class="app__input__content">
+                  <input id="app__contact__subject" class="app__input" type="text" required>
+                  <label for="app__contact__subject">Subject</label>
+                </dd>
+              </dl>
+            </div>
+            <!-- /Single Input -->
+
+            <!-- Single Input -->
+            <div class="app__input__wrapper">
+              <dl>
+                <dt class="app__input__title">Message</dt>
+                <dd class="app__input__content">
+                  <textarea id="app__contact__message" class="app__input" spellcheck="false"></textarea>
+                  <label for="app__contact__message">Message</label>
+                </dd>
+              </dl>
+            </div>
+            <!-- /Single Input -->
+
+            <!-- Single Input -->
+            <div class="app__input__wrapper">
+              <button class="app__btn" type="submit" name="app__contact__send">Send Message</button>
+            </div>
+            <!-- /Single Input -->
           </form>
         </div>
         <!-- /Contact Form -->

@@ -630,7 +630,51 @@ hr::before {
 /* --------------------------------------------------------------
 * Styling FAQ selection.
 * -------------------------------------------------------------*/
-
+#app__faq__section .app__faq__container {
+  padding: 5em 0 10em;
+}
+#app__faq__section  .app__faq__container .app__main__faq__content {
+  background: #fff;
+  margin: 0;
+  padding: 1.4em 1.6em;
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0px 5px 8px 1px var(--box--shadow);
+}
+#app__faq__section  .app__faq__container .app__faq__section__header {
+  text-align: center;
+  margin-bottom: 4em;
+}
+#app__faq__section .app__faq__container .app__faq__section__header h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+#app__faq__section  .app__faq__container .app__faq__content__header {
+  display: flex;
+  margin-bottom: 1em;
+  border-bottom: 1px dashed var(--light--gray);
+  padding-bottom: 1em;
+  cursor: pointer;
+}
+#app__faq__section  .app__faq__container .app__faq__content__header h4 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05ex;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+}
+#app__faq__section  .app__faq__container .app__faq__content__body {
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px dashed var(--light--gray);
+}
+#app__faq__section  .app__faq__container .app__faq__content__body:last-child {
+  border-bottom: none;
+}
 
 /* --------------------------------------------------------------
 * Styling footer selection.

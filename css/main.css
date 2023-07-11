@@ -514,6 +514,49 @@ hr::before {
 }
 
 /* --------------------------------------------------------------
+* Styling testimonial selection.
+* -------------------------------------------------------------*/
+.app__testimonial__container {
+  padding: 5em 0;
+}
+.app__testimonial__section__header {
+  text-align: center;
+  margin-bottom: 3em;
+}
+.app__testimonial__section__header h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.app__testimonial__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.app__single__testimonial {
+  width: 30%;
+  background: #fff;
+  padding: 1em;
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px -1px var(--box--shadow);
+}
+
+.app__testimonial__wrapper  header {
+  display: flex;
+  gap: 1em;
+}
+/* .app__testimonial__wrapper  header img, .app__testimonial__wrapper  header div {
+  flex: 1;
+} */
+.app__testimonial__wrapper  header img {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+}
+
+/* --------------------------------------------------------------
 * Styling contact selection.
 * -------------------------------------------------------------*/
 #app__contact__section {
@@ -672,7 +715,7 @@ hr::before {
   margin-bottom: 1em;
   border-bottom: 1px dashed var(--light--gray);
 }
-#app__faq__section  .app__faq__container .app__faq__content__body:last-child {
+#app__faq__section  .app__faq__container .app__single__faq__wrapper:last-child .app__faq__content__body {
   border-bottom: none;
 }
 

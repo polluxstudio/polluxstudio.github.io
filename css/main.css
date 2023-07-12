@@ -15,6 +15,7 @@
   --main--color: #444;
   --main--bg: #f0f0f0;
   --main--foreground: #fff;
+  --extra--light--gray: #ccc;
   --highlight: #12B99D;
   --highlight-light: #00C9A7;
   --gray: #3c4859;
@@ -514,6 +515,18 @@ hr::before {
 }
 
 /* --------------------------------------------------------------
+* Styling hire selection.
+* -------------------------------------------------------------*/
+#app__hire__section {
+  background: var(--main--foreground);
+}
+#app__hire__section .app__hire__container {
+  padding: 7em 0;
+  display: flex; 
+  gap: 5em;
+}
+
+/* --------------------------------------------------------------
 * Styling testimonial selection.
 * -------------------------------------------------------------*/
 .app__testimonial__container {
@@ -678,7 +691,7 @@ hr::before {
 }
 #app__faq__section  .app__faq__container .app__main__faq__content {
   background: #fff;
-  margin: 0;
+  margin: 0 7em;
   padding: 1.4em 1.6em;
   box-sizing: border-box;
   border-radius: 4px;
@@ -697,7 +710,7 @@ hr::before {
 #app__faq__section  .app__faq__container .app__faq__content__header {
   display: flex;
   margin-bottom: 1em;
-  border-bottom: 1px dashed var(--light--gray);
+  border-bottom: 1px dashed var(--extra--light--gray);
   padding-bottom: 1em;
   cursor: pointer;
 }
@@ -710,14 +723,28 @@ hr::before {
   padding: 0;
   flex: 1;
 }
-#app__faq__section  .app__faq__container .app__faq__content__body {
-  padding-bottom: 1em;
-  margin-bottom: 1em;
-  border-bottom: 1px dashed var(--light--gray);
+#app__faq__section .app__faq__container .app__faq__content__body {
+  /* padding-bottom: 1em;
+  margin-bottom: 1em; */
+  border-bottom: 1px dashed var(--extra--light--gray);
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  max-height: 0;
+  opacity: 0;
 }
 #app__faq__section  .app__faq__container .app__single__faq__wrapper:last-child .app__faq__content__body {
   border-bottom: none;
 }
+#app__faq__section .app__faq__container .app__faq__content__header span {
+  transition: transform 0.3s ease;
+}
+#app__faq__section .app__faq__container .app__faq__content__header span.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+/* #app__faq__section .app__faq__container .app__faq__content__body.active {
+  display: block;
+} */
 
 /* --------------------------------------------------------------
 * Styling footer selection.

@@ -525,6 +525,12 @@ hr::before {
   display: flex; 
   gap: 5em;
 }
+#app__hire__section .app__hire__container .app__hire__section__image {
+  flex: 1;
+}
+#app__hire__section .app__hire__container .app__hire__section__content {
+  flex: 1;
+}
 
 /* --------------------------------------------------------------
 * Styling testimonial selection.
@@ -747,7 +753,7 @@ hr::before {
 }
 #app__faq__section .app__faq__container .app__faq__section__footer .app__faq__btn {
   background-color: var(--main--foreground);
-  border: none;
+  border: 1px solid var(--main--bg);
   border-radius: 50px;
   padding: 0.8em 4em;
   box-shadow: 0px 1px 2px 1px var(--box--shadow);

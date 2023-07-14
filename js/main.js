@@ -27,3 +27,25 @@ faqHeaders.forEach(header => {
     }
   });
 });
+
+// Mobile Menu
+const mobileMenu = document.querySelector('button.app__mobile__menu');
+const menuContent = document.querySelector('#app__main__container .app__main__header  .app__header_navigation ul');
+
+mobileMenu.onclick = function() {
+  menuContent.classList.toggle('app__show__menu__content');
+}
+
+
+// // Mobile Navigation ...
+// let mobile_nav_btn = document.querySelector('.mobile-menu-btn');
+// let mobile_nav_container = document.querySelector('.main-nav-wrapper');
+// let mobile_nav_close_btn = document.querySelector('.mobile-nav-close-btn');
+
+// mobile_nav_btn.onclick = function() {
+// 	mobile_nav_container.classList.toggle('show-mobile-nav');
+// }
+
+// mobile_nav_close_btn.onclick = function() {
+// 	mobile_nav_container.classList.toggle('show-mobile-nav');
+// }

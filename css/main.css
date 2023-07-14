@@ -254,6 +254,7 @@ hr::before {
 /* Styling header navigation selection. */
 #app__main__container .app__main__header  .app__header_navigation {
   flex-grow: 1;
+  position: relative;
 }
 #app__main__container .app__main__header  .app__header_navigation ul {
   display: flex;
@@ -278,6 +279,20 @@ hr::before {
   }
   #app__main__container .app__main__header  .app__header_navigation ul {
     display: none;
+  }
+  #app__main__container .app__main__header  .app__header_navigation ul.app__show__menu__content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    background: var(--main--foreground);
+    top: 35px;
+    left: 0;
+    right: 0;
+    z-index: 999999999999999999999;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 2px 2px var(--box--shadow);
   }
 }
 
@@ -342,6 +357,16 @@ hr::before {
 /* Styling hero selection's image */
 #app__hero__section .app__hero__container .app__hero__image {
   flex: 2;
+}
+
+/* Mobile View */
+@media (max-width: 800px) {
+  #app__hero__section .app__hero__container .app__hero__image {
+    display: none;
+  }
+  #app__hero__section .app__hero__container .app__main__title__and__subtitle {
+    text-align: center;
+  }
 }
 
 /* --------------------------------------------------------------

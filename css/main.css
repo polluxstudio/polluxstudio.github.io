@@ -420,6 +420,7 @@ hr::before {
 #app__about__section .app__services__section__container .app__about__section .app__about__header h2 {
   font-size: 1.8rem;
   line-height: 2.6rem;
+  text-transform: capitalize;
 }
 #app__about__section .app__services__section__container .app__about__section p {
   font-size: 0.9rem;
@@ -554,16 +555,16 @@ hr::before {
   gap: 1em;
 }
 #app__testimonial__section .app__testimonial__container .app__single__testimonial {
-  width: 30%;
+  width: 32%;
   background: #fff;
   padding: 1em;
   box-sizing: border-box;
   border-radius: 4px;
   box-shadow: 0 2px 5px -1px var(--box--shadow);
 }
-#app__testimonial__section .app__testimonial__container article {
+/* #app__testimonial__section .app__testimonial__container article {
   margin-bottom: 1em;
-}
+} */
 #app__testimonial__section .app__testimonial__container article q {
   font-size: 0.8em;
   line-height: 0.9em;
@@ -571,9 +572,11 @@ hr::before {
 #app__testimonial__section .app__testimonial__container .app__testimonial__wrapper  header {
   display: flex;
   gap: 1em;
+  margin-top: 1em;
 }
 #app__testimonial__section .app__testimonial__container .app__testimonial__wrapper  header div {
   flex: 1;
+  line-height: 1.2em;
 }
 #app__testimonial__section .app__testimonial__container .app__testimonial__wrapper  header img {
   width: 40px;

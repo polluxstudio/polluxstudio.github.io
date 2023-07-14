@@ -103,6 +103,22 @@ a:focus{
   transition: background-color 0.3s ease;
   box-shadow: 3px 3px 0px 0px var(--highlight);
 }
+.app__btn__fill {
+  background: var(--highlight);
+  color: var(--main--foreground);
+}
+.app__btn__fill:hover {
+  color: var(--main--foreground);
+}
+.app__btn__fill:link {
+  color: var(--main--foreground);
+}
+.app__btn__fill:active {
+  color: var(--main--foreground);
+}
+.app__btn__fill:focus {
+  color: var(--main--foreground);
+}
 
 /* --------------------------------------------------------------
  * Sets up default styles for span to modify text.
@@ -246,6 +262,23 @@ hr::before {
 }
 #app__main__container .app__main__header  .app__header_navigation ul li a {
   color: var(--main--color);
+}
+/* Mobile Menu */
+#app__main__container .app__main__header .app__mobile__menu {
+  display: none;
+}
+@media (max-width: 800px) {
+  #app__main__container .app__main__header .app__mobile__menu {
+    display: block;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    padding: 0 12px;
+    border-radius: 4px;
+  }
+  #app__main__container .app__main__header  .app__header_navigation ul {
+    display: none;
+  }
 }
 
 /* --------------------------------------------------------------
@@ -679,7 +712,7 @@ hr::before {
   font-size: 14px;
   border: 0;
   background: none;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--extra--light--gray);
   outline: none;
   border-radius: 0;
   -webkit-appearance: none;
@@ -693,7 +726,7 @@ hr::before {
   left: 0;
   height: 30px;
   line-height: 30px;
-  color: #ccc;
+  color: var(--extra--light--gray);
   cursor: text;
   transition: all 200ms ease-out;
   z-index: 10;
@@ -711,7 +744,12 @@ hr::before {
   background: var(--highlight-light);
   transition: all 200ms ease-out;
 }
-
+#app__contact__section .app__contact__container .app__actual__contact__form .app__input__wrapper .app__contact__btn {
+  font-weight: 600;
+  font-size: 0.75em;
+  letter-spacing: 1px;
+  padding: 0.6em 1.6em;
+}
 /* --------------------------------------------------------------
 * Styling FAQ selection.
 * -------------------------------------------------------------*/

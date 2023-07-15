@@ -490,28 +490,30 @@ hr::before {
 }
 
 /* --------------------------------------------------------------
-* Styling about selection.
-* -------------------------------------------------------------*/
-
-
-
-/* --------------------------------------------------------------
-* Styling about social media selection.
-* -------------------------------------------------------------*/
-
-
-
-/* --------------------------------------------------------------
-* Styling services selection.
-* -------------------------------------------------------------*/
-
-
-
-/* --------------------------------------------------------------
 * Styling portfolio selection.
 * -------------------------------------------------------------*/
+#app__portfolio__section {
+  background-color: var(--main--foreground); 
+}
+#app__portfolio__section .app__portfolio__section__container {
+  padding: 7em 0;
+}
+#app__portfolio__section .app__portfolio__section__container .app__portfolio__section__header {
+  text-align: center;
+}
+#app__portfolio__section  .app__portfolio__section__container .app__portfolio__wrapper {
 
-
+}
+#app__portfolio__section  .app__portfolio__section__container .app__portfolio__wrapper .app__single__portfolio {
+  display: flex;
+  gap: 3em;
+}
+#app__portfolio__section  .app__portfolio__section__container .app__portfolio__wrapper .app__single__portfolio .app__portfolio__image {
+  flex: 1;
+}
+#app__portfolio__section  .app__portfolio__section__container .app__portfolio__wrapper .app__single__portfolio .app__portfolio__text {
+  flex: 1;
+}
 
 /* --------------------------------------------------------------
 * Styling team selection.

@@ -35,3 +35,13 @@ const menuContent = document.querySelector('#app__main__container .app__main__he
 mobileMenu.onclick = function() {
   menuContent.classList.toggle('app__show__menu__content');
 }
+
+// Portfolio Slider
+// let slider_index = 0;
+let slider_containers = document.querySelectorAll('.app__portfolio__wrapper .app__single__portfolio');
+
+let slider_count = slider_containers.length;
+
+for (i = 0; i < slider_count; i++) {
+  slider_containers[i].style.display = 'none';
+}

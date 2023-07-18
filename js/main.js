@@ -37,7 +37,6 @@ mobileMenu.onclick = function() {
 }
 
 // Portfolio Slider
-
 let slider_index = 0;
 let slider_containers = document.querySelectorAll('.app__portfolio__wrapper .app__single__portfolio');
 let slider_count = slider_containers.length;
@@ -53,24 +52,3 @@ function showSlides() {
 }
 
 showSlides();
-
-
-// let slider_index = 0;
-// let slider_containers = document.querySelectorAll('.app__portfolio__wrapper .app__single__portfolio__wrapper');
-// let slider_count = slider_containers.length;
-
-// function showSlides() {
-//   for (let i = 0; i < slider_count; i++) {
-//     slider_containers[i].style.display = 'none';
-//   }
-
-//   slider_index++;
-//   if (slider_index > slider_count) {
-//     slider_index = 1;
-//   }
-
-//   slider_containers[slider_index - 1].style.display = 'block';
-//   setTimeout(showSlides, 5000);
-// }
-
-// showSlides();

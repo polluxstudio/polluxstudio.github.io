@@ -519,6 +519,11 @@ hr::before {
   display: flex;
   gap: 3em;
   margin-bottom: 5em;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+#app__portfolio__section  .app__portfolio__section__container .app__portfolio__wrapper .app__single__portfolio.active {
+  opacity: 1;
 }
 #app__portfolio__section  .app__portfolio__section__container .app__portfolio__wrapper .app__single__portfolio .app__portfolio__image {
   flex: 1;
@@ -527,52 +532,10 @@ hr::before {
   flex: 1;
 }
 
-
-/* #app__portfolio__section  .app__portfolio__section__container .app__portfolio__wrapper .active {
-  opacity: 1;
-} */
-
-.app__single__portfolio {
-  opacity: 0;
-  transition: opacity 0.5s ease;
+#app__portfolio__section  .app__portfolio__section__container .app__portfolio__wrapper .app__single__portfolio.active .app__portfolio__image,
+#app__portfolio__section  .app__portfolio__section__container .app__portfolio__wrapper .app__single__portfolio.active .app__portfolio__text {
+  
 }
-
-.app__single__portfolio.active {
-  opacity: 1;
-}
-
-
-
-/* .app__single__portfolio {
-  position: relative;
-  overflow: hidden;
-}
-
-.app__single__portfolio .app__portfolio__image,
-.app__single__portfolio .app__portfolio__text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-.app__single__portfolio .app__portfolio__text {
-  padding: 20px;
-}
-
-.app__single__portfolio.active .app__portfolio__image,
-.app__single__portfolio.active .app__portfolio__text {
-  opacity: 1;
-  height: 375px;
-} */
-
-
-
-
-
-
 
 /* --------------------------------------------------------------
 * Styling team selection.

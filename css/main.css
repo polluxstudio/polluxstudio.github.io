@@ -511,8 +511,8 @@ hr::before {
 
 }
 #app__portfolio__section  .app__portfolio__section__container .app__portfolio__wrapper {
-  height: 375px;
-  overflow: hidden;
+  /* height: 375px;
+  overflow: hidden; */
 }
 #app__portfolio__section  .app__portfolio__section__container .app__portfolio__wrapper .app__single__portfolio {
   display: flex;

@@ -52,3 +52,8 @@ function showSlides() {
 }
 
 showSlides();
+
+// // Show current year at footer
+// document.addEventListener('DOMContentLoaded', function () {
+//   document.querySelector('#year').textContent = new Date().getFullYear();
+// });

@@ -24,6 +24,7 @@
   <!-- /CSS Stylesheet -->
 </head>
 <body>
+
   <!-- Main Content Wrapper -->
   <main id="app__content__wrapper">
 
@@ -85,7 +86,11 @@
 
       <!-- Main Footer -->
       <footer id="app__main_footer">
-        
+
+        <!-- Copyright Text -->
+        <p>&copy; <span id="year"></span> Pollux Studio™. All rights reserved.</p>
+        <!-- /Copyright Text -->
+
       </footer><!-- /Main Footer -->
 
     </footer><!-- Footer Section -->
@@ -95,5 +100,13 @@
   <!-- JS -->
   <script src="js/main.js"></script>
   <!-- /JS -->
+
+  <script>
+    // Show current year at footer
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelector('#year').textContent = new Date().getFullYear();
+    });
+  </script>
+  
 </body>
 </html>

@@ -1,0 +1,36 @@
+/**
+ *--------------------------------------------------------------
+ * Main SCSS
+ *
+ * Process and Output all the scss code to main.css file.
+ *
+ * @output main.css
+ * @link https://sass-guidelin.es/
+ * @author Tafhimul kabir <tafhimulkabir@protonmail.com>
+ *
+ --------------------------------------------------------------*/
+ 
+ @charset "UTF-8";
+
+ @import 
+      'global/reset',
+      'global/variable',
+      'global/mixin',
+      'global/typography';
+ 
+ @import
+      'elements/text_input';
+ 
+ @import 
+      'sections/header',
+      'sections/hero',
+      'sections/services',
+      'sections/about',
+      'sections/portfolio',
+      'sections/team',
+      'sections/hire',
+      'sections/testimonial',
+      'sections/contact',
+      'sections/faq',
+      'sections/top_footer',
+      'sections/main_footer';

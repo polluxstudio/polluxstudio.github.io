@@ -1,0 +1,10 @@
+@mixin absolute_fill() {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

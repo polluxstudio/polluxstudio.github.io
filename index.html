@@ -31,10 +31,70 @@
     <!-- Header Section -->
     <header class="app__header">
 
+      <!-- Background -->
+      <div class="app__background">
+        
+      </div><!-- /Background -->
+
       <!-- Header Wrapper -->
-      <h1>Pollux Studio: Your Gateway to Creative Excellence</h1>
-      <h2>Unlocking the Power of Innovation - Web Design, Development, Graphic Design, Digital Marketing, and Technical Writing Services</h2>
-      <!-- /Header Wrapper -->
+      <section class="app__header__wraper">
+
+        <!-- Main Header -->
+        <header id="app__main__header">
+
+          <!-- Container -->
+          <div class="app__container app__main__header__container">
+            
+            <!-- Logo -->
+            <a href="https://polluxstudio.github.io/">
+              <img src="https://raw.githubusercontent.com/polluxstudio/medias/main/polluxstudio/polluxstudio-logo.png" alt="Pollux Studio Logo">
+            </a>
+            <!-- /Logo -->
+
+            <!-- Navigation -->
+            <nav id="app__main__navidation">
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#app__services">Services</a></li>
+                <li><a href="#app__about">About</a></li>
+                <li><a href="#app__portfolio">Portfolio</a></li>
+                <li><a href="#app__team">Our Team</a></li>
+                <li><a href="#app__hire">Hire Us</a></li>
+                <li><a href="#app__gallery">Gallery</a></li>
+                <li><a href="#app__testimonial">Testimonial</a></li>
+                <li><a href="#app__contact">Contact Us</a></li>
+                <li><a href="#app__faq">FAQ</a></li>
+              </ul>
+            </nav>
+            <!-- /Navigation -->
+
+          </div><!-- /Container -->
+
+        </header><!-- Main Header -->
+
+        <!-- Hero Section -->
+        <section id="app__hero">
+
+          <!-- Container -->
+          <div class="app__container">
+
+            <!-- Hero Text -->
+            <article class="app__hero__text">
+              <h1>Pollux Studio: Your Gateway to Creative Excellence</h1>
+              <h2>Unlocking the Power of Innovation - Web Design, Development, Graphic Design, Digital Marketing, and Technical Writing Services</h2>
+              <a href="#app__contact">Get In Touch</a>
+            </article><!-- /Hero Text -->
+
+            <!-- Hero Image -->
+            <div class="app__hero__image">
+              <img src="imgs/hero.svg" alt="Businesses Proposal Image">
+            </div><!-- /Hero Image -->
+
+          </div><!-- /Container -->
+
+        </section><!-- /Hero Section -->
+
+      </section><!-- /Header Wrapper -->
 
     </header><!-- /Header Section -->
 
@@ -130,6 +190,11 @@ Contact us today to get started on your next creative project!
       </div><!-- /Container -->
 
     </section><!-- /Hire Section -->
+
+    <!-- Gallery Section -->
+    <section id="app__gallery">
+
+    </section><!-- /Gallery Section -->
 
     <!-- Testimonial Section -->
     <section id="app__testimonial">
@@ -230,6 +295,9 @@ Contact us today to get started on your next creative project!
       document.querySelector('#year').textContent = new Date().getFullYear();
     });
   </script>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </body>
 </html>

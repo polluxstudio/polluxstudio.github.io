@@ -1,0 +1,55 @@
+/* --------------------------------------------------------------
+ * Sets up media query for container.
+ * -------------------------------------------------------------*/
+ .app__container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  @media (min-width: 7680px) {
+    .app__container {
+      max-width: 1920px;
+    }
+  }
+  
+  @media (max-width: 7679px) and (min-width: 2560px) {
+    .app__container {
+      max-width: 1440px;
+    }
+  }
+  
+  @media (max-width: 2559px) and (min-width: 1920px) {
+    .app__container {
+      max-width: 1200px;
+    }
+  }
+  
+  @media (max-width: 1919px) and (min-width: 1366px) {
+    .app__container {
+      max-width: 1024px;
+    }
+  }
+  
+  @media (max-width: 1365px) and (min-width: 992px) {
+    .app__container {
+      max-width: 768px;
+    }
+  }
+  
+  @media (max-width: 991px) and (min-width: 768px) {
+    .app__container {
+      max-width: 90%;
+    }
+  }
+  
+  @media (max-width: 767px) and (min-width: 576px) {
+    .app__container {
+      max-width: 90%;
+    }
+  }
+  
+  @media (max-width: 575px) and (min-width: 320px) {
+    .app__container {
+      max-width: 100%;
+    }
+  }

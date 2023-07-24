@@ -1,6 +1,9 @@
 /* --------------------------------------------------------------
  * Sets up media query for container.
  * -------------------------------------------------------------*/
+ .app__container__pad {
+    padding: 8em 0;
+ }
  .app__container {
     width: 100%;
     margin: 0 auto;

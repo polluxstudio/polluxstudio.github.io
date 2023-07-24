@@ -14,16 +14,12 @@
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,500,500i,700" rel="stylesheet">
   <!-- /Google Font -->
-
-  <!-- Custom Font Icon -->
-  <link rel="stylesheet" type="text/css" href="css/ionicons.css">
-  <!-- /Custom Font Icon -->
   
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="css/main.css" type="text/css" media="all">
   <!-- /CSS Stylesheet -->
 
-  <style>
+  <!-- <style>
     
 .app__header {
   position: relative;
@@ -259,7 +255,7 @@ img {
             height: 100%;
         }
   
-  </style>
+  </style> -->
 </head>
 <body>
 
@@ -284,7 +280,7 @@ img {
         <header id="app__main__header">
 
           <!-- Container -->
-          <div class="app__container app__main__header__container">
+          <div class="app__container app__main__header__container app__flex app__gap__1">
             
             <!-- Logo -->
             <a href="https://polluxstudio.github.io/">
@@ -293,8 +289,8 @@ img {
             <!-- /Logo -->
 
             <!-- Navigation -->
-            <nav id="app__main__navidation">
-              <ul>
+            <nav id="app__main__navidation app__flex__1">
+              <ul class="app__flex app__gap__1">
                 <li><a href="#app__header">Home</a></li>
                 <li><a href="#app__services">Services</a></li>
                 <li><a href="#app__about">About</a></li>
@@ -318,10 +314,10 @@ img {
         <section id="app__hero">
 
           <!-- Container -->
-          <div class="app__container app__hero__container">
+          <div class="app__container app__hero__container app__flex app__gap__5">
 
             <!-- Hero Text -->
-            <article class="app__hero__text">
+            <article class="app__hero__text app__flex__1">
               <h1>Welcome to Pollux Studio</h1>
               <h2>Pollux Studio: Your Gateway to Creative Excellence</h2>
               <h3>Unlocking the Power of Innovation - Web Design, Development, Graphic Design, Digital Marketing, and Technical Writing Services</h3>
@@ -329,7 +325,7 @@ img {
             </article><!-- /Hero Text -->
 
             <!-- Hero Image -->
-            <div class="app__hero__image">
+            <div class="app__hero__image app__flex__1">
               <img src="imgs/hero.svg" alt="Businesses Proposal Image">
             </div><!-- /Hero Image -->
 
@@ -348,32 +344,62 @@ img {
       <div class="app__container app__services__container">
 
         <!-- Header -->
-        <header class="app__service__header">
+        <header class="app__service__header app__text__center app__header__center">
           <h2>What Do We Offer?</h2>
         </header><!-- /Header -->
 
         <!-- Actual Services -->
-        <div class="app__actual__services">
+        <div class="app__actual__services app__flex app__gap__2">
 
           <!-- Service Wrapper -->
-          <div class="app__single__service__wrapper">
-            <ion-icon name="desktop-outline"></ion-icon>
-            <h3>Web Design</h3>
-            <p>Craft captivating and user-centric websites that leave a lasting impression on your audience. Our team of skilled designers will work closely with you to create visually stunning and intuitive websites that reflect your brand's essence.</p>
+          <div class="app__single__service__wrapper app__flex app__gap__1">
+
+            <!-- Service Icon -->
+            <div class="app__single__service__icon app__flex__1">
+              <ion-icon name="desktop-outline"></ion-icon>
+            </div><!-- Service Icon -->
+
+            <!-- Service Info -->
+            <div class="app__single__service__info app__flex__5">
+              <h3>Web Design</h3>
+              <span class="app__line"></span>
+              <p>Craft captivating and user-centric websites that leave a lasting impression on your audience. Our team of skilled designers will work closely with you to create visually stunning and intuitive websites that reflect your brand's essence.</p>
+            </div><!-- /Service Info -->
+
           </div><!-- /Service Wrapper -->
 
           <!-- Service Wrapper -->
-          <div class="app__single__service__wrapper">
-            <ion-icon name="laptop-outline"></ion-icon>
-            <h3>Web Development</h3>
-            <p>Transforming concepts into functional realities is our forte. Whether it's a simple website or a complex web application, our proficient developers are equipped with the latest technologies to build robust and scalable solutions.</p>
+          <div class="app__single__service__wrapper app__flex app__gap__1">
+            
+            <!-- Service Icon -->
+            <div class="app__single__service__icon app__flex__1">
+              <ion-icon name="laptop-outline"></ion-icon>
+            </div><!-- Service Icon -->
+
+            <!-- Service Info -->
+            <div class="app__single__service__info app__flex__5">
+              <h3>Web Development</h3>
+              <span class="app__line"></span>
+              <p>Transforming concepts into functional realities is our forte. Whether it's a simple website or a complex web application, our proficient developers are equipped with the latest technologies to build robust and scalable solutions.</p>
+            </div><!-- /Service Info -->
+
           </div><!-- /Service Wrapper -->
 
           <!-- Service Wrapper -->
-          <div class="app__single__service__wrapper">
-            <ion-icon name="pencil-outline"></ion-icon>
-            <h3>Graphic Design</h3>
-            <p>Visual storytelling is at the heart of our graphic design services. From eye-catching logos to engaging marketing collateral, our designs leave an indelible mark on your customers' minds.</p>
+          <div class="app__single__service__wrapper app__flex app__gap__1">
+            
+            <!-- Service Icon -->
+            <div class="app__single__service__icon app__flex__1">
+              <ion-icon name="pencil-outline"></ion-icon>
+            </div><!-- Service Icon -->
+
+            <!-- Service Info -->
+            <div class="app__single__service__info app__flex__5">
+              <h3>Graphic Design</h3>
+              <span class="app__line"></span>
+              <p>Visual storytelling is at the heart of our graphic design services. From eye-catching logos to engaging marketing collateral, our designs leave an indelible mark on your customers' minds.</p>
+            </div><!-- /Service Info -->
+
           </div><!-- /Service Wrapper -->
 
         </div><!-- /Actual Services -->
@@ -386,13 +412,13 @@ img {
     <section id="app__about">
 
       <!-- Container -->
-      <div class="app__container app__about__container">
+      <div class="app__container app__about__container app__flex app__gap__5">
         
         <!-- About Text -->
-        <div class="app__about__text">
+        <div class="app__about__text app__flex__1">
 
           <!-- Header -->
-          <head class="app__about__header">
+          <head class="app__about__header app__header__side">
             <h2>Who We Are?</h2>
             <span class="app__line"></span>
             <h3>Welcome to Pollux Studio - Where Creativity Meets Technology</h3>
@@ -406,8 +432,8 @@ img {
         </div><!-- /About Text -->
 
         <!-- About Image -->
-        <div class="app__about__image">
-          <img src="imgs/about.svg" alt="About Us picture">
+        <div class="app__about__image app__flex__1">
+          <img src="imgs/laptop.png" alt="About Us picture">
         </div><!-- /About Image -->
 
       </div><!-- /Container -->
@@ -418,18 +444,18 @@ img {
     <section id="app__why__choose__us">
 
       <!-- Container -->
-      <div class="app__container app__why__choose__us__container">
+      <div class="app__container app__why__choose__us__container app__flex app__gap__5">
 
         <!-- Why Choose Us Slider -->
-        <div class="app__why__choose__us__slider">
+        <div class="app__why__choose__us__slider app__flex__1">
           <img src="imgs/mobile.png" alt="Mobile">
         </div><!-- /Why Choose Us Slider -->
 
         <!-- Why Choose US Text -->
-        <div class="app__why__choose__us__text">
+        <div class="app__why__choose__us__text app__flex__1">
           
           <!-- Header -->
-          <header class="app__why__choose__us__header">
+          <header class="app__why__choose__us__header app__header__side">
             <h2>Why Choose Pollux Studio?</h2>
           </header><!-- /Header -->
 
@@ -485,7 +511,7 @@ img {
       <div class="app__container app__portfolio__container">
 
         <!-- Header -->
-        <header class="app__portfolio__header">
+        <header class="app__portfolio__header app__header__center app__text__center">
           <h2>Checkout Our recent Work</h2>
         </header>
         <!-- /Header -->
@@ -493,81 +519,95 @@ img {
         <!-- Portfolio Wrapper -->
         <div class="app__portfolio__wrapper">
 
-          <!-- Single Portfolio Wrapper -->
-          <div class="app__single__portfolio__wrapper">
-            <!-- Single Portfolio -->
-            <div class="app__single__portfolio">
+          <!-- Portfolion Navigation -->
+          <nav class="app__portfolio__navigation">
+            <ul class="app__flex app__gap__2 app__align__center">
+              <li><a href="#"><ion-icon name="desktop-outline"></ion-icon></a></li>
+              <li><a href="#"><ion-icon name="laptop-outline"></ion-icon></a></li>
+              <li><a href="#"><ion-icon name="pencil-outline"></ion-icon></a></li>
+            </ul>
+          </nav><!-- /Portfolion Navigation -->
 
-              <!-- Portfolio Image -->
-              <div class="app__portfolio__iamge">
-                <img src="imgs/prortfolio/1.png" alt="Portfolio Image">
-              </div><!-- /Portfolio Image -->
+          <!-- Portfolio Slider  -->
+          <div class="app__portfolio__slider">
+            
+            <!-- Single Portfolio Wrapper -->
+            <div class="app__single__portfolio__wrapper">
+              <!-- Single Portfolio -->
+              <div class="app__single__portfolio app__flex app__gap__3">
 
-              <!-- Portfolio Text -->
-              <div class="app__portfolio__text">
-                <h3>Lorem ipsum dolor, sit amet consectetur</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio dolorum omnis, tenetur dolores voluptate velit consequuntur eveniet! Aliquam, illum illo. Aperiam architecto quod facere perferendis laborum eius, quia totam necessitatibus.</p>
-              </div><!-- /Portfolio Text -->
+                <!-- Portfolio Image -->
+                <div class="app__portfolio__image app__flex__1">
+                  <img src="imgs/prortfolio/1.png" alt="Portfolio Image">
+                </div><!-- /Portfolio Image -->
 
-            </div> <!-- /Single Portfolio -->
-          </div><!-- /Single Portfolio Wrapper -->
+                <!-- Portfolio Text -->
+                <div class="app__portfolio__text app__flex__1">
+                  <h3>Lorem ipsum dolor, sit amet consectetur</h3>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio dolorum omnis, tenetur dolores voluptate velit consequuntur eveniet! Aliquam, illum illo. Aperiam architecto quod facere perferendis laborum eius, quia totam necessitatibus.</p>
+                </div><!-- /Portfolio Text -->
 
-          <!-- Single Portfolio Wrapper -->
-          <div class="app__single__portfolio__wrapper">
-            <!-- Single Portfolio -->
-            <div class="app__single__portfolio">
+              </div> <!-- /Single Portfolio -->
+            </div><!-- /Single Portfolio Wrapper -->
 
-              <!-- Portfolio Image -->
-              <div class="app__portfolio__iamge">
-                <img src="imgs/prortfolio/2.png" alt="Portfolio Image">
-              </div><!-- /Portfolio Image -->
+            <!-- Single Portfolio Wrapper -->
+            <div class="app__single__portfolio__wrapper">
+              <!-- Single Portfolio -->
+              <div class="app__single__portfolio app__flex app__gap__3">
 
-              <!-- Portfolio Text -->
-              <div class="app__portfolio__text">
-                <h3>Lorem ipsum dolor, sit amet consectetur</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio dolorum omnis, tenetur dolores voluptate velit consequuntur eveniet! Aliquam, illum illo. Aperiam architecto quod facere perferendis laborum eius, quia totam necessitatibus.</p>
-              </div><!-- /Portfolio Text -->
+                <!-- Portfolio Image -->
+                <div class="app__portfolio__image app__flex__1">
+                  <img src="imgs/prortfolio/2.png" alt="Portfolio Image">
+                </div><!-- /Portfolio Image -->
 
-            </div> <!-- /Single Portfolio -->
-          </div><!-- /Single Portfolio Wrapper -->
+                <!-- Portfolio Text -->
+                <div class="app__portfolio__text app__flex__1">
+                  <h3>Lorem ipsum dolor, sit amet consectetur</h3>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio dolorum omnis, tenetur dolores voluptate velit consequuntur eveniet! Aliquam, illum illo. Aperiam architecto quod facere perferendis laborum eius, quia totam necessitatibus.</p>
+                </div><!-- /Portfolio Text -->
 
-          <!-- Single Portfolio Wrapper -->
-          <div class="app__single__portfolio__wrapper">
-            <!-- Single Portfolio -->
-            <div class="app__single__portfolio">
+              </div> <!-- /Single Portfolio -->
+            </div><!-- /Single Portfolio Wrapper -->
 
-              <!-- Portfolio Image -->
-              <div class="app__portfolio__iamge">
-                <img src="imgs/prortfolio/3.png" alt="Portfolio Image">
-              </div><!-- /Portfolio Image -->
+            <!-- Single Portfolio Wrapper -->
+            <div class="app__single__portfolio__wrapper">
+              <!-- Single Portfolio -->
+              <div class="app__single__portfolio app__flex app__gap__3">
 
-              <!-- Portfolio Text -->
-              <div class="app__portfolio__text">
-                <h3>Lorem ipsum dolor, sit amet consectetur</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio dolorum omnis, tenetur dolores voluptate velit consequuntur eveniet! Aliquam, illum illo. Aperiam architecto quod facere perferendis laborum eius, quia totam necessitatibus.</p>
-              </div><!-- /Portfolio Text -->
+                <!-- Portfolio Image -->
+                <div class="app__portfolio__image app__flex__1">
+                  <img src="imgs/prortfolio/3.png" alt="Portfolio Image">
+                </div><!-- /Portfolio Image -->
 
-            </div> <!-- /Single Portfolio -->
-          </div><!-- /Single Portfolio Wrapper -->
+                <!-- Portfolio Text -->
+                <div class="app__portfolio__text app__flex__1">
+                  <h3>Lorem ipsum dolor, sit amet consectetur</h3>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio dolorum omnis, tenetur dolores voluptate velit consequuntur eveniet! Aliquam, illum illo. Aperiam architecto quod facere perferendis laborum eius, quia totam necessitatibus.</p>
+                </div><!-- /Portfolio Text -->
 
-          <!-- Single Portfolio Wrapper -->
-          <div class="app__single__portfolio__wrapper">
-            <!-- Single Portfolio -->
-            <div class="app__single__portfolio">
+              </div> <!-- /Single Portfolio -->
+            </div><!-- /Single Portfolio Wrapper -->
 
-              <!-- Portfolio Image -->
-              <div class="app__portfolio__iamge">
-                <img src="imgs/prortfolio/4.png" alt="Portfolio Image">
-              </div><!-- /Portfolio Image -->
+            <!-- Single Portfolio Wrapper -->
+            <div class="app__single__portfolio__wrapper">
+              <!-- Single Portfolio -->
+              <div class="app__single__portfolio app__flex app__gap__3">
 
-              <!-- Portfolio Text -->
-              <div class="app__portfolio__text">
-                <h3>Lorem ipsum dolor, sit amet consectetur</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio dolorum omnis, tenetur dolores voluptate velit consequuntur eveniet! Aliquam, illum illo. Aperiam architecto quod facere perferendis laborum eius, quia totam necessitatibus.</p>
-              </div><!-- /Portfolio Text -->
+                <!-- Portfolio Image -->
+                <div class="app__portfolio__image app__flex__1">
+                  <img src="imgs/prortfolio/4.png" alt="Portfolio Image">
+                </div><!-- /Portfolio Image -->
 
-            </div> <!-- /Single Portfolio -->
-          </div><!-- /Single Portfolio Wrapper -->
+                <!-- Portfolio Text -->
+                <div class="app__portfolio__text app__flex__1">
+                  <h3>Lorem ipsum dolor, sit amet consectetur</h3>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio dolorum omnis, tenetur dolores voluptate velit consequuntur eveniet! Aliquam, illum illo. Aperiam architecto quod facere perferendis laborum eius, quia totam necessitatibus.</p>
+                </div><!-- /Portfolio Text -->
+
+              </div> <!-- /Single Portfolio -->
+            </div><!-- /Single Portfolio Wrapper -->
+            
+          </div><!-- /Portfolio Slider  -->
 
         </div><!-- /Portfolio Wrapper -->
         
@@ -628,7 +668,7 @@ img {
       <div class="app__container">
 
         <!-- Header -->
-        <header class="app__faq__header">
+        <header class="app__faq__header app__header__center app__text__center">
           <h2>Frequently Asked Questions</h2>
         </header><!-- /Header -->
 

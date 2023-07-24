@@ -22,6 +22,244 @@
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="css/main.css" type="text/css" media="all">
   <!-- /CSS Stylesheet -->
+
+  <style>
+    
+.app__header {
+  position: relative;
+  width: 100%;
+  height: 100dvh;
+  left: 0;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  min-height: 500px;
+  color: #fff;
+}
+#app__main__header {
+  display: flex;
+}
+.app__main__header__container {
+  display: flex;
+  padding: 0 !important;
+  align-items: center;
+  height: 100%;
+}
+.app__container {
+  width: 1200px;
+  margin: 0 auto;
+}
+#app__main__navidation {
+  flex: 1;
+  text-align: right;
+}
+#app__main__navidation ul li {
+  list-style: none;
+}
+#app__main__navidation ul {
+  display: flex;
+  gap: 1em;
+  justify-content: flex-end;
+}
+ul {
+}
+#app__main__navidation ul li a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #6f598f;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+}
+a {
+}
+.app__main__header__container a img {
+  height: 22px;
+  width: auto;
+}
+.app__main__header__container > a {
+  display: inline-block;
+  padding: 1em 2em 1em 0;
+}
+.app__hero__container {
+  display: flex;
+  padding: 5em 0;
+  gap: 3em;
+  align-items: center;
+  height: 100%;
+}
+.app__hero__container article, .app__hero__container div {
+  flex: 1;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.app__hero__container h2 {
+  font: 700 48px/1.2 "Poppins", sans-serif;
+  margin-bottom: 10px;
+}
+.app__hero__container h3 {
+  font: 500 18px/1.2 "Poppins", sans-serif;
+  margin-bottom: 10px;
+}
+.app__hero__container h1 {
+  color: #6f598f;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+#app__hero {
+  height: 80%;
+}
+
+
+
+.app__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #351144;
+}
+.app__header__wraper {
+  position: relative;
+  height: 100%;
+}
+
+.app__background__blob {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  background: linear-gradient(300deg,#7c3adb,darkviolet,#300968);
+  top: 5%;
+  left: 10%;
+  filter: blur(10px);
+  animation: blob-animation 15s ease infinite;
+}
+.app__background__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(9, 9, 15, 0.82);
+  filter: blur(20px);
+}
+
+
+
+@keyframes blob-animation {
+            0% {
+                background-position: 0% 50%;
+                border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+                top: 10%;
+                left: 5%;
+            }
+            50% {
+                background-position: 100% 50%;
+                border-radius: 30% 70% 24% 76% / 61% 28% 72% 39%;
+                top: 20%;
+                left: 12%;
+            }
+            100% {
+                background-position: 0% 50%;
+                border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+                /* border-radius: 49% 51% 64% 36% / 39% 45% 55% 61%; */
+                top: 10%;
+                left: 5%;
+            }
+        }
+
+        p {
+          font-weight: 300;
+        }
+ .app__container {
+  padding: 8em 0;
+ }
+.app__services__container {
+  display: flex;
+  gap: 3em;
+}
+.app__service__text {
+  flex: 1;
+}
+.app__actual__services {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 3;
+  gap: 3em;
+}
+.app__single__service__wrapper {
+  width: 29%;
+  text-align: center;
+}
+.app__about__container {
+  display: flex;
+  gap: 5em;
+}
+.app__about__image, .app__about__text {
+  flex: 1;
+}
+
+
+
+
+.btn {
+  position: relative;
+  cursor: pointer;
+  margin: 30px 10px;
+  font-weight: 600;
+  border: none;
+  padding: 10px 28px;
+  background: #fff;
+  color: #210933;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+}
+        .btn::before {
+            position: absolute;
+            content: "";
+            width: 30px;
+            height: 30px;
+            top: -10px;
+            left: -10px;
+            border-top: 3px solid #fff;
+            border-left: 3px solid #fff;
+            transition: all 0.5s;
+        }
+        .btn::after {
+            position: absolute;
+            content: "";
+            width: 30px;
+            height: 30px;
+            bottom: -10px;
+            right: -10px;
+            border-bottom: 3px solid #fff;
+            border-right: 3px solid #fff;
+            transition: all 0.5s;
+        }
+        .btn:hover::before,
+        .btn:hover::after {
+            width: 100%;
+            height: 100%;
+        }
+  
+  </style>
 </head>
 <body>
 
@@ -33,7 +271,10 @@
 
       <!-- Background -->
       <div class="app__background">
-        
+        <div class="app__background__blob">
+          <div class="blob"></div>
+        </div>
+        <div class="app__background__overlay"></div>
       </div><!-- /Background -->
 
       <!-- Header Wrapper -->
@@ -57,6 +298,7 @@
                 <li><a href="#app__header">Home</a></li>
                 <li><a href="#app__services">Services</a></li>
                 <li><a href="#app__about">About</a></li>
+                <li><a href="#app__why__choose__us">Why Us</a></li>
                 <li><a href="#app__portfolio">Portfolio</a></li>
                 <li><a href="#app__team">Our Team</a></li>
                 <li><a href="#app__hire">Hire Us</a></li>
@@ -76,14 +318,14 @@
         <section id="app__hero">
 
           <!-- Container -->
-          <div class="app__container">
+          <div class="app__container app__hero__container">
 
             <!-- Hero Text -->
             <article class="app__hero__text">
               <h1>Welcome to Pollux Studio</h1>
               <h2>Pollux Studio: Your Gateway to Creative Excellence</h2>
               <h3>Unlocking the Power of Innovation - Web Design, Development, Graphic Design, Digital Marketing, and Technical Writing Services</h3>
-              <a href="#app__contact">Get In Touch</a>
+              <a class="btn" href="#app__contact">Get In Touch</a>
             </article><!-- /Hero Text -->
 
             <!-- Hero Image -->
@@ -105,24 +347,10 @@
       <!-- Container -->
       <div class="app__container app__services__container">
 
-        <!-- Services text -->
-        <aside class="app__service__text">
-          
-          <!-- Header -->
-          <header class="app__service__header">
-            <h2>What Do We Offer?</h2>
-            <span class="app__line"></span>
-            <h3>Pollux Studio's Comprehensive Creative Services</h3>
-          </header><!-- /Header -->
-
-          <!-- Article -->
-          <article class="app__service__article">
-            <p>Welcome to Pollux Studio, your gateway to unleashing the full potential of your business in the digital world. We are a versatile and innovative agency that blends creativity, technology, and expertise to provide a range of cutting-edge services designed to elevate your brand and drive your success.</p>
-
-            <p>At Pollux Studio, we understand that every business has a unique story to tell, and we are here to help you articulate that story with finesse. Our team of seasoned professionals is passionate about crafting captivating digital experiences that leave a lasting impact on your audience.</p>
-          </article><!-- /Article -->
-
-        </aside><!-- /Services text -->
+        <!-- Header -->
+        <header class="app__service__header">
+          <h2>What Do We Offer?</h2>
+        </header><!-- /Header -->
 
         <!-- Actual Services -->
         <div class="app__actual__services">
@@ -146,27 +374,6 @@
             <ion-icon name="pencil-outline"></ion-icon>
             <h3>Graphic Design</h3>
             <p>Visual storytelling is at the heart of our graphic design services. From eye-catching logos to engaging marketing collateral, our designs leave an indelible mark on your customers' minds.</p>
-          </div><!-- /Service Wrapper -->
-
-          <!-- Service Wrapper -->
-          <div class="app__single__service__wrapper">
-            <ion-icon name="analytics-outline"></ion-icon>
-            <h3>Digital Marketing</h3>
-            <p>Harness the full potential of digital channels with our strategic marketing solutions. We'll devise tailored strategies to increase your online visibility, attract targeted traffic, and drive conversions, ensuring your business thrives in the digital realm.</p>
-          </div><!-- /Service Wrapper -->
-
-          <!-- Service Wrapper -->
-          <div class="app__single__service__wrapper">
-            <ion-icon name="book-outline"></ion-icon>
-            <h3>Technical Writing</h3>
-            <p>Clear and concise communication is essential for success. Our talented technical writers can translate complex ideas into easily understandable language, producing high-quality content for manuals, guides, and other technical documentation.</p>
-          </div><!-- /Service Wrapper -->
-
-          <!-- Service Wrapper -->
-          <div class="app__single__service__wrapper">
-            <ion-icon name="person-outline"></ion-icon>
-            <h3>Consultation</h3>
-            <p>Craft captivating and user-centric websites that leave a lasting impression on your audience. Our team of skilled designers will work closely with you to create visually stunning and intuitive websites that reflect your brand's essence.</p>
           </div><!-- /Service Wrapper -->
 
         </div><!-- /Actual Services -->
@@ -207,11 +414,34 @@
 
     </section><!-- /About Section -->
 
+    <!-- Why Choose Us -->
+    <section id="app__why__choose__us">
+
+      <!-- Header -->
+      <header class="app__why__choose__us__header">
+        <h2>Why Choose Pollux Studio?</h2>
+      </header><!-- /Header -->
+        
+      
+
+      Collaboration: We believe in working hand-in-hand with our clients throughout the creative journey. Your input and vision play a central role in shaping the final product.
+  
+      Innovation: Stay ahead of the curve with our innovative solutions that adapt to the ever-evolving digital landscape.
+  
+      Expert Team: Our team consists of industry experts with years of experience and a genuine passion for what they do.
+  
+      Client Satisfaction: Your satisfaction is our top priority. We strive to exceed your expectations and deliver exceptional results.
+  
+  Are you ready to embark on a transformative journey with Pollux Studio? Let's unlock the true potential of your business together.
+  
+  Contact us today to get started on your next creative project!
+    </section><!-- /Why Choose Us -->
+
     <!-- Portfolio Section -->
     <section id="app__portfolio">
 
       <!-- Container -->
-      <div class="app__container">
+      <div class="app__container app__portfolio__container">
 
         <!-- Header -->
         <header class="app__portfolio__header">
@@ -320,20 +550,7 @@
 
       <!-- Container -->
       <div class="app__container">
-        
-        Why Choose Pollux Studio?
 
-    Collaboration: We believe in working hand-in-hand with our clients throughout the creative journey. Your input and vision play a central role in shaping the final product.
-
-    Innovation: Stay ahead of the curve with our innovative solutions that adapt to the ever-evolving digital landscape.
-
-    Expert Team: Our team consists of industry experts with years of experience and a genuine passion for what they do.
-
-    Client Satisfaction: Your satisfaction is our top priority. We strive to exceed your expectations and deliver exceptional results.
-
-Are you ready to embark on a transformative journey with Pollux Studio? Let's unlock the true potential of your business together.
-
-Contact us today to get started on your next creative project!
 
       </div><!-- /Container -->
 
@@ -369,35 +586,177 @@ Contact us today to get started on your next creative project!
 
       <!-- Container -->
       <div class="app__container">
-        What services does Pollux Studio offer?
-        Pollux Studio provides a comprehensive range of creative services, including web design, web development, graphic design, digital marketing, and technical writing. Our team of experts excels in these areas, delivering innovative solutions that cater to your unique business needs.
-    
-        How can Pollux Studio's web design service benefit my business?
-        Our web design service focuses on creating visually stunning and user-friendly websites that leave a lasting impression on your audience. A well-designed website enhances brand credibility, improves user engagement, and increases conversion rates, ultimately driving business growth.
-    
-        What makes Pollux Studio's web development different from others?
-        At Pollux Studio, our web development service goes beyond mere coding. We meticulously plan and execute each project, ensuring that the final product is not only functional but also scalable, secure, and optimized for performance. We leverage the latest technologies to deliver seamless digital experiences for your customers.
-    
-        How can graphic design services impact my brand's identity?
-        Our graphic design services play a pivotal role in shaping your brand's identity and storytelling. From crafting a unique logo that represents your brand's personality to designing captivating marketing materials, our visual designs enhance brand recognition and set you apart from the competition.
-    
-        How can digital marketing strategies benefit my business?
-        Digital marketing is crucial for expanding your online presence and reaching your target audience effectively. Our data-driven digital marketing strategies, including SEO, PPC, social media, email marketing, and content marketing, help drive targeted traffic, generate leads, and boost conversions, ultimately increasing your return on investment (ROI).
-    
-        What types of technical writing services does Pollux Studio offer?
-        Our technical writing services cover a wide range of documentation needs, including user manuals, product guides, technical specifications, and instructional content. We ensure that complex technical information is presented in a clear and understandable manner, enhancing the user experience for your customers.
-    
-        How do you ensure collaboration with clients during the creative process?
-        Collaboration is at the core of our approach. We believe in working closely with our clients to understand their vision, goals, and requirements. Throughout the creative journey, we maintain open communication channels, incorporating your feedback to ensure that the final deliverables align with your expectations.
-    
-        What sets Pollux Studio apart from other creative agencies?
-        At Pollux Studio, our passion for innovation and commitment to excellence drive our every endeavor. We combine creativity with technical expertise, ensuring that our services are not only aesthetically appealing but also strategically designed to achieve tangible results for your business.
-    
-        How can I get started with Pollux Studio's services?
-        Getting started with us is simple! You can reach out to us through our website's contact form, email, or phone. Let us know your project requirements, and our friendly team will be delighted to discuss your needs, provide insights, and guide you through the process.
-    
-        Is Pollux Studio experienced in serving businesses of all sizes?
-        Yes, absolutely! Whether you are a startup, a small business, or a large enterprise, Pollux Studio has the expertise to cater to businesses of all sizes and industries. Our solutions are scalable and adaptable to suit your specific business goals.
+
+        <!-- Header -->
+        <header class="app__faq__header">
+          <h2>Frequently Asked Questions</h2>
+        </header><!-- /Header -->
+
+        <!-- FAQ Wrapper -->
+        <div class="app__faq__wrapper app__container__small">
+          
+          <!-- Single FAQ -->
+          <div class="app__single__faq">
+
+            <!-- FAQ Header -->
+            <header class="appp__single__faq__header">
+              <h3>What services does Pollux Studio offer?</h3>
+              <span class="app__faq__toggle__icon"><ion-icon name="chevron-down-outline"></ion-icon></span>
+            </header><!-- /FAQ Header -->
+
+            <!-- FAQ Answer -->
+            <article class="app__single__faq__answer">
+              <p>Pollux Studio provides a comprehensive range of creative services, including web design, web development, graphic design, digital marketing, and technical writing. Our team of experts excels in these areas, delivering innovative solutions that cater to your unique business needs.</p>
+            </article><!-- /FAQ Answer -->
+
+          </div><!-- /Single FAQ -->
+          
+          <!-- Single FAQ -->
+          <div class="app__single__faq">
+
+            <!-- FAQ Header -->
+            <header class="appp__single__faq__header">
+              <h3>How can Pollux Studio's web design service benefit my business?</h3>
+              <span class="app__faq__toggle__icon"><ion-icon name="chevron-down-outline"></ion-icon></span>
+            </header><!-- /FAQ Header -->
+
+            <!-- FAQ Answer -->
+            <article class="app__single__faq__answer">
+              <p>Our web design service focuses on creating visually stunning and user-friendly websites that leave a lasting impression on your audience. A well-designed website enhances brand credibility, improves user engagement, and increases conversion rates, ultimately driving business growth.</p>
+            </article><!-- /FAQ Answer -->
+
+          </div><!-- /Single FAQ -->
+          
+          <!-- Single FAQ -->
+          <div class="app__single__faq">
+
+            <!-- FAQ Header -->
+            <header class="appp__single__faq__header">
+              <h3>What makes Pollux Studio's web development different from others?</h3>
+              <span class="app__faq__toggle__icon"><ion-icon name="chevron-down-outline"></ion-icon></span>
+            </header><!-- /FAQ Header -->
+
+            <!-- FAQ Answer -->
+            <article class="app__single__faq__answer">
+              <p>At Pollux Studio, our web development service goes beyond mere coding. We meticulously plan and execute each project, ensuring that the final product is not only functional but also scalable, secure, and optimized for performance. We leverage the latest technologies to deliver seamless digital experiences for your customers.</p>
+            </article><!-- /FAQ Answer -->
+
+          </div><!-- /Single FAQ -->
+          
+          <!-- Single FAQ -->
+          <div class="app__single__faq">
+
+            <!-- FAQ Header -->
+            <header class="appp__single__faq__header">
+              <h3>How can graphic design services impact my brand's identity?</h3>
+              <span class="app__faq__toggle__icon"><ion-icon name="chevron-down-outline"></ion-icon></span>
+            </header><!-- /FAQ Header -->
+
+            <!-- FAQ Answer -->
+            <article class="app__single__faq__answer">
+              <p>Our graphic design services play a pivotal role in shaping your brand's identity and storytelling. From crafting a unique logo that represents your brand's personality to designing captivating marketing materials, our visual designs enhance brand recognition and set you apart from the competition.</p>
+            </article><!-- /FAQ Answer -->
+
+          </div><!-- /Single FAQ -->
+          
+          <!-- Single FAQ -->
+          <div class="app__single__faq">
+
+            <!-- FAQ Header -->
+            <header class="appp__single__faq__header">
+              <h3>How can digital marketing strategies benefit my business?</h3>
+              <span class="app__faq__toggle__icon"><ion-icon name="chevron-down-outline"></ion-icon></span>
+            </header><!-- /FAQ Header -->
+
+            <!-- FAQ Answer -->
+            <article class="app__single__faq__answer">
+              <p>Digital marketing is crucial for expanding your online presence and reaching your target audience effectively. Our data-driven digital marketing strategies, including SEO, PPC, social media, email marketing, and content marketing, help drive targeted traffic, generate leads, and boost conversions, ultimately increasing your return on investment (ROI).</p>
+            </article><!-- /FAQ Answer -->
+
+          </div><!-- /Single FAQ -->
+          
+          <!-- Single FAQ -->
+          <div class="app__single__faq">
+
+            <!-- FAQ Header -->
+            <header class="appp__single__faq__header">
+              <h3>What types of technical writing services does Pollux Studio offer?</h3>
+              <span class="app__faq__toggle__icon"><ion-icon name="chevron-down-outline"></ion-icon></span>
+            </header><!-- /FAQ Header -->
+
+            <!-- FAQ Answer -->
+            <article class="app__single__faq__answer">
+              <p>Our technical writing services cover a wide range of documentation needs, including user manuals, product guides, technical specifications, and instructional content. We ensure that complex technical information is presented in a clear and understandable manner, enhancing the user experience for your customers.</p>
+            </article><!-- /FAQ Answer -->
+
+          </div><!-- /Single FAQ -->
+          
+          <!-- Single FAQ -->
+          <div class="app__single__faq">
+
+            <!-- FAQ Header -->
+            <header class="appp__single__faq__header">
+              <h3>How do you ensure collaboration with clients during the creative process?</h3>
+              <span class="app__faq__toggle__icon"><ion-icon name="chevron-down-outline"></ion-icon></span>
+            </header><!-- /FAQ Header -->
+
+            <!-- FAQ Answer -->
+            <article class="app__single__faq__answer">
+              <p>Collaboration is at the core of our approach. We believe in working closely with our clients to understand their vision, goals, and requirements. Throughout the creative journey, we maintain open communication channels, incorporating your feedback to ensure that the final deliverables align with your expectations.</p>
+            </article><!-- /FAQ Answer -->
+
+          </div><!-- /Single FAQ -->
+          
+          <!-- Single FAQ -->
+          <div class="app__single__faq">
+
+            <!-- FAQ Header -->
+            <header class="appp__single__faq__header">
+              <h3>What sets Pollux Studio apart from other creative agencies?</h3>
+              <span class="app__faq__toggle__icon"><ion-icon name="chevron-down-outline"></ion-icon></span>
+            </header><!-- /FAQ Header -->
+
+            <!-- FAQ Answer -->
+            <article class="app__single__faq__answer">
+              <p>At Pollux Studio, our passion for innovation and commitment to excellence drive our every endeavor. We combine creativity with technical expertise, ensuring that our services are not only aesthetically appealing but also strategically designed to achieve tangible results for your business.</p>
+            </article><!-- /FAQ Answer -->
+
+          </div><!-- /Single FAQ -->
+
+          <!-- Single FAQ -->
+          <div class="app__single__faq">
+
+            <!-- FAQ Header -->
+            <header class="appp__single__faq__header">
+              <h3>How can I get started with Pollux Studio's services?</h3>
+              <span class="app__faq__toggle__icon"><ion-icon name="chevron-down-outline"></ion-icon></span>
+            </header><!-- /FAQ Header -->
+
+            <!-- FAQ Answer -->
+            <article class="app__single__faq__answer">
+              <p>Getting started with us is simple! You can reach out to us through our website's contact form, email, or phone. Let us know your project requirements, and our friendly team will be delighted to discuss your needs, provide insights, and guide you through the process.</p>
+            </article><!-- /FAQ Answer -->
+
+          </div><!-- /Single FAQ -->
+          
+          <!-- Single FAQ -->
+          <div class="app__single__faq">
+
+            <!-- FAQ Header -->
+            <header class="appp__single__faq__header">
+              <h3>Is Pollux Studio experienced in serving businesses of all sizes?</h3>
+              <span class="app__faq__toggle__icon"><ion-icon name="chevron-down-outline"></ion-icon></span>
+            </header><!-- /FAQ Header -->
+
+            <!-- FAQ Answer -->
+            <article class="app__single__faq__answer">
+              <p>Yes, absolutely! Whether you are a startup, a small business, or a large enterprise, Pollux Studio has the expertise to cater to businesses of all sizes and industries. Our solutions are scalable and adaptable to suit your specific business goals.</p>
+            </article><!-- /FAQ Answer -->
+
+          </div><!-- /Single FAQ -->
+
+        </div><!-- /FAQ Wrapper -->
+
       </div><!-- /Container -->
 
     </section><!-- /FAQ Section -->

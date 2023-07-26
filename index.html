@@ -20,8 +20,82 @@
   <!-- /CSS Stylesheet -->
 
 <style>
+
+.app__carousel__wrapper {
+  width: 100%;
+  position: relative;
+}
+.app__carousel__container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.app__single__carousel.app__single__team__member {
+  scroll-snap-align: start;
+  height: 342px;
+  list-style: none;
+  background: #fff;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+
+
+/* Arrow */
+.app__carousel__arrow__left {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+/* .app__carousel__arrow__right {
+  top: 50%;
+height: 50px;
+width: 50px;
+cursor: pointer;
+font-size: 1.25rem;
+position: absolute;
+text-align: center;
+line-height: 50px;
+background: #fff;
+border-radius: 50%;
+box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+transform: translateY(-50%);
+transition: transform 0.1s linear;
+} */
+.app__carousel__arrow__right {
+  right: -22px;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* Import Google font - Poppins */
-.wrapper {
+/* .wrapper {
   max-width: 1100px;
   width: 100%;
   position: relative;
@@ -124,6 +198,25 @@
     grid-auto-columns: 100%;
   }
 }
+
+
+ */
+
+
+.app__single__faq__answer {
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  max-height: 0;
+  opacity: 0;
+}
+ion-icon {
+  transition: transform 0.3s ease;
+}
+.app__icon__rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
 </style>
 
   <!-- <style>
@@ -728,13 +821,285 @@ img {
       <!-- Container -->
       <div class="app__container app__container__pad">
         
+        <!-- Header -->
+        <header class="app__team__header app__header__center app__text__center">
+          <h2>Meet Our Core Team</h2>
+        </header><!-- Header -->
+
+        <!-- Team Wrapper -->
+        <div class="app__team__wrapper app__carousel__wrapper">
+
+          <!-- Slider Arraw Left -->
+          <span class="app__carousel__arrow__left">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </span><!-- /Slider Arraw Left -->
+
+          <!-- Carousel Container -->
+          <div class="app__carousel__container">
+
+            <!-- Single Carousel -->
+            <div class="app__single__carousel app__single__team__member app__text__center">
+
+              <!-- Header -->
+              <header class="app__team__header">
+                <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Team Member">
+              </header><!-- /Header -->
+
+              <!-- Info -->
+              <article class="app__member__info">
+                <h3>Marshall <span class="app__text__light">Harper</span></h3>
+                <h4>Co-Founder/Lead Developer</h4>
+              </article><!-- /Info -->
+
+              <!-- Social Medias -->
+              <footer class="app__team__social__media">
+                <ul class="app__flex app__gap__2">
+                  <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+                  <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                  <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                </ul>
+              </footer><!-- /Social Medias -->
+
+            </div><!-- /Single Carousel -->
+
+            <!-- Single Carousel -->
+            <div class="app__single__carousel app__single__team__member app__text__center">
+
+              <!-- Header -->
+              <header class="app__team__header">
+                <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Team Member">
+              </header><!-- /Header -->
+
+              <!-- Info -->
+              <article class="app__member__info">
+                <h3>Marshall <span class="app__text__light">Harper</span></h3>
+                <h4>Co-Founder/Lead Developer</h4>
+              </article><!-- /Info -->
+
+              <!-- Social Medias -->
+              <footer class="app__team__social__media">
+                <ul class="app__flex app__gap__2">
+                  <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+                  <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                  <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                </ul>
+              </footer><!-- /Social Medias -->
+
+            </div><!-- /Single Carousel -->
+
+            <!-- Single Carousel -->
+            <div class="app__single__carousel app__single__team__member app__text__center">
+
+              <!-- Header -->
+              <header class="app__team__header">
+                <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Team Member">
+              </header><!-- /Header -->
+
+              <!-- Info -->
+              <article class="app__member__info">
+                <h3>Marshall <span class="app__text__light">Harper</span></h3>
+                <h4>Co-Founder/Lead Developer</h4>
+              </article><!-- /Info -->
+
+              <!-- Social Medias -->
+              <footer class="app__team__social__media">
+                <ul class="app__flex app__gap__2">
+                  <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+                  <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                  <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                </ul>
+              </footer><!-- /Social Medias -->
+
+            </div><!-- /Single Carousel -->
+
+            <!-- Single Carousel -->
+            <div class="app__single__carousel app__single__team__member app__text__center">
+
+              <!-- Header -->
+              <header class="app__team__header">
+                <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Team Member">
+              </header><!-- /Header -->
+
+              <!-- Info -->
+              <article class="app__member__info">
+                <h3>Marshall <span class="app__text__light">Harper</span></h3>
+                <h4>Co-Founder/Lead Developer</h4>
+              </article><!-- /Info -->
+
+              <!-- Social Medias -->
+              <footer class="app__team__social__media">
+                <ul class="app__flex app__gap__2">
+                  <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+                  <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                  <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                </ul>
+              </footer><!-- /Social Medias -->
+
+            </div><!-- /Single Carousel -->
+
+            <!-- Single Carousel -->
+            <div class="app__single__carousel app__single__team__member app__text__center">
+
+              <!-- Header -->
+              <header class="app__team__header">
+                <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Team Member">
+              </header><!-- /Header -->
+
+              <!-- Info -->
+              <article class="app__member__info">
+                <h3>Marshall <span class="app__text__light">Harper</span></h3>
+                <h4>Co-Founder/Lead Developer</h4>
+              </article><!-- /Info -->
+
+              <!-- Social Medias -->
+              <footer class="app__team__social__media">
+                <ul class="app__flex app__gap__2">
+                  <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+                  <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                  <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                </ul>
+              </footer><!-- /Social Medias -->
+
+            </div><!-- /Single Carousel -->
+
+            <!-- Single Carousel -->
+            <div class="app__single__carousel app__single__team__member app__text__center">
+
+              <!-- Header -->
+              <header class="app__team__header">
+                <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Team Member">
+              </header><!-- /Header -->
+
+              <!-- Info -->
+              <article class="app__member__info">
+                <h3>Marshall <span class="app__text__light">Harper</span></h3>
+                <h4>Co-Founder/Lead Developer</h4>
+              </article><!-- /Info -->
+
+              <!-- Social Medias -->
+              <footer class="app__team__social__media">
+                <ul class="app__flex app__gap__2">
+                  <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+                  <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                  <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                </ul>
+              </footer><!-- /Social Medias -->
+
+            </div><!-- /Single Carousel -->
+
+            <!-- Single Carousel -->
+            <div class="app__single__carousel app__single__team__member app__text__center">
+
+              <!-- Header -->
+              <header class="app__team__header">
+                <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Team Member">
+              </header><!-- /Header -->
+
+              <!-- Info -->
+              <article class="app__member__info">
+                <h3>Marshall <span class="app__text__light">Harper</span></h3>
+                <h4>Co-Founder/Lead Developer</h4>
+              </article><!-- /Info -->
+
+              <!-- Social Medias -->
+              <footer class="app__team__social__media">
+                <ul class="app__flex app__gap__2">
+                  <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+                  <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                  <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                </ul>
+              </footer><!-- /Social Medias -->
+
+            </div><!-- /Single Carousel -->
+
+            <!-- Single Carousel -->
+            <div class="app__single__carousel app__single__team__member app__text__center">
+
+              <!-- Header -->
+              <header class="app__team__header">
+                <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Team Member">
+              </header><!-- /Header -->
+
+              <!-- Info -->
+              <article class="app__member__info">
+                <h3>Marshall <span class="app__text__light">Harper</span></h3>
+                <h4>Co-Founder/Lead Developer</h4>
+              </article><!-- /Info -->
+
+              <!-- Social Medias -->
+              <footer class="app__team__social__media">
+                <ul class="app__flex app__gap__2">
+                  <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+                  <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                  <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                </ul>
+              </footer><!-- /Social Medias -->
+
+            </div><!-- /Single Carousel -->
+
+            <!-- Single Carousel -->
+            <div class="app__single__carousel app__single__team__member app__text__center">
+
+              <!-- Header -->
+              <header class="app__team__header">
+                <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Team Member">
+              </header><!-- /Header -->
+
+              <!-- Info -->
+              <article class="app__member__info">
+                <h3>Marshall <span class="app__text__light">Harper</span></h3>
+                <h4>Co-Founder/Lead Developer</h4>
+              </article><!-- /Info -->
+
+              <!-- Social Medias -->
+              <footer class="app__team__social__media">
+                <ul class="app__flex app__gap__2">
+                  <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+                  <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                  <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                </ul>
+              </footer><!-- /Social Medias -->
+
+            </div><!-- /Single Carousel -->
+
+            <!-- Single Carousel -->
+            <div class="app__single__carousel app__single__team__member app__text__center">
+
+              <!-- Header -->
+              <header class="app__team__header">
+                <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Team Member">
+              </header><!-- /Header -->
+
+              <!-- Info -->
+              <article class="app__member__info">
+                <h3>Marshall <span class="app__text__light">Harper</span></h3>
+                <h4>Co-Founder/Lead Developer</h4>
+              </article><!-- /Info -->
+
+              <!-- Social Medias -->
+              <footer class="app__team__social__media">
+                <ul class="app__flex app__gap__2">
+                  <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+                  <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                  <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                </ul>
+              </footer><!-- /Social Medias -->
+
+            </div><!-- /Single Carousel -->
+
+          </div><!-- /Carousel Container -->
+
+          <!-- Slider Arraw Right -->
+          <span class="app__carousel__arrow__right">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </span><!-- /Slider Arraw Right -->
+
+        </div><!-- /Team Wrapper -->
 
 
 
 
-
-
-
+<!-- 
         <div class="wrapper">
           <i id="left" class="fa-solid fa-angle-left"></i>
           <ul class="carousel">
@@ -772,7 +1137,7 @@ img {
           <i id="right" class="fa-solid fa-angle-right"></i>
         </div>
 
-
+ -->
 
 
 
@@ -884,8 +1249,8 @@ img {
           <div class="app__single__faq">
 
             <!-- FAQ Header -->
-            <header class="app__single__faq__header">
-              <h3>What services does Pollux Studio offer?</h3>
+            <header class="app__single__faq__header app__flex app__gap__1">
+              <h3 class="app__flex__1">What services does Pollux Studio offer?</h3>
               <span class="app__faq__toggle__icon"><ion-icon name="chevron-down-outline"></ion-icon></span>
             </header><!-- /FAQ Header -->
 
@@ -900,8 +1265,8 @@ img {
           <div class="app__single__faq">
 
             <!-- FAQ Header -->
-            <header class="app__single__faq__header">
-              <h3>How can Pollux Studio's web design service benefit my business?</h3>
+            <header class="app__single__faq__header app__flex app__gap__1">
+              <h3 class="app__flex__1">How can Pollux Studio's web design service benefit my business?</h3>
               <span class="app__faq__toggle__icon"><ion-icon name="chevron-down-outline"></ion-icon></span>
             </header><!-- /FAQ Header -->
 
@@ -916,8 +1281,8 @@ img {
           <div class="app__single__faq">
 
             <!-- FAQ Header -->
-            <header class="app__single__faq__header">
-              <h3>What makes Pollux Studio's web development different from others?</h3>
+            <header class="app__single__faq__header app__flex app__gap__1">
+              <h3 class="app__flex__1">What makes Pollux Studio's web development different from others?</h3>
               <span class="app__faq__toggle__icon"><ion-icon name="chevron-down-outline"></ion-icon></span>
             </header><!-- /FAQ Header -->
 
@@ -932,8 +1297,8 @@ img {
           <div class="app__single__faq">
 
             <!-- FAQ Header -->
-            <header class="app__single__faq__header">
-              <h3>How can graphic design services impact my brand's identity?</h3>
+            <header class="app__single__faq__header app__flex app__gap__1">
+              <h3 class="app__flex__1">How can graphic design services impact my brand's identity?</h3>
               <span class="app__faq__toggle__icon"><ion-icon name="chevron-down-outline"></ion-icon></span>
             </header><!-- /FAQ Header -->
 
@@ -948,8 +1313,8 @@ img {
           <div class="app__single__faq">
 
             <!-- FAQ Header -->
-            <header class="app__single__faq__header">
-              <h3>How can digital marketing strategies benefit my business?</h3>
+            <header class="app__single__faq__header app__flex app__gap__1">
+              <h3 class="app__flex__1">How can digital marketing strategies benefit my business?</h3>
               <span class="app__faq__toggle__icon"><ion-icon name="chevron-down-outline"></ion-icon></span>
             </header><!-- /FAQ Header -->
 
@@ -964,8 +1329,8 @@ img {
           <div class="app__single__faq">
 
             <!-- FAQ Header -->
-            <header class="app__single__faq__header">
-              <h3>What types of technical writing services does Pollux Studio offer?</h3>
+            <header class="app__single__faq__header app__flex app__gap__1">
+              <h3 class="app__flex__1">What types of technical writing services does Pollux Studio offer?</h3>
               <span class="app__faq__toggle__icon"><ion-icon name="chevron-down-outline"></ion-icon></span>
             </header><!-- /FAQ Header -->
 
@@ -980,8 +1345,8 @@ img {
           <div class="app__single__faq">
 
             <!-- FAQ Header -->
-            <header class="app__single__faq__header">
-              <h3>How do you ensure collaboration with clients during the creative process?</h3>
+            <header class="app__single__faq__header app__flex app__gap__1">
+              <h3 class="app__flex__1">How do you ensure collaboration with clients during the creative process?</h3>
               <span class="app__faq__toggle__icon"><ion-icon name="chevron-down-outline"></ion-icon></span>
             </header><!-- /FAQ Header -->
 
@@ -996,8 +1361,8 @@ img {
           <div class="app__single__faq">
 
             <!-- FAQ Header -->
-            <header class="app__single__faq__header">
-              <h3>What sets Pollux Studio apart from other creative agencies?</h3>
+            <header class="app__single__faq__header app__flex app__gap__1">
+              <h3 class="app__flex__1">What sets Pollux Studio apart from other creative agencies?</h3>
               <span class="app__faq__toggle__icon"><ion-icon name="chevron-down-outline"></ion-icon></span>
             </header><!-- /FAQ Header -->
 
@@ -1012,8 +1377,8 @@ img {
           <div class="app__single__faq">
 
             <!-- FAQ Header -->
-            <header class="app__single__faq__header">
-              <h3>How can I get started with Pollux Studio's services?</h3>
+            <header class="app__single__faq__header app__flex app__gap__1">
+              <h3 class="app__flex__1">How can I get started with Pollux Studio's services?</h3>
               <span class="app__faq__toggle__icon"><ion-icon name="chevron-down-outline"></ion-icon></span>
             </header><!-- /FAQ Header -->
 
@@ -1028,8 +1393,8 @@ img {
           <div class="app__single__faq">
 
             <!-- FAQ Header -->
-            <header class="app__single__faq__header">
-              <h3>Is Pollux Studio experienced in serving businesses of all sizes?</h3>
+            <header class="app__single__faq__header app__flex app__gap__1">
+              <h3 class="app__flex__1">Is Pollux Studio experienced in serving businesses of all sizes?</h3>
               <span class="app__faq__toggle__icon"><ion-icon name="chevron-down-outline"></ion-icon></span>
             </header><!-- /FAQ Header -->
 

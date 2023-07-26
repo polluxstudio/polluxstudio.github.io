@@ -3,6 +3,93 @@
 // Portfolio Silider
 
 // Team Slider
+const teamWrapper = document.querySelector('.app__team__wrapper');
+const carouselContainer = document.querySelector('.app__carousel__container');
+const firstCardWidth = carouselContainer.querySelector('.app__single__carousel').offsetWidth;
+const arrowBtns = document.querySelectorAll('.app__carousel__arrow');
+const carouselItems = [...carouselContainer.children];
+
+let isDragging = false;
+let startX, startScrollLeft, timeoutId;
+
+// Get the number of cards that can fit in the carousel at once
+const cardsPerView = Math.round(carouselContainer.offsetWidth / firstCardWidth);
+
+// Insert copies of the last few cards to the beginning of carousel for infinite scrolling
+carouselItems.slice(-cardsPerView).reverse().forEach(card => {
+  carouselContainer.insertAdjacentHTML('afterbegin', card.outerHTML);
+});
+
+// Insert copies of the first few cards to the end of carousel for infinite scrolling
+carouselItems.slice(0, cardsPerView).forEach(card => {
+  carouselContainer.insertAdjacentHTML('beforeend', card.outerHTML);
+});
+
+// Scroll the carousel to an appropriate position to hide first few duplicate cards on Firefox
+carouselContainer.classList.add('no-transition');
+carouselContainer.scrollLeft = carouselContainer.offsetWidth;
+carouselContainer.classList.remove('no-transition');
+
+// Add event listeners for the arrow buttons to scroll the carousel left and right
+arrowBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    carouselContainer.scrollLeft += btn.classList.contains('app__carousel__arrow__left') ? -firstCardWidth : firstCardWidth;
+  });
+});
+
+const dragStart = (e) => {
+  isDragging = true;
+  carouselContainer.classList.add('dragging');
+  // Records the initial cursor and scroll position of the carousel
+  startX = e.pageX;
+  startScrollLeft = carouselContainer.scrollLeft;
+}
+
+const dragging = (e) => {
+  if (!isDragging) return; // if isDragging is false return from here
+  // Updates the scroll position of the carousel based on the cursor movement
+  carouselContainer.scrollLeft = startScrollLeft - (e.pageX - startX);
+}
+
+const dragStop = () => {
+  isDragging = false;
+  carouselContainer.classList.remove('dragging');
+}
+
+const infiniteScroll = () => {
+  // If the carousel is at the beginning, scroll to the end
+  if (carouselContainer.scrollLeft === 0) {
+    carouselContainer.classList.add('no-transition');
+    carouselContainer.scrollLeft = carouselContainer.scrollWidth - (2 * carouselContainer.offsetWidth);
+    carouselContainer.classList.remove('no-transition');
+  }
+  // If the carousel is at the end, scroll to the beginning
+  else if (Math.ceil(carouselContainer.scrollLeft) === carouselContainer.scrollWidth - carouselContainer.offsetWidth) {
+    carouselContainer.classList.add('no-transition');
+    carouselContainer.scrollLeft = carouselContainer.offsetWidth;
+    carouselContainer.classList.remove('no-transition');
+  }
+
+  // Clear existing timeout & start autoplay if mouse is not hovering over carousel
+  clearTimeout(timeoutId);
+  if (!teamWrapper.matches(':hover')) {
+    autoPlay();
+  }
+}
+
+const autoPlay = () => {
+  if (window.innerWidth < 800) return; // Return if window is smaller than 800
+  // Autoplay the carousel after every 2500 ms
+  timeoutId = setTimeout(() => carouselContainer.scrollLeft += firstCardWidth, 2500);
+}
+autoPlay();
+
+carouselContainer.addEventListener('mousedown', dragStart);
+carouselContainer.addEventListener('mousemove', dragging);
+document.addEventListener('mouseup', dragStop);
+carouselContainer.addEventListener('scroll', infiniteScroll);
+teamWrapper.addEventListener('mouseenter', () => clearTimeout(timeoutId));
+teamWrapper.addEventListener('mouseleave', autoPlay);
 
 
 // FAQ Toggle Options

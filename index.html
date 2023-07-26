@@ -49,8 +49,44 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
+.app__team__header, .app__team__social__media ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.app__team__header img {
+  height: 180px;
+  width: 180px;
+  border-radius: 100%;
+}
+.app__single__team__member {
+  background: #fff;
+  box-shadow: 0px 0px 6px 0px #ccc;
+}
+
+
+
+
+
+
 /* Arrow */
-.app__carousel__arrow__left {
+.app__carousel__arrow {
   top: 50%;
   height: 50px;
   width: 50px;
@@ -58,7 +94,7 @@
   font-size: 1.25rem;
   position: absolute;
   text-align: center;
-  line-height: 50px;
+  line-height: 57px;
   background: #fff;
   border-radius: 50%;
   box-shadow: 0 3px 6px rgba(0,0,0,0.23);
@@ -80,8 +116,11 @@ box-shadow: 0 3px 6px rgba(0,0,0,0.23);
 transform: translateY(-50%);
 transition: transform 0.1s linear;
 } */
+.app__carousel__arrow__left {
+  left: -28px;
+}
 .app__carousel__arrow__right {
-  right: -22px;
+  right: -28px;
 }
 
 
@@ -217,6 +256,33 @@ ion-icon {
   transition: transform 0.3s ease;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hire */
+.app__single__hire__wrapper {
+  width: calc((100% / 2) - 1em);
+}
 </style>
 
   <!-- <style>
@@ -830,7 +896,7 @@ img {
         <div class="app__team__wrapper app__carousel__wrapper">
 
           <!-- Slider Arraw Left -->
-          <span class="app__carousel__arrow__left">
+          <span class="app__carousel__arrow app__carousel__arrow__left">
             <ion-icon name="chevron-back-outline"></ion-icon>
           </span><!-- /Slider Arraw Left -->
 
@@ -1090,7 +1156,7 @@ img {
           </div><!-- /Carousel Container -->
 
           <!-- Slider Arraw Right -->
-          <span class="app__carousel__arrow__right">
+          <span class="app__carousel__arrow app__carousel__arrow__right">
             <ion-icon name="chevron-forward-outline"></ion-icon>
           </span><!-- /Slider Arraw Right -->
 
@@ -1173,28 +1239,28 @@ img {
         <div class="app__hiring__platforms app__flex__3 app__flex app__flex__wrap app__gap__1">
 
           <!-- Fiverr -->
-          <div class="app__single__hire__wrapper app__hire__fiverr app__flex__1">
+          <div class="app__single__hire__wrapper app__hire__fiverr">
             <h4>Fiverr</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos exercitationem dolor sed et quasi. Aut nam repudiandae assumenda tempore odio tenetur aspernatur aliquid. Culpa aperiam praesentium recusandae aspernatur, sunt optio!</p>
             <a href="#">Hire</a>
           </div><!-- /Fiverr -->
 
           <!-- Upwork -->
-          <div class="app__single__hire__wrapper app__hire__upwork app__flex__1">
+          <div class="app__single__hire__wrapper app__hire__upwork">
             <h4>Upwork</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos exercitationem dolor sed et quasi. Aut nam repudiandae assumenda tempore odio tenetur aspernatur aliquid. Culpa aperiam praesentium recusandae aspernatur, sunt optio!</p>
             <a href="#">Hire</a>
           </div><!-- /Upwork -->
 
           <!-- Guru -->
-          <div class="app__single__hire__wrapper app__hire__guru app__flex__1">
+          <div class="app__single__hire__wrapper app__hire__guru">
             <h4>Guru</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos exercitationem dolor sed et quasi. Aut nam repudiandae assumenda tempore odio tenetur aspernatur aliquid. Culpa aperiam praesentium recusandae aspernatur, sunt optio!</p>
             <a href="#">Hire</a>
           </div><!-- /Guru -->
 
           <!-- Freelancer -->
-          <div class="app__single__hire__wrapper app__hire__freelancer app__flex__1">
+          <div class="app__single__hire__wrapper app__hire__freelancer">
             <h4>Freelancer</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos exercitationem dolor sed et quasi. Aut nam repudiandae assumenda tempore odio tenetur aspernatur aliquid. Culpa aperiam praesentium recusandae aspernatur, sunt optio!</p>
             <a href="#">Hire</a>

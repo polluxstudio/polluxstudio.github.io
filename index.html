@@ -283,6 +283,195 @@ ion-icon {
 .app__single__hire__wrapper {
   width: calc((100% / 2) - 1em);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Protfolio Slide */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0.8}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.8}
+  to {opacity: 1}
+}
+
+.txt{
+	position: absolute;
+	color: #fff;
+	letter-spacing: 2px;
+	line-height: 35px;
+	top: 40%;
+	left: 15%;
+	-webkit-animation-name: posi;
+  	-webkit-animation-duration: 2s;
+  	animation-name: posi;
+  	animation-duration: 2s;
+	z-index: 1;
+}
+
+@-webkit-keyframes posi {
+  from {left: 25%;}
+  to {left: 15%;}
+}
+
+
+@keyframes posi {
+  from {left: 25%;}
+  to {left: 15%;}
+}
+
+
+/* 
+img{
+	transform: scale(1.5, 1.5);
+	-webkit-animation-name: zoomin;
+  	-webkit-animation-duration: 40s;
+  	animation-name: zoomin;
+  	animation-duration: 40s;
+}
+@-webkit-keyframes zoomin {
+  from {transform: scale(1, 1);}
+  to {transform: scale(1.5, 1.5);}
+}
+
+
+@keyframes zoomin {
+  from {transform: scale(1, 1);}
+  to {transform: scale(1.5, 1.5);}
+} */
+
+
+
+
+
+
+
+
+.app__single__portfolio__wrapper {
+  display: none;
+}
+
+.app__single__portfolio__wrapper.app__active__slide {
+  display: block;
+}
+
+
+.app__single__portfolio  {
+
+}
+
+/* Portfolio Animation */
+/* .app__portfolio__text {
+  position: relative;
+} */
+.app__single__portfolio__wrapper.app__active__slide .app__portfolio__text h3,
+.app__single__portfolio__wrapper.app__active__slide .app__portfolio__text p {
+  position: relative;
+  left: 0%;
+  animation-name: posi;
+  animation-duration: 2s;
+  z-index: 1;
+}
+
+
+@keyframes posi {
+  from {left: 15%;}
+  to {left: 0%;}
+}
+
+.app__single__portfolio__wrapper.app__active__slide .app__portfolio__image img {
+  position: relative;
+  right: 0%;
+  animation-name: imgs;
+  animation-duration: 2s;
+  z-index: 1;
+}
+
+
+
+@keyframes imgs {
+  from {right: 15%;}
+  to {right: 0%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Masking */
+.app__why__choose__us__slider {
+  background-image: url("imgs/mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* mask: url("imgs/hero.svg"); */
+}
+.app__why__choose__us__slider img {
+  margin-top: 25%;
+}
+/* .app__why__choose__us__slider img {
+  mask-image: url("imgs/mobile.png");
+  mask-size: cover;mask-repeat: no-repeat; 
+  -webkit-mask-image: url("imgs/mobile.png");
+  -webkit-mask-size: cover;-webkit-mask-repeat: no-repeat; 
+  -moz-mask-image: url("imgs/mobile.png");
+  -moz-mask-size: cover;-moz-mask-repeat: no-repeat; 
+} */
 </style>
 
   <!-- <style>
@@ -714,7 +903,8 @@ img {
 
         <!-- Why Choose Us Slider -->
         <div class="app__why__choose__us__slider app__flex__2">
-          <img src="imgs/mobile.png" alt="Mobile">
+          <img src="imgs/prortfolio/1.png" alt="Mobile">
+          <!-- <img src="imgs/mobile.png" alt="Mobile"> -->
         </div><!-- /Why Choose Us Slider -->
 
         <!-- Why Choose US Text -->
@@ -804,7 +994,7 @@ img {
 
                 <!-- Portfolio Image -->
                 <div class="app__portfolio__image app__flex__1">
-                  <img src="imgs/prortfolio/1.png" alt="Portfolio Image">
+                  <img src="imgs/portfolio/1.png" alt="Portfolio Image">
                 </div><!-- /Portfolio Image -->
 
                 <!-- Portfolio Text -->
@@ -823,7 +1013,7 @@ img {
 
                 <!-- Portfolio Image -->
                 <div class="app__portfolio__image app__flex__1">
-                  <img src="imgs/prortfolio/2.png" alt="Portfolio Image">
+                  <img src="imgs/portfolio/2.png" alt="Portfolio Image">
                 </div><!-- /Portfolio Image -->
 
                 <!-- Portfolio Text -->
@@ -842,7 +1032,7 @@ img {
 
                 <!-- Portfolio Image -->
                 <div class="app__portfolio__image app__flex__1">
-                  <img src="imgs/prortfolio/3.png" alt="Portfolio Image">
+                  <img src="imgs/portfolio/3.png" alt="Portfolio Image">
                 </div><!-- /Portfolio Image -->
 
                 <!-- Portfolio Text -->
@@ -861,7 +1051,7 @@ img {
 
                 <!-- Portfolio Image -->
                 <div class="app__portfolio__image app__flex__1">
-                  <img src="imgs/prortfolio/4.png" alt="Portfolio Image">
+                  <img src="imgs/portfolio/4.png" alt="Portfolio Image">
                 </div><!-- /Portfolio Image -->
 
                 <!-- Portfolio Text -->
@@ -1162,54 +1352,6 @@ img {
 
         </div><!-- /Team Wrapper -->
 
-
-
-
-<!-- 
-        <div class="wrapper">
-          <i id="left" class="fa-solid fa-angle-left"></i>
-          <ul class="carousel">
-            <li class="card">
-              <div class="img"><img src="images/img-1.jpg" alt="img" draggable="false"></div>
-              <h2>Blanche Pearson</h2>
-              <span>Sales Manager</span>
-            </li>
-            <li class="card">
-              <div class="img"><img src="images/img-2.jpg" alt="img" draggable="false"></div>
-              <h2>Joenas Brauers</h2>
-              <span>Web Developer</span>
-            </li>
-            <li class="card">
-              <div class="img"><img src="images/img-3.jpg" alt="img" draggable="false"></div>
-              <h2>Lariach French</h2>
-              <span>Online Teacher</span>
-            </li>
-            <li class="card">
-              <div class="img"><img src="images/img-4.jpg" alt="img" draggable="false"></div>
-              <h2>James Khosravi</h2>
-              <span>Freelancer</span>
-            </li>
-            <li class="card">
-              <div class="img"><img src="images/img-5.jpg" alt="img" draggable="false"></div>
-              <h2>Kristina Zasiadko</h2>
-              <span>Bank Manager</span>
-            </li>
-            <li class="card">
-              <div class="img"><img src="images/img-6.jpg" alt="img" draggable="false"></div>
-              <h2>Donald Horton</h2>
-              <span>App Designer</span>
-            </li>
-          </ul>
-          <i id="right" class="fa-solid fa-angle-right"></i>
-        </div>
-
- -->
-
-
-
-
-
-
       </div><!-- /Container -->
 
     </section><!-- /Team Section -->
@@ -1283,6 +1425,183 @@ img {
       <!-- Container -->
       <div class="app__container app__container__pad">
         
+        <!-- Header -->
+        <header class="app__testimonial__header app__header__center app__text__center">
+          <h2>What People Say About Us?</h2>
+        </header><!-- Header -->
+
+        <!-- Testimonial Wrapper -->
+        <div class="app__testimonial__wrapper app__carousel__wrapper">
+
+          <!-- Carousel Container -->
+          <div class="app__carousel__container">
+
+            <!-- Single Carousel -->
+            <div class="app__single__carousel app__single__testimonial">
+
+              <!-- Testimonial Text -->
+              <article class="app__single__testimonial__text">
+                <span class="app__testimonial__quote"></span>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab officia quae facere laborum repellendus fugit, laboriosam itaque. Ea repudiandae quas, facilis explicabo harum dolores mollitia soluta necessitatibus at assumenda est.</p>
+              </article><!-- /Testimonial Text -->
+              
+              <!-- Header -->
+              <header class="app__single__testimonial__header app__flex app__gap__1">
+                
+                <!-- Header Image -->
+                <div class="app__single__testimonial__header__image app__flex__2">
+                  <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Testimonial Image">
+                </div><!-- /Header Image -->
+
+                <!-- Information -->
+                <div class="app__single__testimonial__header__info app__flex__5">
+                  <h4>Marshall Harper</h4>
+                  <h5>Founder of Something</h5>
+                </div><!-- /Information -->
+
+              </header><!-- /Header -->
+
+            </div><!-- /Single Carousel -->
+
+            <!-- Single Carousel -->
+            <div class="app__single__carousel app__single__testimonial">
+
+              <!-- Testimonial Text -->
+              <article class="app__single__testimonial__text">
+                <span class="app__testimonial__quote"></span>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab officia quae facere laborum repellendus fugit, laboriosam itaque. Ea repudiandae quas, facilis explicabo harum dolores mollitia soluta necessitatibus at assumenda est.</p>
+              </article><!-- /Testimonial Text -->
+              
+              <!-- Header -->
+              <header class="app__single__testimonial__header app__flex app__gap__1">
+                
+                <!-- Header Image -->
+                <div class="app__single__testimonial__header__image app__flex__2">
+                  <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Testimonial Image">
+                </div><!-- /Header Image -->
+
+                <!-- Information -->
+                <div class="app__single__testimonial__header__info app__flex__5">
+                  <h4>Marshall Harper</h4>
+                  <h5>Founder of Something</h5>
+                </div><!-- /Information -->
+
+              </header><!-- /Header -->
+
+            </div><!-- /Single Carousel -->
+
+            <!-- Single Carousel -->
+            <div class="app__single__carousel app__single__testimonial">
+
+              <!-- Testimonial Text -->
+              <article class="app__single__testimonial__text">
+                <span class="app__testimonial__quote"></span>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab officia quae facere laborum repellendus fugit, laboriosam itaque. Ea repudiandae quas, facilis explicabo harum dolores mollitia soluta necessitatibus at assumenda est.</p>
+              </article><!-- /Testimonial Text -->
+              
+              <!-- Header -->
+              <header class="app__single__testimonial__header app__flex app__gap__1">
+                
+                <!-- Header Image -->
+                <div class="app__single__testimonial__header__image app__flex__2">
+                  <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Testimonial Image">
+                </div><!-- /Header Image -->
+
+                <!-- Information -->
+                <div class="app__single__testimonial__header__info app__flex__5">
+                  <h4>Marshall Harper</h4>
+                  <h5>Founder of Something</h5>
+                </div><!-- /Information -->
+
+              </header><!-- /Header -->
+
+            </div><!-- /Single Carousel -->
+
+            <!-- Single Carousel -->
+            <div class="app__single__carousel app__single__testimonial">
+
+              <!-- Testimonial Text -->
+              <article class="app__single__testimonial__text">
+                <span class="app__testimonial__quote"></span>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab officia quae facere laborum repellendus fugit, laboriosam itaque. Ea repudiandae quas, facilis explicabo harum dolores mollitia soluta necessitatibus at assumenda est.</p>
+              </article><!-- /Testimonial Text -->
+              
+              <!-- Header -->
+              <header class="app__single__testimonial__header app__flex app__gap__1">
+                
+                <!-- Header Image -->
+                <div class="app__single__testimonial__header__image app__flex__2">
+                  <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Testimonial Image">
+                </div><!-- /Header Image -->
+
+                <!-- Information -->
+                <div class="app__single__testimonial__header__info app__flex__5">
+                  <h4>Marshall Harper</h4>
+                  <h5>Founder of Something</h5>
+                </div><!-- /Information -->
+
+              </header><!-- /Header -->
+
+            </div><!-- /Single Carousel -->
+
+            <!-- Single Carousel -->
+            <div class="app__single__carousel app__single__testimonial">
+
+              <!-- Testimonial Text -->
+              <article class="app__single__testimonial__text">
+                <span class="app__testimonial__quote"></span>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab officia quae facere laborum repellendus fugit, laboriosam itaque. Ea repudiandae quas, facilis explicabo harum dolores mollitia soluta necessitatibus at assumenda est.</p>
+              </article><!-- /Testimonial Text -->
+              
+              <!-- Header -->
+              <header class="app__single__testimonial__header app__flex app__gap__1">
+                
+                <!-- Header Image -->
+                <div class="app__single__testimonial__header__image app__flex__2">
+                  <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Testimonial Image">
+                </div><!-- /Header Image -->
+
+                <!-- Information -->
+                <div class="app__single__testimonial__header__info app__flex__5">
+                  <h4>Marshall Harper</h4>
+                  <h5>Founder of Something</h5>
+                </div><!-- /Information -->
+
+              </header><!-- /Header -->
+
+            </div><!-- /Single Carousel -->
+
+            <!-- Single Carousel -->
+            <div class="app__single__carousel app__single__testimonial">
+
+              <!-- Testimonial Text -->
+              <article class="app__single__testimonial__text">
+                <span class="app__testimonial__quote"></span>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab officia quae facere laborum repellendus fugit, laboriosam itaque. Ea repudiandae quas, facilis explicabo harum dolores mollitia soluta necessitatibus at assumenda est.</p>
+              </article><!-- /Testimonial Text -->
+              
+              <!-- Header -->
+              <header class="app__single__testimonial__header app__flex app__gap__1">
+                
+                <!-- Header Image -->
+                <div class="app__single__testimonial__header__image app__flex__2">
+                  <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Testimonial Image">
+                </div><!-- /Header Image -->
+
+                <!-- Information -->
+                <div class="app__single__testimonial__header__info app__flex__5">
+                  <h4>Marshall Harper</h4>
+                  <h5>Founder of Something</h5>
+                </div><!-- /Information -->
+
+              </header><!-- /Header -->
+
+            </div><!-- /Single Carousel -->
+
+          </div><!-- /Carousel Container -->
+
+        </div><!-- Testimonial Wrapper -->
+
       </div><!-- /Container -->
 
     </section><!-- /Testimonial Section -->

@@ -472,6 +472,24 @@ img{
   -moz-mask-image: url("imgs/mobile.png");
   -moz-mask-size: cover;-moz-mask-repeat: no-repeat; 
 } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ * Input Field
+ * @link https://codepen.io/angeladelise/pen/ZEpXPBZ
+ */
 </style>
 
   <!-- <style>
@@ -1644,90 +1662,34 @@ img {
             <!-- Form -->
             <form action="https://formspree.io/f/mayzrgnk" method="POST">
 
+              <!-- Input Wrapper -->
+              <div class="app__input__wrapper">
+                <input type="text" name="app__contact__name" id="app__name" class="app__input" autocomplete="off" placeholder=" " required>
+                <label for="app__name">Name</label>
+              </div><!-- /Input Wrapper -->
+
+              <!-- Input Wrapper -->
+              <div class="app__input__wrapper">
+                <input type="email" name="app__contact__email" id="app__email" class="app__input" autocomplete="off" placeholder=" " required>
+                <label for="app__email">Email</label>
+              </div><!-- /Input Wrapper -->
+
+              <!-- Input Wrapper -->
+              <div class="app__input__wrapper">
+                <input type="text" name="app__contact__subject" id="app__subject" class="app__input" autocomplete="off" placeholder=" ">
+                <label for="app__subject">Subject</label>
+              </div><!-- /Input Wrapper -->
+
+              <!-- Input Wrapper -->
+              <div class="app__input__wrapper">
+                <textarea id="app__message" name="app__contact__message" class="app__input" spellcheck="false" autocomplete="off" placeholder=" " required></textarea>
+                <label for="app__message">Message</label>
+              </div><!-- /Input Wrapper -->
+
+              <!-- Button -->
+              <button type="submit" name="app__contact__submit">Send Message</button><!-- /Button -->
+
             </form><!-- /Form -->
-
-
-
-
-
-
-            <form action="https://formspree.io/f/mayzrgnk" method="POST">
-              <!-- Single Input -->
-              <div class="app__input__wrapper">
-                <dl>
-                  <dt class="app__input__title">Name</dt>
-                  <dd class="app__input__content">
-                    <input id="app__contact__name" class="app__input" type="text" required="">
-                    <label for="app__contact__name">Name</label>
-                    <span></span>
-                  </dd>
-                </dl>
-              </div>
-              <!-- /Single Input -->
-              
-              <!-- Single Input -->
-              <div class="app__input__wrapper">
-                <dl>
-                  <dt class="app__input__title">Email</dt>
-                  <dd class="app__input__content">
-                    <input id="app__contact__mail" class="app__input" type="email" required="">
-                    <label for="app__contact__mail">Mail</label>
-                    <span></span>
-                  </dd>
-                </dl>
-              </div>
-              <!-- /Single Input -->
-  
-              <!-- Single Input -->
-              <div class="app__input__wrapper">
-                <dl>
-                  <dt class="app__input__title">Subject</dt>
-                  <dd class="app__input__content">
-                    <input id="app__contact__subject" class="app__input" type="text" required="">
-                    <label for="app__contact__subject">Subject</label>
-                    <span></span>
-                  </dd>
-                </dl>
-              </div>
-              <!-- /Single Input -->
-  
-              <!-- Single Input -->
-              <div class="app__input__wrapper">
-                <dl>
-                  <dt class="app__input__title">Message</dt>
-                  <dd class="app__input__content">
-                    <textarea id="app__contact__message" class="app__input" spellcheck="false"></textarea>
-                    <label for="app__contact__message">Message</label>
-                    <span></span>
-                  </dd>
-                </dl>
-              </div>
-              <!-- /Single Input -->
-  
-              <!-- Single Input -->
-              <div class="app__input__wrapper">
-                <button class="app__btn app__contact__btn" type="submit" name="app__contact__send">
-                  <i class="icon ion-paper-airplane"></i>
-                  Send Message
-                </button>
-              </div>
-              <!-- /Single Input -->
-            </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
           </div><!-- /Actual Form -->
 

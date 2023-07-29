@@ -1,4 +1,5 @@
 @mixin absolute_fill() {
+    position: absolute;
     width: 100%;
     max-width: 100%;
     min-width: 100%;

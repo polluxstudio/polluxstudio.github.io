@@ -1,6 +1,12 @@
 // Mobile Menu
+const mobileMenu = document.querySelector('button.app__mobile__menu__btn');
+const menuContent = document.querySelector('#app__main__navigation');
 
-// Portfolio Silider
+mobileMenu.onclick = function() {
+  menuContent.classList.toggle('app__show__mobile__menu');
+}
+
+// Portfolio Slider
 let sliderIndex = 0;
 let sliderContainers = document.querySelectorAll('.app__portfolio__slider .app__single__portfolio__wrapper');
 let sliderCount = sliderContainers.length;

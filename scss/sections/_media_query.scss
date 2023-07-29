@@ -1,0 +1,17 @@
+// Media Query For Main Header
+@media (max-width: 800px) {
+    .app__header {
+        #app__main__header {
+            .navigation__main__wrapper {
+                #app__main__navigation {
+                    display: none;
+                }
+                .app__mobile__menu__button__wrapper {
+                    .app__mobile__menu__btn {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

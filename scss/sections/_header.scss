@@ -1,0 +1,95 @@
+.app__header {
+    #app__main__header {
+
+        // Header Logo Style
+        a {
+            &.app__header__logo {
+                display: inline-block;
+                padding: 0.5em 1em 0.5em 0;
+
+                img {
+                    height: 22px;
+                    width: auto;
+                    max-width: 138px;
+                }
+            }
+        }
+
+        // Navigation Style
+        .navigation__main__wrapper {
+
+            // Main Navigation Style
+            #app__main__navigation {
+                ul {
+                    justify-content: flex-end;
+                    li {
+                        a {
+                            display: inline-block;
+                            padding: 0.5em 0;
+                            font-size: 0.75rem;
+                            font-weight: 500;
+                            letter-spacing: 0.02em;
+                            color: #6f598f !important;
+                        }
+                    }
+                }
+            }
+
+            // Show Mobile Menu One Click
+            .app__show__mobile__menu {
+                display: block !important;
+                @include absolute_fill();
+                position: fixed;
+                background: #fff;
+                z-index: 999;
+                ul {
+                    flex-direction: column;
+                }
+            }
+
+            // Mobile Menu Style
+            .app__mobile__menu__button__wrapper {
+                display: flex;
+                justify-content: flex-end;
+                .app__mobile__menu__btn {
+                    background: transparent;
+                    margin: 0;
+                    padding: 0;
+                    // padding: 0.5em 0 0.5em 0.5em;
+                    border: none;
+                    display: none;
+                    cursor: pointer;
+                    position: relative;
+                    span {
+                        display: inline-block;
+                        height: 2px;
+                        width: 20px;
+                        background: #333;
+                        border-radius: 10px;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 10px;
+                            right: 0px;
+                            width: 14px;
+                            height: 2px;
+                            background: #333;
+                            border-radius: 10px;
+                        }
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            bottom: 0px;
+                            right: 1px;
+                            width: 14px;
+                            height: 2px;
+                            background: #333;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,57 @@
+.app__input__wrapper {
+    position: relative;
+    width: 20rem;
+    height: 3rem;
+  
+    .app__input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 2px solid $main-color;
+      border-radius: 0;
+      font-family: inherit;
+      font-size: inherit;
+      color: white;
+      outline: none;
+      padding: 1.25rem;
+      background: none;
+  
+      &:hover {
+        border-color: $primary-1;
+      }
+  
+      /* Change border when input focus*/
+  
+      &:focus {
+        border-color: $primary-2;
+      }
+    }
+  
+    .app__label {
+      position: absolute;
+      left: 1rem;
+      top: 0.8rem;
+      padding: 0 0.5rem;
+      color: white;
+      cursor: text;
+      transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+      background-color: white;
+    }
+  }
+  
+  /* 
+  1. When the input is in the focus state
+  reduce the size of the label and move upwards 
+  
+  2. Keep label state when content is in input field 
+  */
+  
+  .app__input:focus ~ .app__label,
+  .app__input:not(:placeholder-shown).app__input:not(:focus) ~ .app__label {
+    top: -0.5rem;
+    font-size: 0.8rem;
+    left: 0.8rem;
+  }
+  

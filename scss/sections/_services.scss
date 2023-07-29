@@ -1,3 +1,46 @@
 #app__services {
-    
+    .app__services__container {
+
+        // Service Header
+        .app__service__header {
+
+        }
+
+        // Service Container
+        .app__actual__services  {
+            .app__single__service__wrapper  {
+
+                // Service Icon
+                .app__single__service__icon  {
+                    font-size: 2rem;
+                    color: #6f598f;
+                }
+
+                // Service Information 
+                .app__single__service__info {
+                    h3 {
+                        font-size: 1rem;
+                        margin: 0;
+                    }
+                    span.app__line {
+
+                    }
+                    p {
+                        // margin-top: 1em;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 860px) {
+    #app__services {
+        .app__services__container {
+            .app__actual__services  {
+                flex-direction: column;
+            }
+        }
+    }    
 }

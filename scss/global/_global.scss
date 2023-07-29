@@ -60,3 +60,37 @@ p {
 .app__flex.app__align__center {
     justify-content: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.app__header__center h2 {
+  font-size: 3rem;
+  margin-bottom: 2em;
+}
+
+
+
+
+
+
+
+.app__line {
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 2px;
+  margin: 1em 0;
+  background-color: #6f598f;
+}

@@ -1,0 +1,51 @@
+#app__faq {
+
+    // FAQ Header
+    .app__faq__header  {
+
+    }
+
+    // FAQ container
+    .app__faq__wrapper {
+        border-radius: 4px;
+        box-shadow: 0px 5px 8px 1px rgba(166, 164, 164, 0.5);
+        padding: 2em;
+        .app__single__faq {
+            .app__single__faq__header {
+                margin-bottom: 1em;
+                border-bottom: 1px dashed rgba(166, 164, 164, 0.5);
+                padding-bottom: 1em;
+                cursor: pointer;
+                h3 {
+                    font-size: 0.85rem;
+                    font-weight: 500;
+                    letter-spacing: 0.05ex;
+                    text-transform: capitalize;
+                    margin: 0;
+                    padding: 0;
+                }
+                span {
+                    ion-icon {
+                        transition: transform 0.3s ease;
+                    }
+                    .app__icon__rotate {
+                      transform: rotate(180deg);
+                      transition: transform 0.3s ease;
+                    }
+                }
+            }    
+          .app__single__faq__answer {
+              overflow: hidden;
+              transition: max-height 0.3s ease, opacity 0.3s ease;
+              max-height: 0;
+              opacity: 0;
+              border-bottom: 1px dashed rgba(166, 164, 164, 0.5);
+              padding-bottom: 1em;
+            }
+            &:last-child .app__single__faq__answer {
+              border-bottom: 0;
+              padding-bottom: 0;
+            }
+        }
+    } 
+}

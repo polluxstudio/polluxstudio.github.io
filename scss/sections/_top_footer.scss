@@ -1,0 +1,32 @@
+#app__top__footer {
+    background: var(--main--foreground);
+  }
+  #app__top__footer .app__footer__container {
+    padding: 8em 0 4em;
+    display: flex;
+    align-items: flex-start;
+    gap: 2em;
+  }
+  #app__top__footer .app__footer__container .app__footer__segment {
+    flex: 1;
+  }
+  #app__top__footer .app__footer__container .app__main__footer {
+    flex: 2;
+  }
+  #app__top__footer .app__footer__container .app__footer__segment header h3 {
+    display: inline-block;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.02em;
+    margin: 0 0 1.8em;
+  }
+  #app__top__footer .app__footer__container .app__footer__segment nav ul li a {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #444;
+    text-transform: capitalize;
+    margin-bottom: 1.2em;
+    display: block;
+  }
+  

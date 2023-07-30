@@ -1,0 +1,95 @@
+#app__hire {
+    .app__hire__text {
+        .app__hire__text__header {
+            h2 {
+                text-transform: capitalize;
+                font-size: 2rem;
+                line-height: 3rem;
+            }
+        }
+        .app__hire__text__article {
+            p {
+
+            }
+        }
+    }
+
+    .app__hiring__platforms {
+        .app__single__hire__wrapper {
+            position: relative;
+            width: calc((100% / 2) - 3em);
+            padding: 1em;
+            border-radius: 4px;
+            box-shadow: 0px 5px 8px 1px rgba(166,164,164,0.5);
+            h4 {
+                font-size: 1rem;
+                font-weight: 600;
+            }
+            p {
+
+            }
+            a {
+                padding: 0.6em 4em;
+                margin: 2em 0;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -15px;
+                left: -15px;
+                right: 15px;
+                top: 50%;
+                border: 3px solid #6f598f;
+                border-radius: 15px;
+                z-index: -1;
+            }
+        }
+
+        .app__hire__fiverr {
+            top: -25px;
+        }
+        .app__hire__upwork {
+            top: 0;
+        }
+        .app__hire__guru {
+            top: -25px;
+        }
+        .app__hire__freelancer {
+            top: 0;
+        }
+    }
+}
+
+@media (max-width: 980px) {
+    #app__hire {
+        .app__hire__container {
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    #app__hire {
+        .app__hire__container {
+            .app__hiring__platforms  {
+                flex-direction: column;
+                .app__single__hire__wrapper {
+                    width: 100%;
+                }
+
+                .app__hire__fiverr {
+                    top: 0;
+                }
+                .app__hire__upwork {
+                    top: 0;
+                }
+                .app__hire__guru {
+                    top: 0;
+                }
+                .app__hire__freelancer {
+                    top: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+#app__contact {
+    .app__contact__info__wrapper {
+        .app__contact__info__header {
+            margin-bottom: 1em;
+            h2 {
+
+            }
+            h3 {
+                text-transform: capitalize;
+                font-size: 2rem;
+                line-height: 3rem;
+            }
+            .app__contact__info__article {
+                p {
+
+                }
+            }
+        }
+    }
+
+    .app__contact__form__wrapper {
+        box-shadow: 0px 5px 8px 1px rgba(166,164,164,0.5);
+        border-radius: 4px;
+        padding: 2em;
+
+        .app__contact__form__header {
+            margin-bottom: 1.4em;
+            h3 {
+                font-size: 1.2rem;
+                text-transform: capitalize;
+                font-weight: 600;
+            }
+
+            h4 {
+              font-size: 0.9rem;
+              text-transform: capitalize;
+              font-weight: 300;  
+            }
+        }
+        .app__textarea {
+            height: 5rem;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    #app__contact {
+        .app__contact__container {
+            flex-direction: column;
+        }
+    }
+}

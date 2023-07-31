@@ -48,11 +48,12 @@ $('#app__team__carousel').owlCarousel({
 // Testimonial Slider
 $('#app__testimonial__carousel').owlCarousel({
   loop:true,
-  margin:30,
+  margin:80,
   nav:true,
   autoplay:true,
   autoplayTimeout:1000,
   autoplayHoverPause:true,
+  nav:false,
   responsive:{
       0:{
           items:1
@@ -267,6 +268,7 @@ $('#app__gallery__carousel').owlCarousel({
   nav:true,
   autoplay:true,
   autoplayTimeout:1000,
+  nav:false,
   autoplayHoverPause:true,
   responsive:{
       0:{

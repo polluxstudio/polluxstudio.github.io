@@ -15,13 +15,18 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,500,500i,700" rel="stylesheet">
   <!-- /Google Font -->
   
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+  <!-- /Owl Carousel -->
+  
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="css/main.css" type="text/css" media="all">
   <!-- /CSS Stylesheet -->
 
 <style>
 
-.app__carousel__wrapper {
+/* .app__carousel__wrapper {
   width: 100%;
   position: relative;
 }
@@ -47,14 +52,30 @@
   border-radius: 8px;
 }
 
+ */
 
 
 
 
 
+/* Arrow */
+/* .app__carousel__arrow {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 57px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
 
-
-
+ */
 
 
 
@@ -65,7 +86,7 @@
 
 
 /**/
-.app__team__header, .app__team__social__media ul {
+/* .app__team__header, .app__team__social__media ul {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -82,25 +103,19 @@
 
 
 
-
-
-
-/* Arrow */
-.app__carousel__arrow {
-  top: 50%;
-  height: 50px;
-  width: 50px;
-  cursor: pointer;
-  font-size: 1.25rem;
-  position: absolute;
-  text-align: center;
-  line-height: 57px;
-  background: #fff;
-  border-radius: 50%;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
-  transform: translateY(-50%);
-  transition: transform 0.1s linear;
+.app__carousel__arrow__left {
+  left: -28px;
 }
+.app__carousel__arrow__right {
+  right: -28px;
+} */
+
+/*
+-------------------------------------
+*/
+
+
+
 /* .app__carousel__arrow__right {
   top: 50%;
 height: 50px;
@@ -116,14 +131,6 @@ box-shadow: 0 3px 6px rgba(0,0,0,0.23);
 transform: translateY(-50%);
 transition: transform 0.1s linear;
 } */
-.app__carousel__arrow__left {
-  left: -28px;
-}
-.app__carousel__arrow__right {
-  right: -28px;
-}
-
-
 
 
 
@@ -1094,272 +1101,257 @@ img {
         </header><!-- Header -->
 
         <!-- Team Wrapper -->
-        <div class="app__team__wrapper app__carousel__wrapper">
+        <div id="app__team__carousel" class="app__team__wrapper app__carousel__wrapper owl-carousel owl-theme">            
 
-          <!-- Slider Arraw Left -->
-          <span class="app__carousel__arrow app__carousel__arrow__left">
-            <ion-icon name="chevron-back-outline"></ion-icon>
-          </span><!-- /Slider Arraw Left -->
+          <!-- Single Carousel -->
+          <div class="item app__single__carousel app__single__team__member app__text__center">
 
-          <!-- Carousel Container -->
-          <div class="app__carousel__container">
+            <!-- Header -->
+            <header class="app__team__header">
+              <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Team Member">
+            </header><!-- /Header -->
 
-            <!-- Single Carousel -->
-            <div class="app__single__carousel app__single__team__member app__text__center">
+            <!-- Info -->
+            <article class="app__member__info">
+              <h3>Marshall <span class="app__text__light">Harper</span></h3>
+              <h4>Co-Founder/Lead Developer</h4>
+            </article><!-- /Info -->
 
-              <!-- Header -->
-              <header class="app__team__header">
-                <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Team Member">
-              </header><!-- /Header -->
+            <!-- Social Medias -->
+            <footer class="app__team__social__media">
+              <ul class="app__flex app__gap__2">
+                <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+              </ul>
+            </footer><!-- /Social Medias -->
 
-              <!-- Info -->
-              <article class="app__member__info">
-                <h3>Marshall <span class="app__text__light">Harper</span></h3>
-                <h4>Co-Founder/Lead Developer</h4>
-              </article><!-- /Info -->
+          </div><!-- /Single Carousel -->
 
-              <!-- Social Medias -->
-              <footer class="app__team__social__media">
-                <ul class="app__flex app__gap__2">
-                  <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
-                  <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                  <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                </ul>
-              </footer><!-- /Social Medias -->
+          <!-- Single Carousel -->
+          <div class="item app__single__carousel app__single__team__member app__text__center">
 
-            </div><!-- /Single Carousel -->
+            <!-- Header -->
+            <header class="app__team__header">
+              <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Team Member">
+            </header><!-- /Header -->
 
-            <!-- Single Carousel -->
-            <div class="app__single__carousel app__single__team__member app__text__center">
+            <!-- Info -->
+            <article class="app__member__info">
+              <h3>Marshall <span class="app__text__light">Harper</span></h3>
+              <h4>Co-Founder/Lead Developer</h4>
+            </article><!-- /Info -->
 
-              <!-- Header -->
-              <header class="app__team__header">
-                <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Team Member">
-              </header><!-- /Header -->
+            <!-- Social Medias -->
+            <footer class="app__team__social__media">
+              <ul class="app__flex app__gap__2">
+                <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+              </ul>
+            </footer><!-- /Social Medias -->
 
-              <!-- Info -->
-              <article class="app__member__info">
-                <h3>Marshall <span class="app__text__light">Harper</span></h3>
-                <h4>Co-Founder/Lead Developer</h4>
-              </article><!-- /Info -->
+          </div><!-- /Single Carousel -->
 
-              <!-- Social Medias -->
-              <footer class="app__team__social__media">
-                <ul class="app__flex app__gap__2">
-                  <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
-                  <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                  <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                </ul>
-              </footer><!-- /Social Medias -->
+          <!-- Single Carousel -->
+          <div class="item app__single__carousel app__single__team__member app__text__center">
 
-            </div><!-- /Single Carousel -->
+            <!-- Header -->
+            <header class="app__team__header">
+              <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Team Member">
+            </header><!-- /Header -->
 
-            <!-- Single Carousel -->
-            <div class="app__single__carousel app__single__team__member app__text__center">
+            <!-- Info -->
+            <article class="app__member__info">
+              <h3>Marshall <span class="app__text__light">Harper</span></h3>
+              <h4>Co-Founder/Lead Developer</h4>
+            </article><!-- /Info -->
 
-              <!-- Header -->
-              <header class="app__team__header">
-                <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Team Member">
-              </header><!-- /Header -->
+            <!-- Social Medias -->
+            <footer class="app__team__social__media">
+              <ul class="app__flex app__gap__2">
+                <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+              </ul>
+            </footer><!-- /Social Medias -->
 
-              <!-- Info -->
-              <article class="app__member__info">
-                <h3>Marshall <span class="app__text__light">Harper</span></h3>
-                <h4>Co-Founder/Lead Developer</h4>
-              </article><!-- /Info -->
+          </div><!-- /Single Carousel -->
 
-              <!-- Social Medias -->
-              <footer class="app__team__social__media">
-                <ul class="app__flex app__gap__2">
-                  <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
-                  <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                  <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                </ul>
-              </footer><!-- /Social Medias -->
+          <!-- Single Carousel -->
+          <div class="item app__single__carousel app__single__team__member app__text__center">
 
-            </div><!-- /Single Carousel -->
+            <!-- Header -->
+            <header class="app__team__header">
+              <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Team Member">
+            </header><!-- /Header -->
 
-            <!-- Single Carousel -->
-            <div class="app__single__carousel app__single__team__member app__text__center">
+            <!-- Info -->
+            <article class="app__member__info">
+              <h3>Marshall <span class="app__text__light">Harper</span></h3>
+              <h4>Co-Founder/Lead Developer</h4>
+            </article><!-- /Info -->
 
-              <!-- Header -->
-              <header class="app__team__header">
-                <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Team Member">
-              </header><!-- /Header -->
+            <!-- Social Medias -->
+            <footer class="app__team__social__media">
+              <ul class="app__flex app__gap__2">
+                <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+              </ul>
+            </footer><!-- /Social Medias -->
 
-              <!-- Info -->
-              <article class="app__member__info">
-                <h3>Marshall <span class="app__text__light">Harper</span></h3>
-                <h4>Co-Founder/Lead Developer</h4>
-              </article><!-- /Info -->
+          </div><!-- /Single Carousel -->
 
-              <!-- Social Medias -->
-              <footer class="app__team__social__media">
-                <ul class="app__flex app__gap__2">
-                  <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
-                  <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                  <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                </ul>
-              </footer><!-- /Social Medias -->
+          <!-- Single Carousel -->
+          <div class="item app__single__carousel app__single__team__member app__text__center">
 
-            </div><!-- /Single Carousel -->
+            <!-- Header -->
+            <header class="app__team__header">
+              <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Team Member">
+            </header><!-- /Header -->
 
-            <!-- Single Carousel -->
-            <div class="app__single__carousel app__single__team__member app__text__center">
+            <!-- Info -->
+            <article class="app__member__info">
+              <h3>Marshall <span class="app__text__light">Harper</span></h3>
+              <h4>Co-Founder/Lead Developer</h4>
+            </article><!-- /Info -->
 
-              <!-- Header -->
-              <header class="app__team__header">
-                <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Team Member">
-              </header><!-- /Header -->
+            <!-- Social Medias -->
+            <footer class="app__team__social__media">
+              <ul class="app__flex app__gap__2">
+                <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+              </ul>
+            </footer><!-- /Social Medias -->
 
-              <!-- Info -->
-              <article class="app__member__info">
-                <h3>Marshall <span class="app__text__light">Harper</span></h3>
-                <h4>Co-Founder/Lead Developer</h4>
-              </article><!-- /Info -->
+          </div><!-- /Single Carousel -->
 
-              <!-- Social Medias -->
-              <footer class="app__team__social__media">
-                <ul class="app__flex app__gap__2">
-                  <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
-                  <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                  <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                </ul>
-              </footer><!-- /Social Medias -->
+          <!-- Single Carousel -->
+          <div class="item app__single__carousel app__single__team__member app__text__center">
 
-            </div><!-- /Single Carousel -->
+            <!-- Header -->
+            <header class="app__team__header">
+              <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Team Member">
+            </header><!-- /Header -->
 
-            <!-- Single Carousel -->
-            <div class="app__single__carousel app__single__team__member app__text__center">
+            <!-- Info -->
+            <article class="app__member__info">
+              <h3>Marshall <span class="app__text__light">Harper</span></h3>
+              <h4>Co-Founder/Lead Developer</h4>
+            </article><!-- /Info -->
 
-              <!-- Header -->
-              <header class="app__team__header">
-                <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Team Member">
-              </header><!-- /Header -->
+            <!-- Social Medias -->
+            <footer class="app__team__social__media">
+              <ul class="app__flex app__gap__2">
+                <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+              </ul>
+            </footer><!-- /Social Medias -->
 
-              <!-- Info -->
-              <article class="app__member__info">
-                <h3>Marshall <span class="app__text__light">Harper</span></h3>
-                <h4>Co-Founder/Lead Developer</h4>
-              </article><!-- /Info -->
+          </div><!-- /Single Carousel -->
 
-              <!-- Social Medias -->
-              <footer class="app__team__social__media">
-                <ul class="app__flex app__gap__2">
-                  <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
-                  <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                  <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                </ul>
-              </footer><!-- /Social Medias -->
+          <!-- Single Carousel -->
+          <div class="item app__single__carousel app__single__team__member app__text__center">
 
-            </div><!-- /Single Carousel -->
+            <!-- Header -->
+            <header class="app__team__header">
+              <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Team Member">
+            </header><!-- /Header -->
 
-            <!-- Single Carousel -->
-            <div class="app__single__carousel app__single__team__member app__text__center">
+            <!-- Info -->
+            <article class="app__member__info">
+              <h3>Marshall <span class="app__text__light">Harper</span></h3>
+              <h4>Co-Founder/Lead Developer</h4>
+            </article><!-- /Info -->
 
-              <!-- Header -->
-              <header class="app__team__header">
-                <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Team Member">
-              </header><!-- /Header -->
+            <!-- Social Medias -->
+            <footer class="app__team__social__media">
+              <ul class="app__flex app__gap__2">
+                <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+              </ul>
+            </footer><!-- /Social Medias -->
 
-              <!-- Info -->
-              <article class="app__member__info">
-                <h3>Marshall <span class="app__text__light">Harper</span></h3>
-                <h4>Co-Founder/Lead Developer</h4>
-              </article><!-- /Info -->
+          </div><!-- /Single Carousel -->
 
-              <!-- Social Medias -->
-              <footer class="app__team__social__media">
-                <ul class="app__flex app__gap__2">
-                  <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
-                  <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                  <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                </ul>
-              </footer><!-- /Social Medias -->
+          <!-- Single Carousel -->
+          <div class="item app__single__carousel app__single__team__member app__text__center">
 
-            </div><!-- /Single Carousel -->
+            <!-- Header -->
+            <header class="app__team__header">
+              <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Team Member">
+            </header><!-- /Header -->
 
-            <!-- Single Carousel -->
-            <div class="app__single__carousel app__single__team__member app__text__center">
+            <!-- Info -->
+            <article class="app__member__info">
+              <h3>Marshall <span class="app__text__light">Harper</span></h3>
+              <h4>Co-Founder/Lead Developer</h4>
+            </article><!-- /Info -->
 
-              <!-- Header -->
-              <header class="app__team__header">
-                <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Team Member">
-              </header><!-- /Header -->
+            <!-- Social Medias -->
+            <footer class="app__team__social__media">
+              <ul class="app__flex app__gap__2">
+                <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+              </ul>
+            </footer><!-- /Social Medias -->
 
-              <!-- Info -->
-              <article class="app__member__info">
-                <h3>Marshall <span class="app__text__light">Harper</span></h3>
-                <h4>Co-Founder/Lead Developer</h4>
-              </article><!-- /Info -->
+          </div><!-- /Single Carousel -->
 
-              <!-- Social Medias -->
-              <footer class="app__team__social__media">
-                <ul class="app__flex app__gap__2">
-                  <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
-                  <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                  <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                </ul>
-              </footer><!-- /Social Medias -->
+          <!-- Single Carousel -->
+          <div class="item app__single__carousel app__single__team__member app__text__center">
 
-            </div><!-- /Single Carousel -->
+            <!-- Header -->
+            <header class="app__team__header">
+              <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Team Member">
+            </header><!-- /Header -->
 
-            <!-- Single Carousel -->
-            <div class="app__single__carousel app__single__team__member app__text__center">
+            <!-- Info -->
+            <article class="app__member__info">
+              <h3>Marshall <span class="app__text__light">Harper</span></h3>
+              <h4>Co-Founder/Lead Developer</h4>
+            </article><!-- /Info -->
 
-              <!-- Header -->
-              <header class="app__team__header">
-                <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Team Member">
-              </header><!-- /Header -->
+            <!-- Social Medias -->
+            <footer class="app__team__social__media">
+              <ul class="app__flex app__gap__2">
+                <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+              </ul>
+            </footer><!-- /Social Medias -->
 
-              <!-- Info -->
-              <article class="app__member__info">
-                <h3>Marshall <span class="app__text__light">Harper</span></h3>
-                <h4>Co-Founder/Lead Developer</h4>
-              </article><!-- /Info -->
+          </div><!-- /Single Carousel -->
 
-              <!-- Social Medias -->
-              <footer class="app__team__social__media">
-                <ul class="app__flex app__gap__2">
-                  <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
-                  <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                  <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                </ul>
-              </footer><!-- /Social Medias -->
+          <!-- Single Carousel -->
+          <div class="item app__single__carousel app__single__team__member app__text__center">
 
-            </div><!-- /Single Carousel -->
+            <!-- Header -->
+            <header class="app__team__header">
+              <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Team Member">
+            </header><!-- /Header -->
 
-            <!-- Single Carousel -->
-            <div class="app__single__carousel app__single__team__member app__text__center">
+            <!-- Info -->
+            <article class="app__member__info">
+              <h3>Marshall <span class="app__text__light">Harper</span></h3>
+              <h4>Co-Founder/Lead Developer</h4>
+            </article><!-- /Info -->
 
-              <!-- Header -->
-              <header class="app__team__header">
-                <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Team Member">
-              </header><!-- /Header -->
+            <!-- Social Medias -->
+            <footer class="app__team__social__media">
+              <ul class="app__flex app__gap__2">
+                <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+              </ul>
+            </footer><!-- /Social Medias -->
 
-              <!-- Info -->
-              <article class="app__member__info">
-                <h3>Marshall <span class="app__text__light">Harper</span></h3>
-                <h4>Co-Founder/Lead Developer</h4>
-              </article><!-- /Info -->
-
-              <!-- Social Medias -->
-              <footer class="app__team__social__media">
-                <ul class="app__flex app__gap__2">
-                  <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
-                  <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                  <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                </ul>
-              </footer><!-- /Social Medias -->
-
-            </div><!-- /Single Carousel -->
-
-          </div><!-- /Carousel Container -->
-
-          <!-- Slider Arraw Right -->
-          <span class="app__carousel__arrow app__carousel__arrow__right">
-            <ion-icon name="chevron-forward-outline"></ion-icon>
-          </span><!-- /Slider Arraw Right -->
+          </div><!-- /Single Carousel -->
 
         </div><!-- /Team Wrapper -->
 
@@ -1460,45 +1452,55 @@ img {
         <div class="app__gallery__carousel__wrapper app__flex__3 app__carousel__wrapper">
 
           <!-- Carousel Container -->
-          <div class="app__carousel__container">
+          <div id="app__gallery__carousel" class="app__carousel__container owl-carousel owl-theme">
 
             <!-- Single Carousel -->
-            <div class="app__single__carousel app__single__video">
+            <div class="app__single__carousel app__single__video item">
               <a href="#"><img src="imgs/portfolio/3.png" alt="Gallery Iamge"></a>
             </div><!-- /Single Carousel -->
 
             <!-- Single Carousel -->
-            <div class="app__single__carousel app__single__video">
+            <div class="app__single__carousel app__single__video item">
               <a href="#"><img src="imgs/portfolio/3.png" alt="Gallery Iamge"></a>
             </div><!-- /Single Carousel -->
 
             <!-- Single Carousel -->
-            <div class="app__single__carousel app__single__video">
+            <div class="app__single__carousel app__single__video item">
               <a href="#"><img src="imgs/portfolio/3.png" alt="Gallery Iamge"></a>
             </div><!-- /Single Carousel -->
 
             <!-- Single Carousel -->
-            <div class="app__single__carousel app__single__video">
+            <div class="app__single__carousel app__single__video item">
               <a href="#"><img src="imgs/portfolio/3.png" alt="Gallery Iamge"></a>
             </div><!-- /Single Carousel -->
 
             <!-- Single Carousel -->
-            <div class="app__single__carousel app__single__video">
+            <div class="app__single__carousel app__single__video item">
               <a href="#"><img src="imgs/portfolio/3.png" alt="Gallery Iamge"></a>
             </div><!-- /Single Carousel -->
 
             <!-- Single Carousel -->
-            <div class="app__single__carousel app__single__video">
+            <div class="app__single__carousel app__single__video item">
               <a href="#"><img src="imgs/portfolio/3.png" alt="Gallery Iamge"></a>
             </div><!-- /Single Carousel -->
 
             <!-- Single Carousel -->
-            <div class="app__single__carousel app__single__video">
+            <div class="app__single__carousel app__single__video item">
               <a href="#"><img src="imgs/portfolio/3.png" alt="Gallery Iamge"></a>
             </div><!-- /Single Carousel -->
 
             <!-- Single Carousel -->
-            <div class="app__single__carousel app__single__video">
+            <div class="app__single__carousel app__single__video item">
+              <a href="#"><img src="imgs/portfolio/3.png" alt="Gallery Iamge"></a>
+            </div><!-- /Single Carousel -->
+
+            <!-- Single Carousel -->
+            <div class="app__single__carousel app__single__video item">
+              <a href="#"><img src="imgs/portfolio/3.png" alt="Gallery Iamge"></a>
+            </div><!-- /Single Carousel -->
+
+            <!-- Single Carousel -->
+            <div class="app__single__carousel app__single__video item">
               <a href="#"><img src="imgs/portfolio/3.png" alt="Gallery Iamge"></a>
             </div><!-- /Single Carousel -->
 
@@ -1525,14 +1527,15 @@ img {
         <div class="app__testimonial__wrapper app__carousel__wrapper">
 
           <!-- Carousel Container -->
-          <div class="app__carousel__container">
+          <div id="app__testimonial__carousel" class="app__carousel__container owl-carousel owl-theme">
 
             <!-- Single Carousel -->
-            <div class="app__single__carousel app__single__testimonial">
+            <div class="app__single__carousel app__single__testimonial item">
 
               <!-- Testimonial Text -->
-              <article class="app__single__testimonial__text">
-                <p><span class="app__testimonial__quote">&#8222;</span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab officia quae facere laborum repellendus fugit, laboriosam itaque. Ea repudiandae quas, facilis explicabo harum dolores mollitia soluta necessitatibus at assumenda est.</p>
+              <article class="app__single__testimonial__text app__flex">
+                <span class="app__testimonial__quote">&#8222;</span>
+                <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab officia quae facere laborum repellendus fugit, laboriosam itaque. Ea repudiandae quas, facilis explicabo harum dolores mollitia soluta necessitatibus at assumenda est.</blockquote>
               </article><!-- /Testimonial Text -->
               
               <!-- Header -->
@@ -1554,11 +1557,12 @@ img {
             </div><!-- /Single Carousel -->
 
             <!-- Single Carousel -->
-            <div class="app__single__carousel app__single__testimonial">
+            <div class="app__single__carousel app__single__testimonial item">
 
               <!-- Testimonial Text -->
-              <article class="app__single__testimonial__text">
-                <p><span class="app__testimonial__quote">&#8222;</span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab officia quae facere laborum repellendus fugit, laboriosam itaque. Ea repudiandae quas, facilis explicabo harum dolores mollitia soluta necessitatibus at assumenda est.</p>
+              <article class="app__single__testimonial__text app__flex">
+                <span class="app__testimonial__quote">&#8222;</span>
+                <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab officia quae facere laborum repellendus fugit, laboriosam itaque. Ea repudiandae quas, facilis explicabo harum dolores mollitia soluta necessitatibus at assumenda est.</blockquote>
               </article><!-- /Testimonial Text -->
               
               <!-- Header -->
@@ -1580,11 +1584,12 @@ img {
             </div><!-- /Single Carousel -->
 
             <!-- Single Carousel -->
-            <div class="app__single__carousel app__single__testimonial">
+            <div class="app__single__carousel app__single__testimonial item">
 
               <!-- Testimonial Text -->
-              <article class="app__single__testimonial__text">
-                <p><span class="app__testimonial__quote">&#8222;</span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab officia quae facere laborum repellendus fugit, laboriosam itaque. Ea repudiandae quas, facilis explicabo harum dolores mollitia soluta necessitatibus at assumenda est.</p>
+              <article class="app__single__testimonial__text app__flex">
+                <span class="app__testimonial__quote">&#8222;</span>
+                <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab officia quae facere laborum repellendus fugit, laboriosam itaque. Ea repudiandae quas, facilis explicabo harum dolores mollitia soluta necessitatibus at assumenda est.</blockquote>
               </article><!-- /Testimonial Text -->
               
               <!-- Header -->
@@ -1606,11 +1611,12 @@ img {
             </div><!-- /Single Carousel -->
 
             <!-- Single Carousel -->
-            <div class="app__single__carousel app__single__testimonial">
+            <div class="app__single__carousel app__single__testimonial item">
 
               <!-- Testimonial Text -->
-              <article class="app__single__testimonial__text">
-                <p><span class="app__testimonial__quote">&#8222;</span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab officia quae facere laborum repellendus fugit, laboriosam itaque. Ea repudiandae quas, facilis explicabo harum dolores mollitia soluta necessitatibus at assumenda est.</p>
+              <article class="app__single__testimonial__text app__flex">
+                <span class="app__testimonial__quote">&#8222;</span>
+                <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab officia quae facere laborum repellendus fugit, laboriosam itaque. Ea repudiandae quas, facilis explicabo harum dolores mollitia soluta necessitatibus at assumenda est.</blockquote>
               </article><!-- /Testimonial Text -->
               
               <!-- Header -->
@@ -1632,11 +1638,12 @@ img {
             </div><!-- /Single Carousel -->
 
             <!-- Single Carousel -->
-            <div class="app__single__carousel app__single__testimonial">
+            <div class="app__single__carousel app__single__testimonial item">
 
               <!-- Testimonial Text -->
-              <article class="app__single__testimonial__text">
-                <p><span class="app__testimonial__quote">&#8222;</span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab officia quae facere laborum repellendus fugit, laboriosam itaque. Ea repudiandae quas, facilis explicabo harum dolores mollitia soluta necessitatibus at assumenda est.</p>
+              <article class="app__single__testimonial__text app__flex">
+                <span class="app__testimonial__quote">&#8222;</span>
+                <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab officia quae facere laborum repellendus fugit, laboriosam itaque. Ea repudiandae quas, facilis explicabo harum dolores mollitia soluta necessitatibus at assumenda est.</blockquote>
               </article><!-- /Testimonial Text -->
               
               <!-- Header -->
@@ -1658,11 +1665,93 @@ img {
             </div><!-- /Single Carousel -->
 
             <!-- Single Carousel -->
-            <div class="app__single__carousel app__single__testimonial">
+            <div class="app__single__carousel app__single__testimonial item">
 
               <!-- Testimonial Text -->
-              <article class="app__single__testimonial__text">
-                <p><span class="app__testimonial__quote">&#8222;</span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab officia quae facere laborum repellendus fugit, laboriosam itaque. Ea repudiandae quas, facilis explicabo harum dolores mollitia soluta necessitatibus at assumenda est.</p>
+              <article class="app__single__testimonial__text app__flex">
+                <span class="app__testimonial__quote">&#8222;</span>
+                <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab officia quae facere laborum repellendus fugit, laboriosam itaque. Ea repudiandae quas, facilis explicabo harum dolores mollitia soluta necessitatibus at assumenda est.</blockquote>
+              </article><!-- /Testimonial Text -->
+              
+              <!-- Header -->
+              <header class="app__single__testimonial__header app__flex app__gap__1">
+                
+                <!-- Header Image -->
+                <div class="app__single__testimonial__header__image">
+                  <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Testimonial Image">
+                </div><!-- /Header Image -->
+
+                <!-- Information -->
+                <div class="app__single__testimonial__header__info app__flex__1">
+                  <h4>Marshall Harper</h4>
+                  <h5>Founder of Something</h5>
+                </div><!-- /Information -->
+
+              </header><!-- /Header -->
+
+            </div><!-- /Single Carousel -->
+
+            <!-- Single Carousel -->
+            <div class="app__single__carousel app__single__testimonial item">
+
+              <!-- Testimonial Text -->
+              <article class="app__single__testimonial__text app__flex">
+                <span class="app__testimonial__quote">&#8222;</span>
+                <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab officia quae facere laborum repellendus fugit, laboriosam itaque. Ea repudiandae quas, facilis explicabo harum dolores mollitia soluta necessitatibus at assumenda est.</blockquote>
+              </article><!-- /Testimonial Text -->
+              
+              <!-- Header -->
+              <header class="app__single__testimonial__header app__flex app__gap__1">
+                
+                <!-- Header Image -->
+                <div class="app__single__testimonial__header__image">
+                  <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Testimonial Image">
+                </div><!-- /Header Image -->
+
+                <!-- Information -->
+                <div class="app__single__testimonial__header__info app__flex__1">
+                  <h4>Marshall Harper</h4>
+                  <h5>Founder of Something</h5>
+                </div><!-- /Information -->
+
+              </header><!-- /Header -->
+
+            </div><!-- /Single Carousel -->
+
+            <!-- Single Carousel -->
+            <div class="app__single__carousel app__single__testimonial item">
+
+              <!-- Testimonial Text -->
+              <article class="app__single__testimonial__text app__flex">
+                <span class="app__testimonial__quote">&#8222;</span>
+                <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab officia quae facere laborum repellendus fugit, laboriosam itaque. Ea repudiandae quas, facilis explicabo harum dolores mollitia soluta necessitatibus at assumenda est.</blockquote>
+              </article><!-- /Testimonial Text -->
+              
+              <!-- Header -->
+              <header class="app__single__testimonial__header app__flex app__gap__1">
+                
+                <!-- Header Image -->
+                <div class="app__single__testimonial__header__image">
+                  <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="Testimonial Image">
+                </div><!-- /Header Image -->
+
+                <!-- Information -->
+                <div class="app__single__testimonial__header__info app__flex__1">
+                  <h4>Marshall Harper</h4>
+                  <h5>Founder of Something</h5>
+                </div><!-- /Information -->
+
+              </header><!-- /Header -->
+
+            </div><!-- /Single Carousel -->
+
+            <!-- Single Carousel -->
+            <div class="app__single__carousel app__single__testimonial item">
+
+              <!-- Testimonial Text -->
+              <article class="app__single__testimonial__text app__flex">
+                <span class="app__testimonial__quote">&#8222;</span>
+                <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab officia quae facere laborum repellendus fugit, laboriosam itaque. Ea repudiandae quas, facilis explicabo harum dolores mollitia soluta necessitatibus at assumenda est.</blockquote>
               </article><!-- /Testimonial Text -->
               
               <!-- Header -->
@@ -2088,6 +2177,8 @@ img {
   </main><!-- /Main Content Body -->
 
   <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="js/main.js"></script>
   <!-- /JS -->
 

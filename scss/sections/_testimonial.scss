@@ -54,3 +54,16 @@
         }
     }
 }
+
+@media (max-width: 800px) {
+    #app__testimonial {
+        .app__testimonial__container {
+            .app__testimonial__wrapper {
+                .app__carousel__container {
+                    grid-auto-columns: 100%;
+                }
+            }
+        }
+    }
+}
+

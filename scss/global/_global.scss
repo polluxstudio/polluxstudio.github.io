@@ -183,3 +183,66 @@ p {
   width: 100%;
   height: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#app__team, #app__gallery {
+  .owl-theme {
+    .owl-dots {
+      .owl-dot {
+        span {
+          width: 20px;
+          height: 6px;
+        }
+      }
+    }
+  }
+}
+
+
+#app__team {
+  .owl-nav {
+    button {
+      position: absolute;
+      top: 50%;
+      font-size: 3rem !important;
+      background: #fff !important;
+      margin-top: -30px;
+      width: 60px;
+      height: 60px;
+      border-radius: 100% !important;
+      box-shadow: 0px 2px 5px 1px rgba(166,164,164,0.5);
+      
+      &:hover {
+        color: #6f598f !important;
+        background: #fff !important;
+      }
+      span {
+        display: block;
+        line-height: 1em;
+      }
+    }
+    .owl-prev {
+      left: -30px;
+    }
+    .owl-next {
+      right: -30px;
+    }
+  }
+}

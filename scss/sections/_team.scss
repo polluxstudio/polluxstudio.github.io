@@ -1,0 +1,46 @@
+#app__team {
+    .app__team__container {
+        .app__single__carousel {
+            padding: 0.5em;
+            margin: 0.5em;
+            overflow: hidden;
+            border-radius: 4px;
+            box-shadow: 0px 2px 5px 1px rgba(166,164,164,0.5);
+        }
+
+        .app__team__header {
+            display: flex;
+            justify-content: center;
+            margin: 1.5em 0 2em;
+            img {
+                height: 160px;
+                width: 160px !important;
+                border-radius: 100%;
+            }
+        }
+
+        .app__member__info {
+            h3 {
+                font-size: 1rem;
+                margin-bottom: 0.3em;
+            }
+            h4 {
+                font-size: 0.8rem;
+                color: #444;
+            }
+        }
+
+        .app__team__social__media {
+            padding: 2.5em 0 2em;
+            ul {
+                justify-content: center;
+                li {
+                    a {
+                        color: #444;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

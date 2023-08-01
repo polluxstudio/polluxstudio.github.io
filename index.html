@@ -26,35 +26,6 @@
 
 <style>
 
-/* .app__carousel__wrapper {
-  width: 100%;
-  position: relative;
-}
-.app__carousel__container {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: calc((100% / 3) - 12px);
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  gap: 16px;
-  border-radius: 8px;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-}
-.app__single__carousel {
-  scroll-snap-align: start;
-  height: 342px;
-  list-style: none;
-  background: #fff;
-  cursor: pointer;
-  padding-bottom: 15px;
-  flex-direction: column;
-  border-radius: 8px;
-}
-
- */
-
-
 
 
 
@@ -85,22 +56,7 @@
 
 
 
-/**/
-/* .app__team__header, .app__team__social__media ul {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.app__team__header img {
-  height: 180px;
-  width: 180px;
-  border-radius: 100%;
-}
-.app__single__team__member {
-  background: #fff;
-  box-shadow: 0px 0px 6px 0px #ccc;
-}
-
+/*
 
 
 .app__carousel__arrow__left {
@@ -109,10 +65,6 @@
 .app__carousel__arrow__right {
   right: -28px;
 } */
-
-/*
--------------------------------------
-*/
 
 
 
@@ -131,304 +83,6 @@ box-shadow: 0 3px 6px rgba(0,0,0,0.23);
 transform: translateY(-50%);
 transition: transform 0.1s linear;
 } */
-
-
-
-
-
-
-
-
-
-/* Import Google font - Poppins */
-/* .wrapper {
-  max-width: 1100px;
-  width: 100%;
-  position: relative;
-}
-.wrapper i {
-  top: 50%;
-  height: 50px;
-  width: 50px;
-  cursor: pointer;
-  font-size: 1.25rem;
-  position: absolute;
-  text-align: center;
-  line-height: 50px;
-  background: #fff;
-  border-radius: 50%;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
-  transform: translateY(-50%);
-  transition: transform 0.1s linear;
-}
-.wrapper i:active{
-  transform: translateY(-50%) scale(0.85);
-}
-.wrapper i:first-child{
-  left: -22px;
-}
-.wrapper i:last-child{
-  right: -22px;
-}
-.wrapper .carousel{
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: calc((100% / 3) - 12px);
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  gap: 16px;
-  border-radius: 8px;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-}
-.carousel::-webkit-scrollbar {
-  display: none;
-}
-.carousel.no-transition {
-  scroll-behavior: auto;
-}
-.carousel.dragging {
-  scroll-snap-type: none;
-  scroll-behavior: auto;
-}
-.carousel.dragging .card {
-  cursor: grab;
-  user-select: none;
-}
-.carousel :where(.card, .img) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.carousel .card {
-  scroll-snap-align: start;
-  height: 342px;
-  list-style: none;
-  background: #fff;
-  cursor: pointer;
-  padding-bottom: 15px;
-  flex-direction: column;
-  border-radius: 8px;
-}
-.carousel .card .img {
-  background: #8B53FF;
-  height: 148px;
-  width: 148px;
-  border-radius: 50%;
-}
-.card .img img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #fff;
-}
-.carousel .card h2 {
-  font-weight: 500;
-  font-size: 1.56rem;
-  margin: 30px 0 5px;
-}
-.carousel .card span {
-  color: #6A6D78;
-  font-size: 1.31rem;
-}
-
-@media screen and (max-width: 900px) {
-  .wrapper .carousel {
-    grid-auto-columns: calc((100% / 2) - 9px);
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .wrapper .carousel {
-    grid-auto-columns: 100%;
-  }
-}
-
-
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Portfolio Slide */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: 0.8}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: 0.8}
-  to {opacity: 1}
-}
-
-.txt{
-	position: absolute;
-	color: #fff;
-	letter-spacing: 2px;
-	line-height: 35px;
-	top: 40%;
-	left: 15%;
-	-webkit-animation-name: posi;
-  	-webkit-animation-duration: 2s;
-  	animation-name: posi;
-  	animation-duration: 2s;
-	z-index: 1;
-}
-
-@-webkit-keyframes posi {
-  from {left: 25%;}
-  to {left: 15%;}
-}
-
-
-@keyframes posi {
-  from {left: 25%;}
-  to {left: 15%;}
-}
-
-
-/* 
-img{
-	transform: scale(1.5, 1.5);
-	-webkit-animation-name: zoomin;
-  	-webkit-animation-duration: 40s;
-  	animation-name: zoomin;
-  	animation-duration: 40s;
-}
-@-webkit-keyframes zoomin {
-  from {transform: scale(1, 1);}
-  to {transform: scale(1.5, 1.5);}
-}
-
-
-@keyframes zoomin {
-  from {transform: scale(1, 1);}
-  to {transform: scale(1.5, 1.5);}
-} */
-
-
-
-
-
-
-
-
-.app__single__portfolio__wrapper {
-  display: none;
-}
-
-.app__single__portfolio__wrapper.app__active__slide {
-  display: block;
-}
-
-
-.app__single__portfolio  {
-
-}
-
-/* Portfolio Animation */
-/* .app__portfolio__text {
-  position: relative;
-} */
-.app__single__portfolio__wrapper.app__active__slide .app__portfolio__text h3,
-.app__single__portfolio__wrapper.app__active__slide .app__portfolio__text p {
-  position: relative;
-  left: 0%;
-  animation-name: posi;
-  animation-duration: 2s;
-  z-index: 1;
-}
-
-
-@keyframes posi {
-  from {left: 15%;}
-  to {left: 0%;}
-}
-
-.app__single__portfolio__wrapper.app__active__slide .app__portfolio__image img {
-  position: relative;
-  right: 0%;
-  animation-name: imgs;
-  animation-duration: 2s;
-  z-index: 1;
-}
-
-
-
-@keyframes imgs {
-  from {right: 15%;}
-  to {right: 0%;}
-}
-
-
-
 
 
 
@@ -458,38 +112,6 @@ img{
   margin-top: 25%;
 }
 
-
-
-
-
-
-
-/* .app__why__choose__us__slider img {
-  mask-image: url("imgs/mobile.png");
-  mask-size: cover;mask-repeat: no-repeat; 
-  -webkit-mask-image: url("imgs/mobile.png");
-  -webkit-mask-size: cover;-webkit-mask-repeat: no-repeat; 
-  -moz-mask-image: url("imgs/mobile.png");
-  -moz-mask-size: cover;-moz-mask-repeat: no-repeat; 
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
- * Input Field
- * @link https://codepen.io/angeladelise/pen/ZEpXPBZ
- */
 </style>
 
   <!-- <style>
@@ -996,99 +618,43 @@ img {
         <!-- Header -->
         <header class="app__portfolio__header app__header__center app__text__center">
           <h2>Our Recent Work</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ab ratione sint, nemo rem sequi cumque odio necessitatibus tempora eius esse delectus, neque et consectetur qui magnam nisi asperiores illum!</p>
         </header>
         <!-- /Header -->
 
         <!-- Portfolio Wrapper -->
         <div class="app__portfolio__wrapper">
 
-          <!-- Portfolion Navigation -->
-          <!-- <nav class="app__portfolio__navigation">
-            <ul class="app__flex app__gap__2 app__align__center">
-              <li><a href="#"><ion-icon name="desktop-outline"></ion-icon></a></li>
-              <li><a href="#"><ion-icon name="laptop-outline"></ion-icon></a></li>
-              <li><a href="#"><ion-icon name="pencil-outline"></ion-icon></a></li>
-            </ul>
-          </nav> --> <!-- /Portfolion Navigation -->
-
           <!-- Portfolio Slider  -->
           <div class="app__portfolio__slider">
+
+            <!-- Single Portfolio -->
+            <!-- /Single Portfolio -->
             
-            <!-- Single Portfolio Wrapper -->
-            <div class="app__single__portfolio__wrapper">
-              <!-- Single Portfolio -->
-              <div class="app__single__portfolio app__flex app__gap__3">
 
-                <!-- Portfolio Image -->
-                <div class="app__portfolio__image app__flex__1">
-                  <img src="imgs/portfolio/1.png" alt="Portfolio Image">
-                </div><!-- /Portfolio Image -->
 
-                <!-- Portfolio Text -->
-                <div class="app__portfolio__text app__flex__1">
-                  <h3>Lorem ipsum dolor, sit amet consectetur</h3>
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio dolorum omnis, tenetur dolores voluptate velit consequuntur eveniet! Aliquam, illum illo. Aperiam architecto quod facere perferendis laborum eius, quia totam necessitatibus.</p>
-                </div><!-- /Portfolio Text -->
 
-              </div> <!-- /Single Portfolio -->
-            </div><!-- /Single Portfolio Wrapper -->
 
-            <!-- Single Portfolio Wrapper -->
-            <div class="app__single__portfolio__wrapper">
-              <!-- Single Portfolio -->
-              <div class="app__single__portfolio app__flex app__gap__3">
 
-                <!-- Portfolio Image -->
-                <div class="app__portfolio__image app__flex__1">
-                  <img src="imgs/portfolio/2.png" alt="Portfolio Image">
-                </div><!-- /Portfolio Image -->
 
-                <!-- Portfolio Text -->
-                <div class="app__portfolio__text app__flex__1">
-                  <h3>Lorem ipsum dolor, sit amet consectetur</h3>
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio dolorum omnis, tenetur dolores voluptate velit consequuntur eveniet! Aliquam, illum illo. Aperiam architecto quod facere perferendis laborum eius, quia totam necessitatibus.</p>
-                </div><!-- /Portfolio Text -->
 
-              </div> <!-- /Single Portfolio -->
-            </div><!-- /Single Portfolio Wrapper -->
 
-            <!-- Single Portfolio Wrapper -->
-            <div class="app__single__portfolio__wrapper">
-              <!-- Single Portfolio -->
-              <div class="app__single__portfolio app__flex app__gap__3">
 
-                <!-- Portfolio Image -->
-                <div class="app__portfolio__image app__flex__1">
-                  <img src="imgs/portfolio/3.png" alt="Portfolio Image">
-                </div><!-- /Portfolio Image -->
 
-                <!-- Portfolio Text -->
-                <div class="app__portfolio__text app__flex__1">
-                  <h3>Lorem ipsum dolor, sit amet consectetur</h3>
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio dolorum omnis, tenetur dolores voluptate velit consequuntur eveniet! Aliquam, illum illo. Aperiam architecto quod facere perferendis laborum eius, quia totam necessitatibus.</p>
-                </div><!-- /Portfolio Text -->
 
-              </div> <!-- /Single Portfolio -->
-            </div><!-- /Single Portfolio Wrapper -->
 
-            <!-- Single Portfolio Wrapper -->
-            <div class="app__single__portfolio__wrapper">
-              <!-- Single Portfolio -->
-              <div class="app__single__portfolio app__flex app__gap__3">
 
-                <!-- Portfolio Image -->
-                <div class="app__portfolio__image app__flex__1">
-                  <img src="imgs/portfolio/4.png" alt="Portfolio Image">
-                </div><!-- /Portfolio Image -->
 
-                <!-- Portfolio Text -->
-                <div class="app__portfolio__text app__flex__1">
-                  <h3>Lorem ipsum dolor, sit amet consectetur</h3>
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio dolorum omnis, tenetur dolores voluptate velit consequuntur eveniet! Aliquam, illum illo. Aperiam architecto quod facere perferendis laborum eius, quia totam necessitatibus.</p>
-                </div><!-- /Portfolio Text -->
 
-              </div> <!-- /Single Portfolio -->
-            </div><!-- /Single Portfolio Wrapper -->
+
+
+
+
+
+
+
+
+
             
           </div><!-- /Portfolio Slider  -->
 

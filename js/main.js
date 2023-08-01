@@ -6,24 +6,6 @@ mobileMenu.onclick = function() {
   menuContent.classList.toggle('app__show__mobile__menu');
 }
 
-// Portfolio Slider
-let sliderIndex = 0;
-let sliderContainers = document.querySelectorAll('.app__portfolio__slider .app__single__portfolio__wrapper');
-let sliderCount = sliderContainers.length;
-
-function showSlides() {
-  sliderContainers[sliderIndex].classList.remove('app__active__slide');
-  sliderIndex++;
-  if (sliderIndex >= sliderCount) {
-    sliderIndex = 0;
-  }
-  sliderContainers[sliderIndex].classList.add('app__active__slide');
-  setTimeout(showSlides, 5000);
-}
-
-showSlides();
-
-
 // Team Slider
 $('#app__team__carousel').owlCarousel({
   loop:true,

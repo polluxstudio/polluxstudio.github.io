@@ -1,0 +1,58 @@
+#app__portfolio {
+    .app__portfolio__container {
+        .app__portfolio__header {
+            margin-bottom: 4em;
+
+            h2 {
+                margin-bottom: 0.2em;
+            }
+            p {
+
+            }
+        }
+    }
+
+    .app__portfolio__wrapper {
+        padding: 1em;
+        .app__portfolio__row {
+            display: flex;
+            flex-wrap: wrap;
+            .app__portfolio__column {
+                flex: calc(100% / 4);
+                max-width: 25%;
+
+                .app__single__portfolio__wrapper {
+                    position: relative;
+
+                    .app__portfolio__container {
+                        position: relative;
+                        overflow: hidden;
+                        border-radius: 10px;
+                        margin: 1em 0.5em;
+
+                        img {
+                            vertical-align: middle;
+                            width: 100%;
+                        }
+
+                        .app__portfolio__image__overlay {
+                            @include absolute_fill;
+                            background: #6f598fe5;
+                            height: 0;
+                            transition: 1s ease-in-out;
+                          }
+                          
+                          &:hover .app__portfolio__image__overlay {
+                            height: 100%;
+                            transition: 1s ease-in-out;
+                        }
+                    }
+
+                    .app__portfolio__modal__wrapper {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

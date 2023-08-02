@@ -1,0 +1,64 @@
+#app__why__choose__us {
+    .app__why__choose__us__container {
+
+        .app__why__choose__us__slider {
+            overflow: hidden;
+            position: relative;
+             .app__why__choose__us__slider {
+                img {
+
+                }
+             }
+
+             .app__why__choose__us__carousel__wrapper {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                z-index: -2;
+                border-radius: 50px;
+                overflow: hidden;
+              }
+        }
+
+        .app__why__choose__us__text  {
+            .app__why__choose__us__header {
+                h2 {
+
+                }
+            }
+
+            .app__why__choose__us__list {
+
+                ul {
+                    li {
+                        a {
+                            font-size: 0.95rem;
+                            text-transform: capitalize;
+                            font-weight: 300;
+                            color: #444;
+                            display: inline-block;
+                            margin: 1em 0em;
+                            span {
+
+                            }
+
+                            em {
+                                position: relative;
+                                left: 15px;
+                            }
+                        }
+                    }
+                }
+
+                .app__why__choose__us__list__footer {
+                    font-size: 0.8rem;
+                    margin-top: 2em;
+                    color: #444;
+                }
+            }
+        }
+    }
+}

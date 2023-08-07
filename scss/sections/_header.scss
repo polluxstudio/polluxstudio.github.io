@@ -29,7 +29,7 @@
             width: 500px;
             height: 500px;
             border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-            background: linear-gradient(300deg,#7c3adb,darkviolet,#300968);
+            background: linear-gradient(300deg,#25c7d9,rgb(10, 157, 135),#ade267);
             top: 5%;
             left: 10%;
             filter: blur(40px);
@@ -46,6 +46,22 @@
             right: 0;
             background-color: rgba(249, 252, 255, 0.5); 
             background-image: linear-gradient(147deg, rgba(249, 252, 255, 0.5) 0%, rgba(222, 228, 234, 0.5) 74%);
+        }
+
+        .app__background__pattern {
+            display: flex;
+            position: absolute;
+            background-image: radial-gradient(#444 2px, transparent 0);
+            background-size: 18px 18px;
+            background-position: 0 0;
+            opacity: 0.2;
+            margin: auto;
+            z-index: 999999999;
+            height: 200px;
+            width: 260px;
+            bottom: 8%;
+            right: 2%;
+            animation: pattern-animation 5s ease infinite;
         }
 
         @keyframes blob-animation {
@@ -74,10 +90,22 @@
                 left: 15%;
             }
             100% {
-                background-position: 0% 50%;
+                background-position: 0 0;
                 border-radius: 49% 51% 64% 36% / 39% 45% 55% 61%; 
                 top: 10%;
                 left: 5%;
+            }
+        }
+
+        @keyframes pattern-animation {
+            0% {
+                bottom: 8%; 
+            }
+            50% {
+                bottom: 10%;
+            }
+            100% {
+                bottom: 8%;
             }
         }
     }
@@ -126,21 +154,44 @@
                             display: inline-block;
                             padding: 0.5em 0;
                             font-size: 0.7rem;
-                            color: #6f598f !important;
+                            color: $color__dark__black !important;
                             font-weight: 500;
                             letter-spacing: 0.2em;
                         }
 
 
                         .app__menu__hover {
-                            display: block;
+                            display: none;
                             height: 1.5px;
-                            width: 70%;
-                            background: #6f598f;
+                            width: 100%;
+                            background: $color__highlight;
                             position: absolute;
                             right: 0;
                         }
+
+                        &.app__active__menu .app__menu__hover {
+                            display: block;
+                            width: 60%;
+                        }
+                        &.app__active__menu:hover .app__menu__hover {
+                            width: 100%;
+                        }
+
+                        &:hover .app__menu__hover {
+                            display: block;
+                            animation: menu-hover 0.3s ease-in-out;
+                        }
+
+                        @keyframes menu-hover {
+                            from {
+                                width: 60%;
+                            }
+                            to {
+                                width: 100%;
+                            }
+                        }
                     }
+                    
                 }
             }
 
@@ -149,7 +200,7 @@
                 display: block !important;
                 @include absolute_fill();
                 position: fixed;
-                background: #fff;
+                background: $color__bg;
                 z-index: 999;
                 ul {
                     flex-direction: column;

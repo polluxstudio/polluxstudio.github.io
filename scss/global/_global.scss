@@ -3,7 +3,7 @@
  * -------------------------------------------------------------*/
  a {
 	text-decoration: none;
-	color: $main-color;
+	color: $color__highlight;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 0.75rem;
@@ -11,19 +11,19 @@
  }
  a:hover {
       text-decoration: none;
-      color: $primary-1;
+      color: $color__highlight;
   }
 a:link {
     text-decoration: none;
-    color: $primary-1;
+    color: $color__highlight;
 }
 a:active{
     text-decoration: none;
-    color: $primary-3;
+    color: $color__highlight;
 }
 a:focus{
     text-decoration: none;
-    color: $primary-2;
+    color: $color__highlight;
 }
 
  
@@ -89,7 +89,7 @@ p {
   width: 25px;
   height: 2px;
   margin: 1em 0;
-  background-color: #6f598f;
+  background-color: $color__highlight;
 }
 
 
@@ -104,7 +104,7 @@ p {
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 500;
-  color: #6f598f;
+  color: $color__highlight;
 }
 
 
@@ -150,11 +150,12 @@ p {
   font-weight: 500;
   border: none;
   padding: 0.8em 3em;
-  background: #6f598f;
-  color: #fff;
+  background: $color__highlight;
+  color: $color__bg;
   font-size: 0.75rem;
   text-transform: uppercase;
   display: inline-block;
+  transition: all 0.5s ease-in-out;
 }
 .app__btn::before {
   position: absolute;
@@ -163,9 +164,9 @@ p {
   height: 30px;
   top: -7px;
   left: -7px;
-  border-top: 3px solid #6f598f;
-  border-left: 3px solid #6f598f;
-  transition: all 0.5s;
+  border-top: 2px solid $color__highlight;
+  border-left: 2px solid $color__highlight;
+  transition: all 0.5s ease-in-out;
 }
 .app__btn::after {
   position: absolute;
@@ -174,19 +175,28 @@ p {
   height: 30px;
   bottom: -7px;
   right: -7px;
-  border-bottom: 3px solid #6f598f;
-  border-right: 3px solid #6f598f;
-  transition: all 0.5s;
+  border-bottom: 2px solid $color__highlight;
+  border-right: 2px solid $color__highlight;
+  transition: all 0.5s ease-in-out;
 }
 .app__btn:hover::before,
 .app__btn:hover::after {
   width: 100%;
   height: 100%;
 }
-
-
-
-
+.app__btn:hover {
+  color: $color__bg;
+  box-shadow: 0px 0px 30px -5px $color__highlight;
+}
+.app__btn:link {
+  color: $color__bg;
+}
+.app__btn:active {
+  color: $color__bg;
+}
+.app__btn:focus {
+  color: $color__bg;
+}
 
 
 

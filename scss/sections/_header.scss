@@ -56,7 +56,7 @@
             background-position: 0 0;
             opacity: 0.2;
             margin: auto;
-            z-index: 999999999;
+            // z-index: 999999999;
             height: 140px;
             width: 120px;
             bottom: 8%;
@@ -172,7 +172,7 @@
                         &.app__active__menu .app__menu__hover {
                             display: block;
                             width: 60%;
-                            transition: all 0.3s ease-in;
+                            transition: all 0.3s ease-in-out;
                         }
                         &.app__active__menu:hover .app__menu__hover {
                             width: 100%;
@@ -255,7 +255,7 @@
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
     .app__header {
         #app__main__header {
             .navigation__main__wrapper {

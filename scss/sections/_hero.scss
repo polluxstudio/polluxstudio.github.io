@@ -1,20 +1,29 @@
 .app__header {
     #app__hero {
         .app__hero__container {
+            padding-bottom: 10em;
+
             .app__hero__text {
                 h1 {
-
+                    font-size: 0.8rem;
+                    font-weight: 500;
+                    color: #6f598f;
+                    letter-spacing: 0.3em;
                 }
                 h2 {
-                    font-size: 3rem;
-                    margin-bottom: 0.2em;
-                    text-transform: capitalize;
+                    font-size: 4rem;
+                    margin: 0.2em auto 0.5em;
+                    text-transform: uppercase;
+                    letter-spacing: 0.06em;
+                    font-weight: 900;
                 }
-                h3 {
+                p {
                     font-size: 1rem;
                     text-transform: capitalize;
                     font-weight: 300;
                     margin-bottom: 1.4em;
+                    color: #444;
+                    line-height: 1.8rem;
                 }
             }
 

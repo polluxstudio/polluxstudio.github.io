@@ -9,6 +9,23 @@
     margin: 0 auto;
 }
 
+
+
+
+
+
+.app__container__lg {
+    width: 1700px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
 @media (min-width: 7680px) {
     .app__container {
         max-width: 1920px;
@@ -23,7 +40,7 @@
 
 @media (max-width: 2559px) and (min-width: 1920px) {
     .app__container {
-        max-width: 1200px;
+        max-width: 1340px;
     }
 }
 

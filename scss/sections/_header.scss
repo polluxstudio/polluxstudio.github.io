@@ -57,8 +57,8 @@
             opacity: 0.2;
             margin: auto;
             z-index: 999999999;
-            height: 200px;
-            width: 260px;
+            height: 140px;
+            width: 120px;
             bottom: 8%;
             right: 2%;
             animation: pattern-animation 5s ease infinite;
@@ -172,6 +172,7 @@
                         &.app__active__menu .app__menu__hover {
                             display: block;
                             width: 60%;
+                            transition: all 0.3s ease-in;
                         }
                         &.app__active__menu:hover .app__menu__hover {
                             width: 100%;

@@ -9,3 +9,9 @@
     left: 0;
     right: 0;
 }
+
+
+@mixin custom_box_shadow($offset-x, $offset-y, $blur-radius, $spread, $color, $opacity: 1) {
+    $shadow-color: rgba($color, $opacity);
+    box-shadow: $offset-x $offset-y $blur-radius $spread $shadow-color;
+}

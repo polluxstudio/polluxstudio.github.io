@@ -38,8 +38,11 @@ ul, ul li {
 
 
 p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 300;
+    color: $color__light__black;
+    letter-spacing: 0.01em;
+    line-height: 1.5rem;
 }
 
 .app__text__center {
@@ -90,6 +93,7 @@ p {
   height: 2px;
   margin: 1em 0;
   background-color: $color__highlight;
+  @include custom_box_shadow(0px, 0px, 10px, 0px, $color__highlight, 0.5);
 }
 
 
@@ -102,9 +106,10 @@ p {
 
 .app__heading__upper {
   text-transform: uppercase;
-  font-size: 1rem;
-  font-weight: 500;
-  color: $color__highlight;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: $color__light__black;
+  letter-spacing: 0.2em;
 }
 
 

@@ -9,11 +9,12 @@
         // Service Container
         .app__actual__services  {
             .app__single__service__wrapper  {
+                flex-direction: column;
 
                 // Service Icon
                 .app__single__service__icon  {
                     font-size: 2rem;
-                    color: #6f598f;
+                    color: $color__highlight;
                 }
 
                 // Service Information 
@@ -40,6 +41,10 @@
         .app__services__container {
             .app__actual__services  {
                 flex-direction: column;
+
+                .app__single__service__wrapper  {
+                    flex-direction: row;
+                }
             }
         }
     }    

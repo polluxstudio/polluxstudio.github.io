@@ -64,6 +64,49 @@
             animation: pattern-animation 5s ease infinite;
         }
 
+        .app__background__floating__icon {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+
+            .app__header__icon {
+                position: absolute;
+                font-size: 3rem;
+                color: $color__highlight;
+                opacity: 0.8;
+            }
+
+
+            .app__icon__close {
+                bottom: 29%;
+                right: 12%;
+              }
+            .app__icon__cube {
+                top: 18%;
+                left: 5%;
+              }
+            .app__icon__ellipse {
+                bottom: 25%;
+                left: 35%;
+              }
+            .app__icon__prism {
+                bottom: 17%;
+                right: 32%;
+              }
+            .app__icon__square {
+                top: 35%;
+                left: 55%;
+              }
+            .app__icon__triangle {
+                bottom: 10%;
+                left: 6%;
+              }
+            .app__icon__planet {
+                top: 18%;
+                right: 4%;
+              }
+          }
+
         @keyframes blob-animation {
             0% {
                 background-position: 0% 50%;

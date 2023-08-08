@@ -211,16 +211,16 @@ $(document).ready(function () {
     URLhashNav: true,
   });
 
-  owlWhyChooseUs.on('initialized.owl.carousel changed.owl.carousel', function (event) {
-    // Get the current slide index
-    let currentSlideIndex = event.item.index;
+  // owlWhyChooseUs.on('initialized.owl.carousel changed.owl.carousel', function (event) {
+  //   // Get the current slide index
+  //   let currentSlideIndex = event.item.index;
 
-    console.log(event.item);
+  //   console.log(event.item);
 
-    // Remove the 'active' class from all anchor tags
-    $('#app__why__choose__us__list ul li a').removeClass('active');
+  //   // Remove the 'active' class from all anchor tags
+  //   $('#app__why__choose__us__list ul li a').removeClass('active');
 
-    // Add the 'active' class to the corresponding anchor tag based on the slide index
-    $('#app__why__choose__us__list ul li a[href="#' + (currentSlideIndex + 1) + '"]').addClass('active');
-  });
+  //   // Add the 'active' class to the corresponding anchor tag based on the slide index
+  //   $('#app__why__choose__us__list ul li a[href="#' + (currentSlideIndex + 1) + '"]').addClass('active');
+  // });
 });

@@ -29,7 +29,12 @@
 
 
             .app__hero__image {
+                align-items: center;
+                justify-content: center;
 
+                img {
+                    width: 80%;
+                }
             }
         }
     }

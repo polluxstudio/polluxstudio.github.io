@@ -39,3 +39,12 @@
         }
     }
 }
+
+
+@media (max-width: 860px) {
+    #app__hero {
+        .app__hero__container {
+            flex-direction: column-reverse;
+        }
+    }
+}

@@ -1,0 +1,79 @@
+#app__about {
+    .app__about__container {
+
+        .app__about__text {
+            .app__about__header {
+                h2 {
+
+                }
+
+                span {
+
+                }
+
+                h3 {
+                    font-size: 2.4rem;
+                    letter-spacing: 0.03em;
+                    line-height: 3rem;
+                    font-weight: 900;
+                    margin-bottom: 0.8em;
+                }
+            }
+
+            .app__about__article {
+                p {
+                    line-height: 1.6rem;
+                }
+            }
+
+        }
+
+        .app__about__image {
+            justify-content: center;
+            align-items: center;
+
+            .app__about__image__wrapper {
+            position: relative;
+
+                img {
+
+                }
+
+                .app__about__image__play__btn {
+                    position: absolute;
+                    display: inline-block;
+                    top: 50%;
+                    left: 50%;
+                    margin-left: -35px;
+                    margin-top: -35px;
+                    button {
+                        border: none;
+                        font-size: 3rem;
+                        color: $color__bg;
+                        margin: 0;
+                        padding: 0;
+                        height: 70px;
+                        width: 70px;
+                        background: rgba($color: $color__highlight, $alpha: 0.7);
+                        border-radius: 8px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+            
+    }
+
+}
+
+
+@media (max-width: 860px) {
+    #app__about {
+        .app__about__container {
+            flex-direction: column-reverse;
+        }
+    }
+}

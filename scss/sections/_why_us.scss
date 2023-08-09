@@ -73,3 +73,11 @@
         }
     }
 }
+
+@media (max-width: 600px) {
+    #app__why__choose__us {
+        .app__why__choose__us__container {
+            flex-direction: column;
+        }
+    }
+}

@@ -1,42 +1,59 @@
 #app__team {
     .app__team__container {
         .app__single__carousel {
-            padding: 0.5em;
+            // padding: 0.5em;
             margin: 0.5em;
             overflow: hidden;
-            border-radius: 4px;
-            box-shadow: 0px 2px 5px 1px rgba(166,164,164,0.5);
+            border-radius: 3px;
+            box-shadow: 0px 2px 5px 1px rgba(166,164,164,0.3);
         }
 
         .app__team__header {
             display: flex;
             justify-content: center;
-            margin: 1.5em 0 2em;
+            margin: 0 0 2em;
             img {
-                height: 160px;
-                width: 160px !important;
-                border-radius: 100%;
+                // height: 160px;
+                // width: 160px !important;
+                // border-radius: 100%;
             }
         }
 
         .app__member__info {
+            padding: 8px 15px 5px;
+
             h3 {
                 font-size: 1rem;
-                margin-bottom: 0.3em;
+                letter-spacing: 0.02em;
+                font-weight: 600;
+                padding: 0;
+                margin-bottom: 0.6em;
             }
             h4 {
-                font-size: 0.8rem;
-                color: #444;
+                font-size: 0.75rem;
+                letter-spacing: 0.02em;
+                font-weight: 600;
+                margin: 0;
+                padding: 0;
+                color: $color__light__black;
+            }
+            p {
+                font-size: 0.9rem;
+                font-weight: 300;
+                color: $color__light__black;
+                letter-spacing: 0.01em;
+                line-height: 1.5rem;
+                margin-top: 1.4em;
             }
         }
 
         .app__team__social__media {
-            padding: 2.5em 0 2em;
+            padding: 1.6em 0 2em;
             ul {
                 justify-content: center;
                 li {
                     a {
-                        color: #444;
+                        color: $color__light__black;
                         font-size: 1rem;
                     }
                 }

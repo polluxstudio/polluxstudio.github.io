@@ -8,6 +8,23 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Detect when sections are in the viewport and update the menu
+const sections = document.querySelectorAll('section');
+const menuItems = document.querySelectorAll('.app__header #app__main__header #app__main__navigation ul li');
+
+function updateMenu() {
+    sections.forEach((section, index) => {
+        const bounding = section.getBoundingClientRect();
+        if (bounding.top <= 50 && bounding.bottom >= 50) {
+            menuItems.forEach(item => item.classList.remove('app__active__menu'));
+            menuItems[index].classList.add('app__active__menu');
+        }
+    });
+}
+
+window.addEventListener('scroll', updateMenu);
+window.addEventListener('resize', updateMenu);
+window.addEventListener('load', updateMenu);
 
 // Mobile Menu
 const mobileMenu = document.querySelector('button.app__mobile__menu__btn');

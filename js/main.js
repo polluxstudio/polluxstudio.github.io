@@ -8,6 +8,25 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Sticky Header
+document.addEventListener('DOMContentLoaded', function() {
+  const header = document.getElementById('app__main__header');
+  let lastScrollY = window.scrollY;
+
+  window.addEventListener('scroll', function() {
+    const scrollY = window.scrollY;
+    
+    if (scrollY > lastScrollY) {
+      header.classList.add('app__header__sticky');
+    } else {
+      header.classList.remove('app__header__sticky');
+    }
+    
+    lastScrollY = scrollY;
+  });
+});
+
+
 // Detect when sections are in the viewport and update the menu
 const sections = document.querySelectorAll('section');
 const menuItems = document.querySelectorAll('.app__header #app__main__header #app__main__navigation ul li');

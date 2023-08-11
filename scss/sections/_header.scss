@@ -166,7 +166,13 @@
 
 
 
-
+    .app__header__sticky {
+        position: fixed;
+        width: 100%;
+        background: #fff;
+        z-index: 99999999999999;
+    }
+    
     #app__main__header {
         padding: 1em 0;
 

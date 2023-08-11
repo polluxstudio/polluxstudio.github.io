@@ -1,3 +1,14 @@
+// Smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+    });
+});
+
+
 // Mobile Menu
 const mobileMenu = document.querySelector('button.app__mobile__menu__btn');
 const menuContent = document.querySelector('#app__main__navigation');
@@ -6,36 +17,23 @@ mobileMenu.onclick = function() {
   menuContent.classList.toggle('app__show__mobile__menu');
 }
 
-// // Why Choose Us 
-// $(document).ready(function () {
-//   let owlWhyChooseUs = $('#app__why__choose__us__carousel');
+// Why Choose Us 
+$(document).ready(function () {
+  let owlWhyChooseUs = $('#app__why__choose__us__carousel');
 
-//   owlWhyChooseUs.owlCarousel({
-//     loop: true,
-//     margin: 0,
-//     items: 1,
-//     dots: false,
-//     nav: false,
-//     autoplay: true,
-//     autoplayTimeout: 5000,
-//     autoplayHoverPause: true,
-//     URLhashListener: true,
-//     URLhashNav: true,
-//   });
-
-//   owlWhyChooseUs.on('changed.owl.carousel', function (event) {
-//     // Get the current slide index
-//     let currentSlideIndex = event.item.index;
-
-//     console.log(event.item);
-
-//     // Remove the 'active' class from all anchor tags
-//     $('#app__why__choose__us__list ul li a').removeClass('active');
-
-//     // Add the 'active' class to the corresponding anchor tag based on the slide index
-//     $('#app__why__choose__us__list ul li a[href="#' + (currentSlideIndex + 1) + '"]').addClass('active');
-//   });
-// });
+  owlWhyChooseUs.owlCarousel({
+    loop: true,
+    margin: 0,
+    items: 1,
+    dots: false,
+    nav: false,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    URLhashListener: true,
+    URLhashNav: true,
+  });
+});
 
 // Team Slider
 $(document).ready(function () {
@@ -146,81 +144,4 @@ faqHeaders.forEach(faqHeader => {
 // Show current year at footer
 document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('#app__main_footer .app__year').textContent = new Date().getFullYear();
-});
-
-
-
-
-
-
-
-
-
-
-// jQuery(document).ready(function($) {
-//   $('.owl-carousel').on('initialized.owl.carousel changed.owl.carousel', function(e) {
-//     if (!e.namespace)  {
-//       return;
-//     }
-//     let carousel = e.relatedTarget;
-//     $('.slider-counter').text(carousel.relative(carousel.current()) + 1 + ' / ' + carousel.items().length);
-//     }).owlCarousel({
-//       nav:false,
-//       loop:true,
-//       dots:false,
-//       items:1,
-//       dots:false,
-//       URLhashListener:true,
-//       startPosition: 'URLHash',
-//       autoplay:true,
-//       autoplayTimeout:9000,
-//       autoplayHoverPause:true,
-//     }
-//   });
-
-//     $('.owl-carousel').on('changed.owl.carousel', function(event) {
-//       let current = event.item.index;
-//       let hash = $(event.target).find(".owl-item").eq(current).find(".item").attr('data-hash');
-//       $('.'+hash).addClass('active');
-//     });
-
-//     $('.owl-carousel').on('change.owl.carousel', function(event) {
-//       let current = event.item.index;
-//       let hash = $(event.target).find(".owl-item").eq(current).find(".item").attr('data-hash');
-//       $('.'+hash).removeClass('active');
-//     });
-
-// });
-
-
-
-// Why Choose Us 
-$(document).ready(function () {
-  let owlWhyChooseUs = $('#app__why__choose__us__carousel');
-
-  owlWhyChooseUs.owlCarousel({
-    loop: true,
-    margin: 0,
-    items: 1,
-    dots: false,
-    nav: false,
-    autoplay: true,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: true,
-    URLhashListener: true,
-    URLhashNav: true,
-  });
-
-  // owlWhyChooseUs.on('initialized.owl.carousel changed.owl.carousel', function (event) {
-  //   // Get the current slide index
-  //   let currentSlideIndex = event.item.index;
-
-  //   console.log(event.item);
-
-  //   // Remove the 'active' class from all anchor tags
-  //   $('#app__why__choose__us__list ul li a').removeClass('active');
-
-  //   // Add the 'active' class to the corresponding anchor tag based on the slide index
-  //   $('#app__why__choose__us__list ul li a[href="#' + (currentSlideIndex + 1) + '"]').addClass('active');
-  // });
 });

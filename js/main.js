@@ -181,3 +181,31 @@ faqHeaders.forEach(faqHeader => {
 document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('#app__main_footer .app__year').textContent = new Date().getFullYear();
 });
+
+
+// Modal
+function modal(selector) {
+  const btn = document.querySelector(selector);
+  const modalId = btn.id;
+  const modalDataAttr = `[data-modal="${modalId}"]`;
+  const modal = document.querySelector(modalDataAttr);
+
+  const closeBtn = document.querySelector('#app__modal #app__modal__close__btn')
+
+  btn.onclick = function() {
+    modal.style.display = 'block';
+  }
+
+  closeBtn.onclick = function() {
+    modal.style.display = 'none';
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = 'none';
+    }
+  }
+}
+
+modal('#app__about__play__btn');

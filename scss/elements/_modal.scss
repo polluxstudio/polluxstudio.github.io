@@ -1,0 +1,49 @@
+#app__modal {
+    @include absolute_fill();
+    position: fixed;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 99999999999999999999;
+    display: none;
+
+    .app__modal__wrapper.app__flex {
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+
+        .app__actual__modal {
+            position: relative;
+            width: 60vw;
+            box-shadow: 0px 5px 8px 1px rgba(66, 66, 66, 0.5);
+            margin: 0 auto;
+            padding: 0;
+
+            #app__modal__close__btn {
+                position: absolute;
+                top: -50px;
+                right: -50px;
+
+                button {
+                    border: none;
+                    color: #fff;
+                    font-size: 2rem;
+                    margin: 0;
+                    padding: 0;
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 100%;
+                    background: rgba(66,66,66,0.5);
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            iframe {
+                width: 100%;
+            }
+        }
+        
+    }
+}

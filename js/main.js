@@ -189,21 +189,33 @@ function modal(selector) {
   const modalId = btn.id;
   const modalDataAttr = `[data-modal="${modalId}"]`;
   const modal = document.querySelector(modalDataAttr);
-
-  const closeBtn = document.querySelector('#app__modal #app__modal__close__btn')
+  const closeBtn = modal.querySelector('#app__modal__close__btn');
 
   btn.onclick = function() {
     modal.style.display = 'block';
+    document.body.style.overflow = 'hidden'; // Prevent scrolling
   }
 
   closeBtn.onclick = function() {
     modal.style.display = 'none';
+    document.body.style.overflow = 'auto'; // Allow scrolling again
+
+    const iframe = modal.querySelector('iframe');
+    iframe.src = iframe.src; // Reset the video by changing the src
+  }
+
+  modal.onclick = function(event) {
+    event.stopPropagation(); // Prevent click from propagating to window
   }
 
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
     if (event.target == modal) {
       modal.style.display = 'none';
+      document.body.style.overflow = 'auto'; // Allow scrolling again
+
+      const iframe = modal.querySelector('iframe');
+      iframe.src = iframe.src; // Reset the video by changing the src
     }
   }
 }

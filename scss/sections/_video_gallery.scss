@@ -1,3 +1,20 @@
-.app__gallery__carousel__wrapper {
-    overflow: hidden;
+#app__gallery {
+
+  .app__container__gallery {
+    background: #f0f0f0;
+    border-radius: 12px;
+    box-shadow: 0px 5px 8px 1px rgba(166,164,164,0.5);
+    padding: 4em 0;
+    margin: 4em auto;
+    
+    .app__gallery__info {
+      padding-left: 4em;
+    }
+
+    .app__gallery__carousel__wrapper {
+      overflow: hidden;
+      position: relative;
+      right: -5%;
+    }
   }
+}

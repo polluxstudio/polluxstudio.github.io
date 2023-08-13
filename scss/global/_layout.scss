@@ -18,7 +18,12 @@
     width: 1700px;
     margin: 0 auto;
 }
-
+@media (max-width: 1700px) {
+    .app__container__lg {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
 
 
 

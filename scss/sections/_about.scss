@@ -69,7 +69,28 @@
 
     #app__modal {
         .app__modal__wrapper {
-            .app__actual__modal {
+            .app__actual__modal {            
+                #app__modal__close__btn {
+                    position: absolute;
+                    top: -50px;
+                    right: -50px;
+
+                    button {
+                        border: none;
+                        color: #fff;
+                        font-size: 2rem;
+                        margin: 0;
+                        padding: 0;
+                        height: 50px;
+                        width: 50px;
+                        border-radius: 100%;
+                        background: rgba(66,66,66,0.5);
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
 
                 .app__modal__close__btn {
 

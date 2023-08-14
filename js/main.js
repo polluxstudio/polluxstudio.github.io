@@ -221,3 +221,4 @@ function modal(selector) {
 }
 
 modal('#app__about__play__btn');
+modal('#app__portfolio__1');

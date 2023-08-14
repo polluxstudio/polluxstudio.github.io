@@ -38,20 +38,88 @@
 
                         .app__portfolio__image__overlay {
                             @include absolute_fill;
-                            background: #6f598fe5;
+                            background: rgba($color: $color__highlight, $alpha: 0.9);
                             height: 0;
                             transition: 0.5s ease-in-out;
-                            filter: blur(20px);
+                            justify-content: center;
+                            align-items: center;
+
+                            .app__btn {
+                                display: none;
+                                background: $color__bg;
+                                color: $color__dark__black;
+                            }
+                            .app__btn:hover {
+                                color: $color__highlight;
+                            }
+                            .app__btn::before  {
+                                border-top: 2px solid $color__bg;
+                                border-left: 2px solid $color__bg;
+                            }
+                            .app__btn::after {
+                                border-bottom: 2px solid $color__bg;
+                                border-right: 2px solid $color__bg;
+                            }
                           }
                           
                           &:hover .app__portfolio__image__overlay {
                             height: 100%;
                             transition: 0.5s ease-in-out;
                         }
+                          &:hover .app__portfolio__image__overlay .app__btn {
+                            display: block;
+                        }
                     }
 
-                    .app__portfolio__modal__wrapper {
+                    #app__modal {
                         display: none;
+
+                        .app__modal__wrapper {
+                            .app__actual__modal {
+                                background: $color__bg;
+                                padding: 1em;
+                                border-radius: 4px;
+                                .app__portfolio__modal__header {
+                                    padding: 0.6em 0;
+                                    margin-bottom: 1em;
+                                    h3 {
+                                        font-size: 1rem;
+                                        text-transform: uppercase;
+                                        letter-spacing: 0.2em;
+                                        font-weight: 600;
+                                    }
+
+                                    .app__close__btn {
+                                        background: none;
+                                        border: none;
+                                        font-size: 1.6rem;
+                                        display: flex;
+                                        cursor: pointer;
+                                    }
+                                }
+
+                                .app__modal__body {
+                                    .app__video__container {
+                                        position: relative;
+                                        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+                                        height: 0;
+                                        overflow: hidden;
+                                        
+                                        iframe {
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            width: 100%;
+                                            height: 100%;
+                                        }
+
+                                        p {
+                                            margin: 1em 0;
+                                          }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }

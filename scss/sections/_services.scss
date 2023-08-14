@@ -1,5 +1,48 @@
 #app__services {
+    position: relative;
+    overflow: hidden;
+
+    .app__background {
+        @include absolute_fill();
+
+        .app__background__blob {
+            width: 500px;
+            height: 500px;
+            background: $color__highlight;
+            border-radius: 100%;
+            filter: blur(150px);
+            position: absolute;
+            right: -150px;
+            top: -150px;
+        }
+
+        .app__background__overlay {
+            @include absolute_fill();
+            // background: rgba($color: $color__bg, $alpha: 0.9);
+            background: rgba(249,252,255,0.8);;
+        }
+
+
+        .app__background__floating__icon {
+
+            .app__icon {
+                position: absolute;
+                font-size: 3rem;
+                color: $color__highlight;
+            }
+
+            .app__icon__cube {
+                top: 24%;
+                right: 8%;
+              }
+
+
+        }
+    }
+
     .app__services__container {
+
+        position: relative;
 
         // Service Header
         .app__service__header {
